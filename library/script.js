@@ -383,7 +383,7 @@ function curiousYes() {
     noSeven.addEventListener('click', expressionNo);
 }
 function expressionNo() {
-    gif.setAttribute('src', 'cat_reading.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cat_reading.gif?v=1648156265877');
     question.textContent = 'Are you looking for wisdom in this world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -413,7 +413,7 @@ function wisdomYes() {
     document.location.assign('philosophy.html');
 }
 function expressionYes() {
-    gif.setAttribute('src', 'politics.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/politics.gif?v=1648156352313');
     question.textContent = 'Do you find politics boring?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -467,7 +467,7 @@ function politicsYes() {
     noNine.addEventListener('click', fantasyNo);
 }
 function fantasyNo() {
-    gif.setAttribute('src', 'mind.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/mind.gif?v=1648156330411');
     question.textContent = 'Are you interested in human thinking and culture?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -500,7 +500,7 @@ function fantasyYes() {
     document.location.assign('literature.html');
 }
 function beyondNo() {
-    gif.setAttribute('src', 'psychology.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/psychology.gif?v=1648156378473');
     question.textContent = 'Are you interested in psychology?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -527,7 +527,7 @@ function beyondNo() {
     noTwo.addEventListener('click', psychologyNo); 
 }
 function psychologyNo() {
-    gif.setAttribute('src', 'good_person.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/good_person.gif?v=1648156315109');
     question.textContent = `Are you striving to meet people's expectations?`;
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -554,7 +554,7 @@ function psychologyNo() {
     noTwo.addEventListener('click', expectationsNo); 
 }
 function expectationsNo() {
-    gif.setAttribute('src', 'writer.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/writer.gif?v=1648156445364');
     question.textContent = `Do you want to express your feelings in words?`;
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -584,7 +584,7 @@ function wordsNo() {
     document.location.assign('art.html');
 }
 function mistakesYes() {
-    gif.setAttribute('src', 'save.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/save.gif?v=1648156397029');
     question.textContent = 'Do you want to help save the world?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
@@ -611,7 +611,7 @@ function mistakesYes() {
     noFour.addEventListener('click', saveWorldNo);
 }
 function saveWorldNo() {
-    gif.setAttribute('src', 'good_person.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/good_person.gif?v=1648156315109');
     question.textContent = `Are you striving to meet people's expectations?`;
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -638,7 +638,7 @@ function saveWorldNo() {
     noTwo.addEventListener('click', expectationsNo); 
 }
 function expectationsYes() {
-    gif.setAttribute('src', 'politics.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/politics.gif?v=1648156352313');
     question.textContent = 'Do you find politics boring?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -665,7 +665,7 @@ function expectationsYes() {
     noEight.addEventListener('click', politicNo);
 }
 function politicNo() {
-    gif.setAttribute('src', 'translate.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/translate.gif?v=1648156428954');
     question.textContent = 'Do you want to learn foreign languages?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -695,7 +695,7 @@ function languagesYes() {
     document.location.assign('languages.html');
 }
 function saveWorldYes() {
-    gif.setAttribute('src', 'black_n_white.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/black_n_white.gif?v=1648156257344');
     question.textContent = 'Do you like black and white color palette?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
@@ -722,7 +722,7 @@ function saveWorldYes() {
     noFive.addEventListener('click', blackWhiteNo)
 }
 function blackWhiteNo() {
-    gif.setAttribute('src', 'writer.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/writer.gif?v=1648156445364');
     question.textContent = 'Do you want to express your feelings in words?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -779,7 +779,7 @@ function blackWhiteYes() {
     document.location.assign('tech.html');
 }
 function noOne() {
-    gif.setAttribute('src', 'abstraction.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/abstraction.gif?v=1648156233558');
     question.textContent = 'Do you rely more on abstract thinking?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'block';
@@ -806,7 +806,7 @@ function noOne() {
     noBtn.addEventListener('click', abstractNo); 
 }
 function abstractYes() {
-    gif.setAttribute('src', 'sorry.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sorry.gif?v=1648156417243');
     question.textContent = 'Do you want to correct your mistakes?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
@@ -833,7 +833,7 @@ function abstractYes() {
     noThree.addEventListener('click', mistakesNo);
 }
 function abstractNo() {
-    gif.setAttribute('src', 'ancestors.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/ancestors.gif?v=1648156247483');
     question.textContent = 'Do you think that elders should be listened to?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -860,7 +860,7 @@ function abstractNo() {
     noNine.style.display = 'none';
 }
 function ancestorsYes() {
-    gif.setAttribute('src', 'save.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/save.gif?v=1648156397029');
     question.textContent = 'Do you want to help save the world?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
@@ -888,7 +888,7 @@ function ancestorsYes() {
 
 }
 function ancestorsNo() {
-    gif.setAttribute('src', 'puzzle.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/puzzle.gif?v=1648156391747');
     question.textContent = 'Do you like digging into details and categorizing?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -915,7 +915,7 @@ function ancestorsNo() {
     noBtn.addEventListener('click', detailsNo);
 }
 function detailsYes() {
-    gif.setAttribute('src', 'black_n_white.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/black_n_white.gif?v=1648156257344');
     question.textContent = 'Do you like black and white color palette?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
