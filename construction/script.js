@@ -1,4 +1,3 @@
-const particles = document.querySelector('#particles-js');
 
 /* Background animation */
 particlesJS("particles-js", {
@@ -147,22 +146,22 @@ function playMusic() {
         path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/5.mp3?v=1648092783495'},
 
         {name: `Gramatik - The Prophet`,
-        path: '6.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/6.mp3?v=1648092787889'},
 
         {name: `Sam Sparro - Quantum Physical, Vol. 2 - Hands Up`,
-        path: '7.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/7.mp3?v=1648092796378'},
 
         {name: `The Allergies - Gather Around`,
-        path: '8.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/8.mp3?v=1648092806919'},
 
         {name: `Dennis Parker - Like an Eagle (Dynamicron Edit)`,
-        path: '9.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/9.mp3?v=1648092812927'},
 
         {name: `Marvin Gaye - Grapevine [Autograf Remix]`,
-        path: '10.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/10.mp3?v=1648092813070'},
 
         {name: `Record Deep - Geonis, Lisitsyn - Tomorrow`,
-        path: '11.mp3'},
+        path: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/11.mp3?v=1648092821833'},
     
     ];
     
