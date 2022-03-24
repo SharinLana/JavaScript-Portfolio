@@ -111,6 +111,8 @@ body {
 	z-index: 2;
 	border-radius: 10px;
 	overflow: auto; 
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; 
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);
