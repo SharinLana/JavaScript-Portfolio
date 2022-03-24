@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/carpet_room_3.jpg?v=1648153208209);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/linoleum_room.jpg?v=1648153577941);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -8,7 +8,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.774);
@@ -53,7 +53,7 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     width: 40%;
-    background-color: #ffd464;
+    background-color: #bdd9f2;
     padding: 10px 0px;
     margin: 8px 0px;
     color: rgb(63, 62, 62);
@@ -76,19 +76,19 @@ h1 {
     height: 200px;
 }
 .one {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/carpet_1.jpg?v=1648153168943);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/linoleum_1.jpg?v=1648153542082);
     background-size:cover;
 }
 .two {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/carpet_2.jpg?v=1648153174182);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/linoleum_2.jpg?v=1648153550010);
     background-size:cover;
 }
 .three {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/carpet_3.jpeg?v=1648153179481);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/linoleum_3.jpg?v=1648153556135);
     background-size:cover;
 }
 .four {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/carpet_4.jpg?v=1648153184191);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/linoleum_4.jpg?v=1648153571006);
     background-size:cover;
 }
 .card:hover .white-field {
@@ -100,14 +100,13 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     color: rgb(63, 62, 62);
-    background-color: #ffd464;
+    background-color: #bdd9f2;
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 8px 20px;
 }
 .btn:hover {
-    background-color: #e76649;
-    color: white;
+    background-color: #eecb93;
 }
 .btn-container {
     display: flex;
@@ -129,7 +128,7 @@ h1 {
     margin-bottom: 20px;
 }
 .backBtn:hover, .exit-btn:hover {
-    background-color: #e76649;
+    background-color: #eecb93;
     color: white;
     transform: scale(1.04);
 }
