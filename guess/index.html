@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | Guessing Game</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="containerOne">
+         <img class="computerImg" src="comp.jpg" alt="Computer" width="300" height="300">
+         <p id="parOne" class="paragraph"></p>
+         <p id="parTwo" class="paragraph"> </p>
+         <p id="parThree" class="paragraph"></p>
+         <div class="btnContainer"> 
+            <button id="yesBtn" class="btn">Yes</button>
+            <button id="noBtn" class="btn">No</button>
+         </div>
+      </div>
+      <div class="containerTwoParent">
+         <div class="containerTwo">
+            <div class="headerContainer">
+               <h1 class="gameHeader">Let the Guess Game begin!</h1>
+            </div>
+            <div class="ruleContainer">
+               <p class="rules">I thought of a number from <span class="number">1</span> to <span class="number">25</span>.</p>
+               <p class="rules">Can you guess which one?</p>
+               <p class="rules">You have <span class="number">5</span> tries, my hints and all the time in the world to win!</p>
+            </div>
+            <div class="gameContainer">
+               <h3> <span id="lastAttempt"></span> <span id="noAttempts">Attempt</span> <span id="attemptNumber">#1</span></h3>
+               <p class="rules lastPar">You have <span id="attemptsLeft" class="number">5</span> attempts left</p>
+               <div class="inputParent">
+                  <input id="inputField" type="text" placeholder="Your guess...">
+                  <h5>Numbers you've tried: <span id="chosenNumbers"></span> </h5>
+               </div>
+               <div class="btnParent"> 
+                  <button id="enter" class="btn">Enter</button>
+                  <button id="playAgain" class="btn">Play Again</button>
+                  <a href="file:///Users/svetlanasharina/Desktop/JavaScript/PROJECTS/Portfolio/games.html"><button class="back-btn">Exit</button></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,294 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.computerImg {
+    border: 4px groove;
+    border-radius: 5px;
+}
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 2%;
+    opacity: 0;
+}
+.btnContainerVisible {
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    padding: 2px 26px;
+    border: 2px outset white;
+    border-radius: 5px;
+}
+#yesBtn {
+    background-color: yellowgreen;
+}
+#noBtn {
+    background-color: tomato;
+}
+.paragraph {
+    color: white;
+    margin: 0;
+    margin-top: 1%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+.containerTwoParent {
+    display: flex;
+    justify-content: center;
+}
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 6px groove rgb(193, 245, 252);
+    background-color: black;
+    margin-top: 7%;
+    padding: 15px;
+}
+.gameHeader {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-color: rgb(62, 73, 83);
+    padding: 10px 30px;
+    text-shadow: 5px 5px 2px black;
+    color:rgb(193, 245, 252);
+    border: 3px groove ;
+}
+.ruleContainer {
+  
+    padding: 10px 0px;
+}
+.rules {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    margin:0;
+    color: white;
+}
+.number {
+    font-weight: bolder;
+    color:rgb(193, 245, 252);
+    text-shadow: 2px 2px 1px black;
+    font-size: 20px;
+    background-color: rgb(62, 73, 83);
+    padding: 2px 6px;
+    border: 2px groove;
+}
+h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin:0;
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    background-color: rgb(62, 73, 83);
+    width: 50%;
+    color:rgb(193, 245, 252);
+    border: 2px groove;
+    text-shadow: 2px 2px 1px black;
+}
+#attemptNumber {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color:rgb(193, 245, 252);
+    text-shadow: 2px 2px 1px black;
+}
+.inputParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputField {
+    width: 15%;
+    height: 25px;
+    padding: 5px;
+    margin-right: 2%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border: 2px groove;
+}
+h5 {
+    margin-left: 2%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+}
+#chosenNumbers {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.btnParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#enter, .back-btn {
+    background-color:rgb(55, 143, 95);
+    color:rgb(193, 246, 252);
+    text-shadow: 2px 2px 1px black;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.back-btn {
+    font-size: 18px;
+    padding: 3px 20px;
+    background-color:rgba(55, 143, 95, 0.829);
+    border: 2px outset white;
+    border-radius: 5px;
+}
+#playAgain {
+    background-color:hotpink;
+    color:rgb(193, 246, 252);
+    text-shadow: 2px 2px 1px black;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.lastPar {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+@media all and (max-width: 800px) {
+    .gameHeader {
+        font-size: 50px;
+    }
+}
+@media all and (max-width: 700px) {
+    .gameHeader {
+        font-size: 40px;
+    }
+    #inputField {
+        width: 20%;
+        font-size: 13px;
+    }
+}
+@media all and (max-width: 600px) {
+    .gameHeader {
+        font-size: 30px;
+    }
+    #inputField {
+        width: 20%;
+        font-size: 13px;
+    }
+    .rules, h5 {
+        font-size: 16px;
+    }
+    #chosenNumbers {
+        font-size: 16px;
+    }
+    .number {
+        font-size: 17px;
+    }
+    h3, #attemptNumber  {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    .btnContainer {
+        width: 60%;
+    }
+    .gameHeader {
+        font-size: 20px;
+    }
+    .rules {
+        line-height: 27px;
+    }
+    .number {
+        font-size: 16px;
+    }
+    h3, #attemptNumber  {
+        font-size: 17px;
+    }
+    .btn {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 18px;
+        padding: 2px 18px;
+        border: 2px outset white;
+        border-radius: 2px;
+    }
+    #enter {
+        text-shadow: 1px 1px 1px black;
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    #playAgain {
+        text-shadow: 1px 1px 1px black;
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    .lastPar {
+        margin-top: 8%;
+    }
+}
+@media all and (max-width: 400px) {
+    .computerImg {
+        width: 250px;
+        height: 250px;
+    }
+    .btnContainer {
+        margin-top: 5%;
+    }
+    .paragraph {
+        font-size: 16px;
+    }
+    .rules {
+        font-size: 14px;
+    }
+    .number {
+        font-size: 15px;
+        text-shadow: 1px 1px 1px black;
+    }
+    h3 {
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    #inputField {
+        font-size: 11px;
+        padding: 2px 5px;
+    }
+    #enter {
+        margin-top: 5%;
+    }
+    #playAgain {
+        margin-top: 5%;
+    }
+    h5 {
+        font-size: 11px;
+    }
+    #chosenNumbers {
+        font-size: 11px;
+    }
+}
+@media all and (max-width: 300px) {
+    h3 {
+        font-size: 15px;
+        padding: 2px 10px;
+    }
+    #inputField, h5 {
+        font-size: 9px;
+    }
+
+}

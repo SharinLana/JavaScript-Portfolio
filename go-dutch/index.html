@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | "Go Dutch" Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="mainContainer">
+         <div class="formParent">
+            <h2 class="header">"Go Dutch!" Calculator</h2>
+            <form>
+               <div class="bill_peopleParent">
+                  <label class="label">Bill </label> 
+                  <input id="bill" class="input" type="text" placeholder="$">
+                  <label class="label">People </label>
+                  <input id="people" class="input" type="text" placeholder="Number...">
+                  <label class="label">Tips </label>
+                  <select id="select" class="selector">
+                     <option value="0.00" selected disabled>Select</option>
+                     <option value="0.10">10%</option>
+                     <option value="0.15">15%</option>
+                     <option value="0.20">20%</option>
+                     <option value="custom">Custom Tip</option>
+                  </select>
+                  <label class="label hiddenTip">Amount</label>
+                  <input id="customTip" class="input hiddenTip" type="text" placeholder="$" value="0.00">
+               </div>
+            </form>
+            <button class="calculate" id="calculateBtn">Calculate</button>
+            <div class="resultParent">
+               <div id="amountResult" class="result">
+                  <h4>Amount per person</h4>
+                  <p id="amount"></p>
+               </div>
+               <div id="tipResult" class="result">
+                  <h4>Tip per person</h4>
+                  <p id="tipPerPerson"></p>
+                  <p id="regularTipPerPerson"></p>
+               </div>
+               <div id="result" class="result">
+                  <h4>Total per person</h4>
+                  <p id="finalResult"></p>
+                  <p id="finalResultTwo"></p>
+               </div>
+            </div>
+            <button class="calculate back-btn" id="backBtn">EXIT</button>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
