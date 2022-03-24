@@ -6,7 +6,7 @@ body {
     justify-content: center;
 }
 .containerOne {
-    background-image: url(fireplace.jpg);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fireplace.jpg?v=1648162117150);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@ body {
 .containerTwo {
     flex: 1;
     min-height: 100vh;
-    background-image: url(cats.jpg);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cats.jpg?v=1648162112613);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
 .containerThree {
     flex: 1;
     min-height: 100vh;
-    background-image: url(forest.jpg);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/forest.jpg?v=1648162167206);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

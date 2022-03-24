@@ -1,0 +1,61 @@
+
+body {
+    background-color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#video {
+    min-height: 100vh;
+    position: fixed;
+}
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+@keyframes gradient {
+    0% {background-position: 80% 0%;}
+    50% {background-position: 20% 100%;}
+    100% {background-position: 80% 0%;}
+}
+#startBtn {
+    z-index: 2;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(230deg, rgb(95, 93, 19), rgb(178, 135, 80), rgb(255, 255, 255));
+    animation: gradient 7s infinite linear;
+    background-size: 400%; 
+    color: white;
+}
+#returnBtn {
+    z-index: 2;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(230deg, rgb(95, 93, 19), rgb(178, 135, 80), rgb(255, 255, 255));
+    animation: gradient 7s infinite linear;
+    background-size: 400%; 
+    display: none;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    letter-spacing: 4px;
+    background: linear-gradient(30deg, rgb(95, 93, 19), rgb(178, 135, 80), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 7s infinite linear;
+    background-size: 400%; 
+}
+a {
+    text-decoration: none;
+    color: white;
+}
