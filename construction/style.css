@@ -1,0 +1,801 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.mainParent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Raleway', sans-serif;
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/construction.JPG?v=1648092838349);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+}
+
+
+/* Animated Background */
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: #1d2027;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+.firstLine {
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 5px;
+	margin-top: 70px;
+	background-color: rgba(255, 255, 255, 0.836);
+	padding: 8px 0px 8px 20px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.ribbon-decor {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/construction.JPG?v=1648092838349);
+	background-position: center left 95%;
+	color: white;
+	text-shadow: 2px 1px 2px black;
+	padding: 8px 20px 8px 2px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-left: 3px;
+}
+
+.skew {
+	width: 20px;
+	height: 40px;
+	background: linear-gradient(to top left, rgb(255, 217, 0) 50%, transparent 20%);
+	position: absolute;
+	top: 0;
+	right: 180px;
+	border: none;
+}
+
+.secondLine {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 5px 20px;
+	border-radius: 10px;
+	color: whitesmoke;
+	text-shadow: 3px 1px 2px black;
+}
+
+.blockParent {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	flex-wrap: wrap;
+	margin-top: -50px;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 100px 35px -50px 35px;
+}
+
+.rhombus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	margin: 0px 10px;
+	background-color: rgba(255, 255, 255, 0.836);
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.836);
+	transform: rotate(45deg);
+}
+
+.number {
+	font-family: 'Lato', sans-serif;
+	font-size: 56px;
+	transform: rotate(-45deg);
+}
+
+.timePar {
+	background-color: rgba(255, 255, 255, 0.836);
+	padding: 5% 10%;
+	margin-top: 50px;
+	border-radius: 8px;
+}
+
+.bottomParent {
+	background-color: rgba(255, 255, 255, 0.836);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 130px;
+	padding: 1% 4%;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 10px;
+}
+
+.meanwhile {
+	font-weight: 300;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 20px;
+	margin-top: 1%;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+}
+
+.play {
+	width: 55px;
+	height: 55px;
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/play.png?v=1648092853879);
+	background-position: center left 8px;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-color: white;
+	filter: invert(100%);
+	border: 3px outset rgb(72, 99, 247);
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 5px white;
+}
+
+.pause {
+	width: 55px;
+	height: 55px;
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/pause.png?v=1648092844493);
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-color: white;
+	filter: invert(100%);
+	border: 3px outset rgb(72, 99, 247);
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 5px white;
+}
+
+.play:hover,
+.pause:hover {
+	border: 4px outset rgb(72, 99, 247);
+}
+
+.audioParent {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.firstContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.secondContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	margin-top: 1%;
+	width: 40%;
+	align-self: center;
+	height: 2px;
+}
+
+.soundOn {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sound.png?v=1648092859510);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin-right: 1%;
+}
+
+.soundOff {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/mute.png?v=1648092838054);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin-right: 1%;
+}
+
+.musicParent {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3%;
+	margin-left: 1%;
+}
+
+.musicName {
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 8%;
+	padding: 0px 10px;
+}
+
+.prevNext {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: -3%;
+}
+
+.btn {
+	font-weight: 300;
+	padding: 4px 16px;
+	font-size: 14px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	border: 1px outset rgb(247, 213, 61);
+	box-shadow: 0px 0px 0px 5px black;
+}
+
+.btn:hover {
+	border: 2px outset rgb(247, 213, 61);
+}
+
+.exit-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.redCurtainParent {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.redCurtain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.border {
+	background-color: rgba(255, 255, 255, 0.836);
+	padding: 2px 10px;
+	border-radius: 20px;
+	width: 40%;
+	margin-top: 10%;
+	border: 2px outset black;
+	outline: 10px solid rgba(255, 255, 255, 0.836);
+}
+
+.over {
+	font-size: 40px;
+	background: linear-gradient(to left, black, #fcc948);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.thanks {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 80% 0%;
+	}
+	50% {
+		background-position: 20% 100%;
+	}
+	100% {
+		background-position: 80% 0%;
+	}
+}
+
+.grandOpening {
+	font-weight: 700;
+	font-size: 30px;
+	background: linear-gradient(140deg, black, 0%, #fcc948 30%, rgba(0, 0, 0, 0.5) 45%, white 50%, #fcc948 60%, black 100%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: gradient 8s infinite linear;
+	background-size: 400%;
+}
+
+.enter {
+	margin-top: 8%;
+	padding: 1% 2%;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	border: 2px outset rgb(247, 213, 61);
+	box-shadow: 0px 0px 0px 5px black;
+}
+
+.enter:hover {
+	border: 3px outset rgb(247, 213, 61);
+}
+
+.link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 15px;
+}
+
+
+/* VERTICAL ADAPTATION*/
+
+@media all and (max-height: 900px) {
+	.bottomParent {
+		margin-top: 90px;
+	}
+}
+
+@media all and (max-height: 900px) {
+	.firstLine {
+		margin-top: 40px;
+	}
+	.secondLine {
+		margin-top: 10px;
+		font-size: 40px;
+	}
+	.blockParent {
+		margin-top: -80px;
+	}
+	.rhombus {
+		width: 80px;
+		height: 80px;
+		margin: 0px 6px;
+	}
+	.number {
+		font-size: 45px;
+	}
+	.bottomParent {
+		margin-top: 70px;
+	}
+	.meanwhile {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-height: 700px) {
+	.firstLine {
+		font-size: 17px;
+	}
+	.skew {
+		width: 20px;
+		height: 36px;
+		bottom: 7px;
+		right: 155px;
+	}
+	.secondLine {
+		margin-top: 0;
+		font-size: 35px;
+	}
+	.rhombus {
+		width: 80px;
+		height: 80px;
+		margin: 0px 6px;
+	}
+	.bottomParent {
+		margin-top: 60px;
+	}
+	.meanwhile {
+		font-size: 18px;
+	}
+	.border {
+		margin-top: 7%;
+	}
+	.enter {
+		margin-top: 5%;
+	}
+}
+
+@media all and (max-height: 700px) {
+	.secondLine {
+		font-size: 30px;
+	}
+	.rhombus {
+		width: 60px;
+		height: 60px;
+		margin: 0px 6px;
+	}
+	.number {
+		font-size: 35px;
+	}
+	.timePar {
+		margin-top: 40px;
+		font-size: 12px;
+	}
+	.bottomParent {
+		width: 45%;
+		padding: 10px 0px;
+	}
+	.audioParent {
+		width: 90%;
+	}
+	.meanwhile {
+		display: none;
+	}
+	.play {
+		width: 40px;
+		height: 40px;
+		background-position: center left 6px;
+		border: 2px outset rgb(72, 99, 247);
+	}
+	.pause {
+		width: 40px;
+		height: 40px;
+		background-position: center left 3.8px;
+		border: 2px outset rgb(72, 99, 247);
+	}
+	.musicName {
+		font-size: 16px;
+	}
+	.btn {
+		padding: 3px 12px;
+		font-size: 12px;
+		border: 1px outset rgb(247, 213, 61);
+		box-shadow: 0px 0px 0px 5px black;
+	}
+}
+
+@media all and (max-height: 500px) {
+	.secondContainer {
+		display: none;
+	}
+	.musicName {
+		display: none;
+	}
+	.btn {
+		margin-top: 25px;
+	}
+	.border {
+		margin-top: 4%;
+	}
+	.enter {
+		margin-top: 3%;
+	}
+}
+
+@media all and (max-height: 400px) {
+	.firstLine {
+		display: none;
+	}
+	.secondLine {
+		margin-top: 20px;
+	}
+	.border {
+		margin-top: 2%;
+	}
+	.enter {
+		margin-top: 2%;
+	}
+}
+
+@media all and (max-height: 350px) {
+	.over {
+		font-size: 30px;
+	}
+	.thanks {
+		font-size: 15px;
+	}
+	.grandOpening {
+		font-size: 20px;
+	}
+	.enter {
+		padding: 10px 26px;
+	}
+	.link {
+		font-size: 12px;
+	}
+}
+
+@media all and (max-height: 300px) {
+	.secondLine {
+		font-size: 25px;
+	}
+	.blockParent {
+		margin-top: -100px;
+	}
+	.rhombus {
+		width: 40px;
+		height: 40px;
+		box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.836);
+	}
+	.number {
+		font-size: 20px;
+	}
+	.timePar {
+		margin-top: 20px;
+	}
+	.over {
+		font-size: 20px;
+	}
+	.thanks {
+		display: none;
+	}
+	.enter {
+		padding: 10px 20px;
+	}
+	.link {
+		font-size: 10px;
+	}
+}
+
+@media all and (max-height: 250px) {
+	.bottomParent {
+		display: none;
+	}
+}
+
+@media all and (max-height: 170px) {
+	.timePar {
+		display: none;
+	}
+	.over {
+		font-size: 14px;
+	}
+	.enter {
+		padding: 6px 20px;
+		margin-top: 1%;
+	}
+	.link {
+		font-size: 8px;
+	}
+	.border {
+		outline: 5px solid rgba(255, 255, 255, 0.836);
+	}
+}
+
+
+/* HORIZONTAL ADAPTATION*/
+
+@media all and (max-width: 1100px) {
+	.border {
+		width: 50%;
+	}
+	.over {
+		font-size: 32px;
+	}
+	.thanks {
+		font-size: 16px;
+	}
+	.grandOpening {
+		font-size: 22px;
+	}
+	.border {
+		margin-top: 6%;
+		width: 70%;
+	}
+	.enter {
+		margin-top: 4%;
+		padding: 2% 4%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.rhombus {
+		width: 80px;
+		height: 80px;
+	}
+	.number {
+		font-size: 40px;
+	}
+	.timePar {
+		font-size: 13px;
+	}
+	.meanwhile {
+		font-size: 15px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.border {
+		width: 60%;
+	}
+	.rhombus {
+		margin: 0;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.secondLine {
+		font-size: 40px;
+	}
+	.block {
+		margin: 100px 25px -50px 25px;
+	}
+	.rhombus {
+		width: 70px;
+		height: 70px;
+	}
+	.number {
+		font-size: 35px;
+	}
+	.meanwhile {
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.secondLine {
+		font-size: 35px;
+	}
+	.rhombus {
+		width: 60px;
+		height: 60px;
+	}
+	.number {
+		font-size: 30px;
+	}
+	.meanwhile {
+		display: none;
+	}
+	.musicParent {
+		width: 80%;
+	}
+	.border {
+		width: 80%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.block {
+		margin: 100px 35px -80px 35px;
+	}
+	.rhombus {
+		width: 70px;
+		height: 70px;
+	}
+	.number {
+		font-size: 35px;
+	}
+	.blockParent {
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.firstLine {
+		font-size: 16px;
+	}
+	.skew {
+		width: 18px;
+		height: 36px;
+		top: -1px;
+		right: 148px;
+	}
+	.secondLine {
+		font-size: 25px;
+	}
+	.bottomParent {
+		margin-top: 80px;
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.firstLine {
+		font-size: 14px;
+	}
+	.skew {
+		display: none;
+	}
+	.secondLine {
+		font-size: 20px;
+	}
+	.play {
+		width: 40px;
+		height: 40px;
+		background-position: center left 6px;
+		border: 2px outset rgb(72, 99, 247);
+	}
+	.pause {
+		width: 40px;
+		height: 40px;
+		background-position: center left 3.8px;
+		border: 2px outset rgb(72, 99, 247);
+	}
+	.musicName {
+		font-size: 14px;
+	}
+	.btn {
+		padding: 3px 12px;
+		font-size: 12px;
+		border: 1px outset rgb(247, 213, 61);
+		box-shadow: 0px 0px 0px 5px black;
+	}
+}
+
+@media all and (max-width: 350px) {
+	.firstLine {
+		font-size: 12px;
+	}
+	.secondLine {
+		font-size: 18px;
+	}
+	.blockParent {
+		width: 90%;
+	}
+	.rhombus {
+		width: 50px;
+		height: 50px;
+		box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.836);
+	}
+	.number {
+		font-size: 23px;
+	}
+	.timePar {
+		font-size: 12px;
+		width: 60px;
+		margin-top: 30px;
+	}
+	.bottomParent {
+		padding: 1%;
+	}
+	.over {
+		font-size: 20px;
+	}
+	.thanks {
+		font-size: 14px;
+	}
+	.grandOpening {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 300px) {
+	.firstLine {
+		font-size: 10px;
+	}
+	.secondLine {
+		font-size: 16px;
+	}
+	.blockParent {
+		width: 100%;
+	}
+	.musicName {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+	.play {
+		width: 30px;
+		height: 30px;
+		background-position: center left 5px;
+		border: 1px outset rgb(72, 99, 247);
+	}
+	.pause {
+		width: 30px;
+		height: 30px;
+		background-position: center left 3px;
+		border: 1px outset rgb(72, 99, 247);
+	}
+	.btn {
+		font-size: 9px;
+	}
+	.grandOpening {
+		font-size: 16px;
+	}
+}
