@@ -181,5 +181,5 @@ backBtns.forEach(btn => {
 })
 
 function goBack() {
-    document.location.assign('file:///Users/svetlanasharina/Desktop/JavaScript/PROJECTS/Portfolio/calculators.html');
+    document.location.assign('https://lana-sharin-portfolio.glitch.me/calculators.html');
 }
