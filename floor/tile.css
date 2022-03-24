@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/stone_room_1.jpg?v=1648153620397);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tile_room_2.jpg?v=1648153664711);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -53,7 +53,7 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     width: 40%;
-    background-color: #e9c363;
+    background-color: #c0d778;
     padding: 10px 0px;
     margin: 8px 0px;
     color: rgb(63, 62, 62);
@@ -76,19 +76,19 @@ h1 {
     height: 200px;
 }
 .one {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/stone_1.jpg?v=1648153588804);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tile_1.jpg?v=1648153629861);
     background-size:cover;
 }
 .two {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/stone_2.jpg?v=1648153598841);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tile_2.jpg?v=1648153637067);
     background-size:cover;
 }
 .three {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/stone_3.jpg?v=1648153603514);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tile_3.jpg?v=1648153644454);
     background-size:cover;
 }
 .four {
-    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/stone_4.jpg?v=1648153611831);
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tile_4.jpg?v=1648153652060);
     background-size:cover;
 }
 .card:hover .white-field {
@@ -100,13 +100,13 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     color: rgb(63, 62, 62);
-    background-color: #e9c363;
+    background-color: #c0d778;
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 8px 20px;
 }
 .btn:hover {
-    background-color: #aab388;
+    background-color: #e4830e;
     color: white;
 }
 .btn-container {
@@ -129,7 +129,7 @@ h1 {
     margin-bottom: 20px;
 }
 .backBtn:hover, .exit-btn:hover {
-    background-color: #aab388;
+    background-color: #e4830e;
     color: white;
     transform: scale(1.04);
 }
