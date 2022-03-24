@@ -14,12 +14,12 @@ let angle = 0;
 /* Animation for the slides */
 
 nextBtn.addEventListener('click', () => {
-    angle -= 90;
+    angle -= 120;
     carousel.style.transform = `translateZ(-400px) rotateY(${angle}deg)`;
 })
 
 backBtn.addEventListener('click', () => {
-    angle += 90;
+    angle += 120;
     carousel.style.transform = `translateZ(-400px) rotateY(${angle}deg)`;
 })
 

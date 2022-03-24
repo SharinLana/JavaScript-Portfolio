@@ -83,7 +83,7 @@ body {
 }
 
 .carousel_card:nth-child(2) {
-	transform: rotateY(90deg) translateZ(400px);
+	transform: rotateY(120deg) translateZ(400px);
 	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/go_dutch.jpg?v=1648090995043);
 	background-position: top;
 	background-repeat: no-repeat;
@@ -91,16 +91,8 @@ body {
 }
 
 .carousel_card:nth-child(3) {
-	transform: rotateY(180deg) translateZ(400px);
+	transform: rotateY(240deg) translateZ(400px);
 	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/recipes.jpg?v=1648091139455);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.carousel_card:nth-child(4) {
-	transform: rotateY(270deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/currency.jpg?v=1648090956062);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -354,14 +346,11 @@ i {
 		transform: rotateY(0deg) translateZ(300px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(300px);
+		transform: rotateY(120deg) translateZ(300px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(300px);
+		transform: rotateY(240deg) translateZ(300px);
 		background-size: cover;
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(300px);
 	}
 	.confetti-container {
 		margin-bottom: 0px;
@@ -406,14 +395,11 @@ i {
 		transform: rotateY(0deg) translateZ(180px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(180px);
+		transform: rotateY(120deg) translateZ(180px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(180px);
+		transform: rotateY(240deg) translateZ(180px);
 		background-size: calc(150%) calc(100%);
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(180px);
 	}
 	.slide-header {
 		margin: 0px 0px -15px 0px;
@@ -457,14 +443,10 @@ i {
 		transform: rotateY(0deg) translateZ(150px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(150px);
+		transform: rotateY(120deg) translateZ(150px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(150px);
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(150px);
-		background-size: calc(190%) calc(100%);
+		transform: rotateY(240deg) translateZ(150px);
 	}
 	.inner-text {
 		padding: 0px 20px 20px 20px;
@@ -516,13 +498,10 @@ i {
 		background-size: calc(200%) calc(100%);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(135px);
+		transform: rotateY(120deg) translateZ(135px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(135px);
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(135px);
+		transform: rotateY(240deg) translateZ(135px);
 	}
 	.slide-header {
 		font-size: 17px;

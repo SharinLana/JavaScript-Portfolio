@@ -1,0 +1,302 @@
+body {
+	background-color: rgba(82, 195, 230, 0.541);
+	background-image: url(building_1.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: top;
+}
+
+.containerOne {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 140px;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+h5 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 6px 12px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.containerTwoParent {
+	display: flex;
+	justify-content: center;
+}
+
+.containerTwo {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	background-color: #26737a;
+	color: white;
+	width: 694px;
+}
+
+.containerThreeParent {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.containerThree,
+.containerFour {
+	display: flex;
+	justify-content: space-evenly;
+	width: 680px;
+}
+
+.containerFourParent {
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(63, 62, 62);
+}
+
+a:hover {
+	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.window {
+	display: flex;
+	justify-content: center;
+}
+
+.floor-pic {
+	padding: 1px;
+}
+
+.floor-type {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.containerFive {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8px;
+}
+
+.containerCentered {
+	display: flex;
+	justify-content: center;
+}
+
+.questionContainerParent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0px;
+	width: 400px;
+	height: 170px;
+	text-align: center;
+	background-color: #297f87de;
+	color: white;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+	;
+	display: none;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#yesBtn,
+#noBtn,
+#secondNoBtn,
+#thirdNoBtn,
+#forthNoBtn,
+#fifthNoBtn,
+#sixthNoBtn,
+#startBtn,
+.back-btn {
+	padding: 6px 30px;
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+#startBtn {
+	background-color: #DF2E2E;
+	color: white;
+	border: 2px outset rgba(255, 255, 255, 0.8);
+}
+
+.back-btn {
+	background-color: #fcecde;
+	margin-bottom: -20px;
+	border: 2px outset rgba(255, 255, 255, 0.8);
+}
+
+.back-btn:hover {
+	transform: scale(1.04);
+}
+
+#yesBtn {
+	background-color: white;
+}
+
+#noBtn,
+#secondNoBtn,
+#thirdNoBtn,
+#forthNoBtn,
+#fifthNoBtn,
+#sixthNoBtn {
+	background-color: black;
+	color: white;
+}
+
+#secondNoBtn,
+#thirdNoBtn,
+#forthNoBtn,
+#fifthNoBtn,
+#sixthNoBtn {
+	display: none;
+}
+
+.doorContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+#doorOpened {
+	display: none;
+}
+
+.invitationContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.invitationSubContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 20px;
+	width: 500px;
+	height: 190px;
+	text-align: center;
+	background-color: #fcecde;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.582);
+	;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	display: none;
+}
+
+.invitation {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.tnanks {
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.conclusion {
+	font-weight: 400;
+}
+
+@media all and (max-width: 500px) {
+	.floor-pic {
+		width: 25px;
+	}
+	.questionContainerParent {
+		width: 350px;
+	}
+	.invitationSubContainer {
+		width: 350px;
+	}
+	.invitation {
+		font-size: 13px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.floor-pic {
+		width: 20px;
+	}
+	.questionContainerParent {
+		width: 320px;
+	}
+	.invitationSubContainer {
+		width: 320px;
+	}
+}
+
+@media all and (max-width: 350px) {
+	.floor-pic {
+		width: 17px;
+	}
+	h5 {
+		margin-top: 0;
+	}
+	.questionContainerParent {
+		width: 280px;
+	}
+	.invitationSubContainer {
+		width: 280px;
+	}
+	.floor-type {
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 300px) {
+	.floor-pic {
+		width: 17px;
+	}
+	h5 {
+		margin-top: 0;
+	}
+	.questionContainerParent {
+		width: 240px;
+		height: 220px;
+	}
+	.invitationSubContainer {
+		width: 240px;
+		height: 220px;
+	}
+	.floor-type {
+		font-size: 12px;
+	}
+}
