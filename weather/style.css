@@ -1,0 +1,216 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.regular-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sunset.jpeg?v=1648094061841);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.foggy-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fog.jpg?v=1648094047675);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.rainy-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/rain.gif?v=1648094049452);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.winter-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/snow_3.jpg?v=1648094051106);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cloudy-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/clouds.gif?v=1648094060787);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sunny-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sun_3.JPG?v=1648094056628);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	background: #3373cc3b;
+}
+
+.second-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+#input {
+	background-color: rgba(142, 127, 161, 0.3);
+	border-radius: 20px;
+	border: 3px solid #CDF3A2;
+	padding: 15px;
+	font-size: 20px;
+	color: white;
+	z-index: 3;
+}
+
+#input::placeholder {
+	color: rgba(255, 255, 255, 0.637);
+}
+
+#input:focus {
+	outline: none;
+}
+
+#city {
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#date {
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#degrees {
+	font-size: 70px;
+	font-weight: 400;
+	text-shadow: 5px 10px black;
+	margin: 0;
+	text-align: center;
+}
+
+#feelsLike {
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#conditions {
+	font-size: 32px;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+}
+
+#min,
+#max {
+	font-size: 26px;
+	font-weight: 300;
+	margin: 5px;
+	text-align: center;
+}
+
+#wind {
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.exit-btn {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	padding: 8px 30px;
+	border-radius: 10px;
+	border: 3px solid #CDF3A2;
+	background-color: transparent;
+	color: white;
+}
+
+.exit-btn:hover {
+	transform: scale(1.04);
+}
+
+.note-conteiner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.note {
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.363);
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+}
+
+
+/* Snow animation */
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@media all and (max-width: 400px) {
+	#city {
+		font-size: 35px;
+	}
+	#date {
+		font-size: 22px;
+	}
+	#degrees {
+		font-size: 55px;
+		text-shadow: 3px 5px black;
+	}
+	#feelsLike {
+		font-size: 25px;
+	}
+	#min,
+	#max {
+		font-size: 24px;
+	}
+	#wind {
+		font-size: 24px;
+	}
+}
+
+@media all and (max-width: 350px) {
+	#city {
+		font-size: 30px;
+	}
+	#date {
+		font-size: 22px;
+	}
+	#degrees {
+		font-size: 45px;
+		text-shadow: 2px 4px black;
+	}
+	#feelsLike {
+		font-size: 22px;
+	}
+	#min,
+	#max {
+		font-size: 22px;
+	}
+	#wind {
+		font-size: 22px;
+	}
+}
