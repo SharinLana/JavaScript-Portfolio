@@ -49,12 +49,12 @@ yesBtn.addEventListener('click', ()=> {
     document.querySelector('.containerOne').style.display = 'none';
     document.querySelector('.containerTwo').style.display = 'block';
     document.querySelector('#playAgain').style.display = 'none';
-    document.body.style.backgroundImage = 'url(bg_4.jpg)'
+    document.body.style.backgroundImage = 'url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/bg_4.jpg?v=1648103053457)'
 })
 noBtn.addEventListener('click', ()=> {
     Swal.fire({
         title: 'Hmmm...',
-        imageUrl: 'loser.gif',
+        imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/loser.gif?v=1648103085804',
         imageWidth: 300,
         imageHeight: 300,
         imageAlt: 'Custom image',
@@ -113,7 +113,7 @@ function validateGuess() {
             Swal.fire({
                 title: 'Woo-hoo! You won!!!',
                 text:'Congrats. But next time I will be the winner',
-                imageUrl: 'congrats.gif',
+                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/congrats.gif?v=1648103063208',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -123,7 +123,7 @@ function validateGuess() {
             Swal.fire({
                 title: 'Game Over',
                 text: 'The aswer was ' + randomNumber + '.' + ` Want a revanche?`,
-                imageUrl: 'evil_laugh.gif',
+                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/evil_laugh.gif?v=1648103069518',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -176,7 +176,7 @@ function validateGuess() {
             Swal.fire({
                 title: 'Woo-hoo! You won!!!',
                 text: 'Congrats. But next time I will be the winner',
-                imageUrl: 'https://acegif.com/wp-content/uploads/funny-celebrate-8.gif',
+                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/congrats.gif?v=1648103063208',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',

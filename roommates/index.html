@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | Roommate Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="mainContainer">
+         <div class="firstContainer">
+            <div class="headerParent">
+               <h2 class="header">Household expenses payment <br> in accordance with monthly income of each working family member</h2>
+            </div>
+            <form id="formOne">
+               <select id="select">
+                  <option selected disabled value="chooseMonth">Choose a Month</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+               </select>
+               <div class="spouses">
+                  <div class="spouseContainer">
+                     <label class="husband">Family Member #1</label>
+                     <input id="husbandsName" type="text" placeholder="Name...">
+                     <input id="husbandsIncome" class="monthlyIncome" type="text" placeholder="Monthly income in $...">
+                  </div>
+                  <div class="spouseContainer">
+                     <label class="wife">Family Member #2</label>
+                     <input id="wifesName" type="text" placeholder="Name...">
+                     <input id="wifesIncome" class="monthlyIncome" type="text" placeholder="Monthly income in $">
+                  </div>
+               </div>
+            </form>
+            <div class="coinParent">
+               <img class="dollars" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/dollar_coin.png?v=1648103644639" alt="" width="100">  
+               <div class="headerParent header-parent">
+                  <h3 class="headerTwo">Household expenses in <span id="month"></span>:</h3>
+               </div>
+               <img class="dollars" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/dollar_coin.png?v=1648103644639" alt="" width="100">
+            </div>
+            <form id="formTwo">
+               <label class="formHeaders">Rent:</label>
+               <input id="rent" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Utilities (water, gas, electricity, Internet, etc.):</label>
+               <input id="utilities" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Transport:</label>
+               <input id="transport" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Food:</label>
+               <input id="food" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Household goods:</label>
+               <input id="goods" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Pet care:</label>
+               <input id="pets" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Kid Care:</label>
+               <input id="kids" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Cleaning service</label>
+               <input id="cleaning" class="input" type="text" placeholder="0000.00">
+               <label class="formHeaders">Other expenses (furniture, renovation, repairs, appliances) </label>
+               <input id="other" class="input" type="text" placeholder="0000.00">
+            </form>
+            <button id="calculateBtn">Calculate</button>
+            <img id="dollarCoin" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/dollar_coin.png?v=1648103644639" alt="" width="160">
+            <button class="backBtn">EXIT</button>
+         </div>
+         <!-- SECOND CONTAINER -->
+         <div class="secondContainer">
+            <div class="pre-calculation-container"> 
+            <div class="calculationContainer">
+               <div class="month">
+                  <h3 class="monthHeader" id="headerThree"></h3>
+               </div>
+               <h3 class="summaryHeader">Each family member contributed to the family budget:</h3>
+               <ul class="listOne">
+                  <li><span class="firstName name"></span>: $<span id="firstIncome"></span>. This is <span class="husbandsRate percents"></span>% of monthly income</li>
+                  <li><span class="secondName name"></span>: $<span id="secondIncome"></span>. This is <span class="wifesRate percents"></span>% of monthly income</li>
+               </ul>
+               <h4 class="incomeHeader">Total income: $<span id="totalIncome"></span></h4>
+               <h3 class="summaryHeader">Family spending this month:</h3>
+               <ul class="listTwo">
+                  <li>Rent: <span id="rentCost"></span></li>
+                  <li>Utilites: <span id="utilitesCost"></span></li>
+                  <li>Transport: <span id="transportCost"></span></li>
+                  <li>Food: <span id="foodCost"></span></li>
+                  <li>Household goods: <span id="goodsCost"></span></li>
+                  <li>Pet care: <span id="petsCost"></span></li>
+                  <li>Kid care: <span id="kidsCost"></span></li>
+                  <li>Cleaning service: <span id="cleaningCost"></span></li>
+                  <li>Other expenses: <span id="otherCost"></span></li>
+               </ul>
+               <h4 class="incomeHeader">Total expenses: $<span id="totalExpenses"></span></h4>
+               <div class="recapParent">
+                  <h2 class="recapHeader">In accordance with the monthly income, <br>
+                     <span class="firstName name"></span> and <span class="secondName name"></span> <br> should contribute their share of the maintenance of the household 
+                     as follows: 
+                  </h2>
+               </div>
+               <ul class="listOne">
+                  <li><span class="firstName name"></span>: <span id="husbandsContribution"></span> (<span class="husbandsRate"></span>% of monthly expenses)</li>
+                  <li><span class="secondName name"></span>: <span id="wifesContribution"></span> (<span class="wifesRate"></span>% of monthly expenses)</li>
+               </ul>
+               <div class="assessmentParent">
+                  <h3 class="assessment">Financial Assessment</h3>
+               </div>
+               <p class="conclusion"></p>
+               <button class="backBtn">EXIT</button>
+            </div>
+         </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
