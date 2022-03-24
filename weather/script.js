@@ -1,6 +1,6 @@
 //Шаг №1 - создаем объект со ссылкой на сайт и ключом
 const api = {
-    endpoint: 'http://api.openweathermap.org/data/2.5/',
+    endpoint: 'https://api.openweathermap.org/data/2.5/',
     key: '9709c15ccfb3b6f387ec6b4d9313d7ba'
     }
 const apiLocation = {
