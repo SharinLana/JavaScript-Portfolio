@@ -90,6 +90,6 @@ floorBtn.addEventListener('click', () => {
 
 libraryBtn.addEventListener('click', () => {
     setTimeout(function() {
-        document.location.assign('library%20/index.html');
+        document.location.assign('library/index.html');
     }, 800);
 });
