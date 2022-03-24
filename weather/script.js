@@ -30,7 +30,7 @@ const apiLocation = {
     
     /* Arranging a weather forcast search by a city name */
     async function getInfo(data) {
-        const res = await fetch(`${api.endpoint}weather?q=${data}&units=metric&appID=${api.key}`)
+        const res = await fetch(`$https://ipgeolocation.abstractapi.com/v1/?weather?q=${data}&units=metric&appID=0f7be2a69944649b3f65ca24031e1dd`)
         const resReceived = await res.json(); 
         console.log(resReceived);
         showResult(resReceived);
