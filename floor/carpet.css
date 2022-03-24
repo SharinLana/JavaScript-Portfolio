@@ -1,0 +1,140 @@
+body {
+    background-image: url(carpet_room_3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+h1 {
+    color: rgb(63, 62, 62);
+}
+.list-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    text-align: center;
+    position: relative;
+    max-width: 300px;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.774);
+    margin: 20px;
+}
+.header {
+    transform: translateY(30px);
+    transition: transform .3s linear;
+    width: 80%;
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(63, 62, 62);
+}
+.card:hover .header {
+    transform: translateY(0);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+}
+.price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 40%;
+    background-color: #ffd464;
+    padding: 10px 0px;
+    margin: 8px 0px;
+    color: rgb(63, 62, 62);
+}
+.card:hover .price {
+    box-shadow: inset 0px 6px 6px -5px rgba(0, 0, 0, .2),
+                inset 0px -6px 6px -5px rgba(0, 0, 0, .2);
+}
+.white-field {
+    background-color: white;
+    width: 80%;
+    padding: 30px 10px;
+    transform: translateY(-30px);
+    transition: transform .3s linear;
+    display: flex;
+    justify-content: center;
+}
+.img-parent {
+    width: 90%;
+    height: 200px;
+}
+.one {
+    background-image: url(carpet_1.jpg);
+    background-size:cover;
+}
+.two {
+    background-image: url(carpet_2.jpg);
+    background-size:cover;
+}
+.three {
+    background-image: url(carpet_3.jpeg);
+    background-size:cover;
+}
+.four {
+    background-image: url(carpet_4.jpg);
+    background-size:cover;
+}
+.card:hover .white-field {
+    transform: translateY(0);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+}
+.btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(63, 62, 62);
+    background-color: #ffd464;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 20px;
+}
+.btn:hover {
+    background-color: #e76649;
+    color: white;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.backBtn, .exit-btn {
+    background-color: rgba(255, 255, 255, 0.849);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: rgb(63, 62, 62);
+    margin-top: 40px;
+}
+.exit-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.backBtn:hover, .exit-btn:hover {
+    background-color: #e76649;
+    color: white;
+    transform: scale(1.04);
+}
+@media all and (max-width: 700px) {
+    .card {
+        width: 80%;
+    }
+}
