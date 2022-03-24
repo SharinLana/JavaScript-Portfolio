@@ -440,7 +440,7 @@ function expressionYes() {
     noEight.addEventListener('click', politicNo);
 }
 function politicsYes() {
-    gif.setAttribute('src', 'fantasy.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648159493233');
     question.textContent = 'Do you want to immerse yourself in a fantasy world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -749,7 +749,7 @@ function blackWhiteNo() {
     noTwo.addEventListener('click', wordsNo); 
 }
 function wordsYes() {
-    gif.setAttribute('src', 'fantasy.gif');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648159493233');
     question.textContent = 'Do you want to immerse yourself in a fantasy world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
