@@ -11,7 +11,7 @@
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	background-image: url(glitter.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/glitter.jpg?v=1648091001217);
 	background-position: center;
 	background-size: cover;
 }
@@ -542,35 +542,35 @@
 }
 
 .front-games {
-	background-image: url(wheel.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/wheel.jpg?v=1648091186046);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .front-calculators {
-	background-image: url(go_dutch.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/go_dutch.jpg?v=1648090995043);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .front-weather {
-	background-image: url(weather.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/weather.jpg?v=1648091177039);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .front-timers {
-	background-image: url(focus.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/focus.jpg?v=1648090976026);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .front-website {
-	background-image: url(sms-2.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sms-2.jpg?v=1648091162838);
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
