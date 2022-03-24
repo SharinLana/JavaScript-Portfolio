@@ -119,7 +119,7 @@ body {
 	border-radius: 10px;
 	overflow: auto; 
   overflow: scroll;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: auto;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | Meditation App | Fireplace Sounds</title>
+      <link rel="stylesheet" href="fireplace.css">
+   </head>
+   <body>
+      <div class="container">
+         <video muted defaultMuted loop playsinline id="video">
+            <source src="fireplace.mp4" type="video/mp4">
+         </video>
+         <audio loop id="audio">
+            <source src="fireplace.mp3" type="audio/mp3">
+         </audio>
+         <div class="timerContainer">
+            <h1>00:00</h1>
+            <button id="startBtn">Start</button>
+            <button id="returnBtn"><a href="index.html">Go Back</a></button>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="apps.js"></script>
+   </body>
+</html>
