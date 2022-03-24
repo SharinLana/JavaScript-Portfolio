@@ -13,7 +13,8 @@ html {
 body {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+	background-color: #2f4353;
+	background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
@@ -75,31 +76,23 @@ body {
 
 .carousel_card:nth-child(1) {
 	transform: rotateY(0deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/wheel.jpg?v=1648091186046);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/construction.jpg?v=1648090944349);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .carousel_card:nth-child(2) {
-	transform: rotateY(90deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/library.jpg?v=1648091026565);
+	transform: rotateY(120deg) translateZ(400px);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/meditation.jpg?v=1648091056183);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .carousel_card:nth-child(3) {
-	transform: rotateY(180deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/guess.jpg?v=1648091004286);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.carousel_card:nth-child(4) {
-	transform: rotateY(270deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/floor.jpg?v=1648090969108);
+	transform: rotateY(240deg) translateZ(400px);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/focus.jpg?v=1648090976026);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -114,7 +107,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Lato', sans-serif;
-	padding: 60px 40px;
+	padding: 40px 40px;
 	z-index: 2;
 	border-radius: 10px;
 	overflow: auto; 
@@ -184,7 +177,7 @@ i {
 	margin-bottom: 50px;
 }
 
-.game-btn {
+.timer-btn {
 	font-family: 'Architects Daughter', cursive;
 	font-size: 16px;
 	padding: 7px 18px;
@@ -194,11 +187,7 @@ i {
 	z-index: 2;
 	position: absolute;
 }
-.game-link {
-	text-decoration: none;
-	color: white;
-}
-.game-btn:hover {
+.timer-btn:hover {
 	transform: scale(1.04);
 }
 .particle {
@@ -288,7 +277,7 @@ i {
 	color: whitesmoke;
 }
 
-.note-conteiner {
+.note-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -315,20 +304,23 @@ i {
 	.confetti-container {
 		margin-bottom: 0px;
 	}
+	.inner-text {
+		padding-top: 0px;
+	}
 }
 @media all and (max-height: 600px) {
 	.inner-text {
-		padding-top: 140px;
+		padding-top: 100px;
 	}
 }
 @media all and (max-height: 500px) {
 	.inner-text {
-		padding-top: 160px;
+		padding-top: 150px;
 	}
 }
 @media all and (max-height: 400px) {
 	.inner-text {
-		padding-top: 180px;
+		padding-top: 170px;
 	}
 }
 
@@ -348,23 +340,17 @@ i {
 		transform: rotateY(0deg) translateZ(300px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(300px);
+		transform: rotateY(120deg) translateZ(300px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(300px);
+		transform: rotateY(240deg) translateZ(300px);
 		background-size: cover;
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(300px);
 	}
 	.confetti-container {
 		margin-bottom: 0px;
 	}
 	.slide-header {
 		font-size: 18px;
-		margin-top: 80px;
-	}
-	.guess-header, .floor-header {
 		margin-top: 10px;
 	}
 	.underline {
@@ -391,20 +377,14 @@ i {
 		transform: rotateY(0deg) translateZ(180px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(180px);
+		transform: rotateY(120deg) translateZ(180px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(180px);
+		transform: rotateY(240deg) translateZ(180px);
 		background-size: calc(150%) calc(100%);
 	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(180px);
-	}
-	.slide-header {
-		margin: 0px 0px -15px 0px;
-	}
-	.read-header, .wheel-header {
-		margin-top: 60px;
+	.website-header, .focus-header {
+		margin-top: 90px;
 	}
 	.carousel-btns,
 	.back-btn-container {
@@ -422,6 +402,17 @@ i {
 		margin-top: 25px;
 	}
 }
+@media all and (max-width: 400px) {
+	.header {
+		font-size: 28px;
+	}
+	.focus-header, .website-header, .meditation-header{
+		margin-top: 20px;
+	}
+	.website-header {
+		font-size: 16px;
+	}
+}
 
 @media all and (max-width: 350px) {
 	.header {
@@ -436,24 +427,20 @@ i {
 		transform: rotateY(0deg) translateZ(150px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(150px);
+		transform: rotateY(120deg) translateZ(150px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(150px);
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(150px);
-		background-size: calc(190%) calc(100%);
+		transform: rotateY(240deg) translateZ(150px);
 	}
 	.inner-text {
 		padding: 0px 20px 20px 20px;
 	}
 	.slide-header {
 		font-size: 17px;
-		margin-top: 150px;
-	}
-	.read-header, .wheel-header {
 		margin-top: 200px;
+	}
+	.meditation-header {
+		margin-top: 150px;
 	}
 	.underline {
 		font-size: 15px;
@@ -495,18 +482,33 @@ i {
 		background-size: calc(200%) calc(100%);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(135px);
+		transform: rotateY(120deg) translateZ(135px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(135px);
+		transform: rotateY(240deg) translateZ(135px);
 	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(135px);
+	.slide-header {
+		font-size: 17px;
+		margin-top: 130px;
 	}
-	.guess-header {
+	.meditation-header {
 		margin-top: 80px;
 	}
-	.floor-header {
-		margin-top: 155px;
+	.focus-header {
+		margin-top: 160px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

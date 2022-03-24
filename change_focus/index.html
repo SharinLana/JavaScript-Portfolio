@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | Change Focus App</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="mainContainer">
+         <div class="secondContainer">
+            <h1 class="header">Change Focus Reminder</h1>
+            <div class="parContainer">
+               <p id="firstPar">The purpose of this app is to remind you to look away from your computer screen from time to time to keep your eyesight healthy.</p>
+               <p id="secondPar">Ophthalmologists recommend changing focus from close to far at least once every 20 minutes. But you can set your own frequency of reminders.</p>
+               <p id="thirdPar">Just enter the time interval at which you would like to be reminded to change focus. And the application will remind you of this during the entire time of your work at the computer.</p>
+            </div>
+            <p class="reminder">Remind me to look away from the screen every:</p>
+            <input id='input' type="text" placeholder="... minutes">
+            <button id="btn">Go</button>
+            <button id="reset">RESET</button> 
+            <audio id="audio" src="change_focus.mp3"></audio>
+            <h3></h3>
+            <h2></h2>
+            <a href="file:///Users/svetlanasharina/Desktop/JavaScript/PROJECTS/Portfolio/timers.html"><button class="exit-btn">EXIT</button></a>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

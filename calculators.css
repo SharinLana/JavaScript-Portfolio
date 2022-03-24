@@ -76,7 +76,7 @@ body {
 
 .carousel_card:nth-child(1) {
 	transform: rotateY(0deg) translateZ(400px);
-	background-image: url(roommate.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/roommate.jpg?v=1648091151278);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -84,7 +84,7 @@ body {
 
 .carousel_card:nth-child(2) {
 	transform: rotateY(90deg) translateZ(400px);
-	background-image: url(go_dutch.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/go_dutch.jpg?v=1648090995043);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -92,7 +92,7 @@ body {
 
 .carousel_card:nth-child(3) {
 	transform: rotateY(180deg) translateZ(400px);
-	background-image: url(recipes.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/recipes.jpg?v=1648091139455);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -100,7 +100,7 @@ body {
 
 .carousel_card:nth-child(4) {
 	transform: rotateY(270deg) translateZ(400px);
-	background-image: url(currency.jpg);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/currency.jpg?v=1648090956062);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
