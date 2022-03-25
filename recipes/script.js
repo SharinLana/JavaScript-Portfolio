@@ -34,6 +34,23 @@ function showTimer() {
 }
 
 startTimerBtn.addEventListener('click', launchTimer);
+timerField.addEventListener('keydown', function(e) {
+    if (e.keyCode === 13) {
+      
+        if (isNaN(timerField.value)) {
+        alert('No')
+          timerField.value = '';
+    }
+      else if (timerField.value <= 0) {
+        alert('No')
+          timerField.value = '';
+    }
+      else {
+        startCountdown();
+        timerField.value = '';
+    }
+    }
+})
 function launchTimer() {
     if (isNaN(timerField.value)) {
         Swal.fire({
@@ -55,29 +72,7 @@ function launchTimer() {
         timerField.value = '';
     }
 }
-timerField.addEventListener('keydown', function(e) {
-    if (e.keyCode === 13) {
-        if (isNaN(timerField.value)) {
-        Swal.fire({
-            title: `Допустим ввод только чисел
-            и знака '.' (точка)`,
-            customClass: 'adaptation',
-          })
-          timerField.value = '';
-    }
-    else if (timerField.value <= 0) {
-        Swal.fire({
-            title: `Число должно быть выше 0`,
-            customClass: 'adaptation',
-          })
-          timerField.value = '';
-    }
-    else {
-        startCountdown();
-        timerField.value = '';
-    }
-    }
-})
+
 
 function startCountdown() {
     startTimerBtn.style.display = 'none'; 
