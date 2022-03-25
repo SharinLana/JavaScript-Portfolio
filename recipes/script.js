@@ -89,13 +89,10 @@ function startCountdown() {
             seconds = '0' + seconds;
         }
         
-        /* Important condition for setting a pause lately */
-        if(!isPaused) { //if the variable hasn't been set yet, do this:
-            counter.textContent = `${hours} : ${minutes} : ${seconds}`;
-            totalTime--;
-        }
+        
 
         if (totalTime < 0) {
+            audio.play();
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
             totalTime = 0;
@@ -108,8 +105,14 @@ function startCountdown() {
                 imageHeight: 260,
                 customClass: 'adaptation',
               });
-            audio.play();
         }
+      
+      /* Important condition for setting a pause lately */
+        if(!isPaused) { //if the variable hasn't been set yet, do this:
+            counter.textContent = `${hours} : ${minutes} : ${seconds}`;
+            totalTime--;
+        }
+      
     }, 1000);
 
     /* Pausing the countdown */
