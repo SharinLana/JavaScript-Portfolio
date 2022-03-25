@@ -13,6 +13,7 @@ const goTop = document.querySelector('.back-to-top');
 const iconOne = document.querySelector('.icon-one');
 const iconTwo = document.querySelector('.icon-two');
 const iconThree = document.querySelector('.icon-three');
+const projectContainers = document.querySelectorAll('.container');
 
 
 /* Bokeh animation */
@@ -90,6 +91,12 @@ welcomeBtn.addEventListener('click', () => {
   gsap.from('.col', {opacity: 0, scale: 0, duration: .6, delay: 2.8, stagger: 0.2, ease: 'power1.out'})
 })
 
+//Activating project containers on click 
+projectContainers.forEach(container => {
+  container.addEventListener('click', () => {
+  container.style.classList.toggle('container:hover');
+})
+})
 
 //Highlighting the navbar links on scroll
 window.addEventListener('scroll', startAnimation);

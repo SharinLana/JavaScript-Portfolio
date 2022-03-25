@@ -61,7 +61,7 @@ function startConfetti() {
 
 /* Animation on load */
     gsap.from('.header', {x: -200, opacity: 0, delay: 2, duration: .5})
-    gsap.from('.carousel-cards', {opacity: 0, scale: 0, delay: .7, duration: 1})
+    gsap.from('.carousel-cards', {opacity: 0,  delay: .7, duration: 1})
     gsap.from('.carousel-btns', {x: 100, opacity: 0, delay: 2, duration: .5})
     gsap.from('.back-btn', {y: -40, opacity: 0, delay: 2.7, duration: 0.5, ease: "bounce"})
     gsap.from('.note', {opacity: 0, delay: 3.2, duration: 0.5, ease: "bounce"})
