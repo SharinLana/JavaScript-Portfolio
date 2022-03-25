@@ -76,16 +76,6 @@ innerTexts.forEach(text => {
     })
 })
 
-/* Slider */
-innerTexts.forEach(text => {
-  text.addEventListener('touchmove', () => {
-    let coord = text.clientHeight; //got access to the height of the first page 
-    let i = 10; //scrollY in px
-    text.scrollTo(0, i);
-  })
-})
-
-
 /* Button links */
 roommateBtn.addEventListener('click', () => {
     setTimeout(function() {
