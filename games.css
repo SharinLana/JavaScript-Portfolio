@@ -322,6 +322,9 @@ i {
 	.inner-text {
 		padding-top: 140px;
 	}
+  .wheel-header {
+    margin-top: 100px;
+  }
 }
 @media all and (max-height: 500px) {
 	.inner-text {
