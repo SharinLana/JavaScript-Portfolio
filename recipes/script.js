@@ -103,7 +103,7 @@ function startCountdown() {
             Swal.fire({
                 title: `Время вышло!
                 Проверьте готовность блюда`,
-                imageUrl: 'alarm_clock.gif',
+                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/alarm_clock.gif?v=1648168558038',
                 imageWidth: 240,
                 imageHeight: 260,
                 customClass: 'adaptation',
