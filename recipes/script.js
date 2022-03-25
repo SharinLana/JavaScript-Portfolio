@@ -53,6 +53,7 @@ function launchTimer() {
     else {
         startCountdown();
         timerField.value = '';
+      audio.pause(); 
     }
 }
 timerField.addEventListener('keydown', function(e) {
@@ -96,6 +97,7 @@ function startCountdown() {
         }
       
       if (totalTime <= 0) {
+            audio.play();
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
             totalTime = 0;
@@ -109,10 +111,7 @@ function startCountdown() {
                 customClass: 'adaptation',
               });
         }
-        
-      
-         
-       
+               
     }, 1000);
 
     /* Pausing the countdown */
@@ -131,7 +130,7 @@ function startCountdown() {
         pauseTimerBtn.style.display = 'block';
     })
 
-    /* Reloading the Timer */
+  /* Reloading the Timer */
     resetTimerBtn.addEventListener('click', () => {
         clearInterval(timerID);
         totalTime = 0;
@@ -144,8 +143,9 @@ function startCountdown() {
         resumeTimerBtn.style.display = 'none';
         timeLeftHeader.style.display = 'none';
         timerHeader.style.display = 'block';
-        // audio.pause();
+            
     })
+    
 
     /* Closing Timer */
     closeTimerBtn.addEventListener('click', hideTimer);
