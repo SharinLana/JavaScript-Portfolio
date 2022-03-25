@@ -95,11 +95,12 @@ function startCountdown() {
             totalTime--;
         }
 
-        if (totalTime < 0) {
+        if (totalTime <= 0) {
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
             totalTime = 0;
             counter.textContent = `00 : 00 : 00`;
+            audio.play();
             Swal.fire({
                 title: `Время вышло!
                 Проверьте готовность блюда`,
@@ -108,7 +109,6 @@ function startCountdown() {
                 imageHeight: 260,
                 customClass: 'adaptation',
               });
-              audio.play();
         }
     }, 1000);
 
