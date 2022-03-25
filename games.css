@@ -325,11 +325,23 @@ i {
   .wheel-header {
     margin-top: 100px;
   }
+  .read-header {
+    margin-top: 80px;
+  }
 }
 @media all and (max-height: 500px) {
 	.inner-text {
 		padding-top: 160px;
 	}
+  .floor-header {
+    margin-top: 50px;
+  }
+  .read-header {
+    margin-top: 100px;
+  }
+  .wheel-header {
+    margin-top: 120px;
+  }
 }
 @media all and (max-height: 400px) {
 	.inner-text {
