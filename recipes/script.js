@@ -33,34 +33,34 @@ function showTimer() {
     gsap.from('.closeBtn', {opacity: 0, duration: .5, delay: 1, rotate: 145})
 }
 
-startTimerBtn.addEventListener('click', launchTimer);
-timerField.addEventListener('keydown', function(e) {
-    if (e.keyCode === 13) {
-    launchTimer();
-    }
-})
+startTimerBtn.addEventListener('click', startCountdown);
+// timerField.addEventListener('keydown', function(e) {
+//     if (e.keyCode === 13) {
+//     launchTimer(e);
+//     }
+// })
 
-function launchTimer() {
-    if (isNaN(timerField.value)) {
-        Swal.fire({
-            title: `Допустим ввод только чисел
-            и знака '.' (точка)`,
-            customClass: 'adaptation',
-          })
-          timerField.value = '';
-    }
-    else if (timerField.value <= 0) {
-        Swal.fire({
-            title: `Число должно быть выше 0`,
-            customClass: 'adaptation',
-          })
-          timerField.value = '';
-    }
-    else {
-        startCountdown();
-        timerField.value = '';
-    }
-}
+// function launchTimer() {
+//     if (isNaN(timerField.value)) {
+//         Swal.fire({
+//             title: `Допустим ввод только чисел
+//             и знака '.' (точка)`,
+//             customClass: 'adaptation',
+//           })
+//           timerField.value = '';
+//     }
+//     else if (timerField.value <= 0) {
+//         Swal.fire({
+//             title: `Число должно быть выше 0`,
+//             customClass: 'adaptation',
+//           })
+//           timerField.value = '';
+//     }
+//     else {
+//         startCountdown();
+//         timerField.value = '';
+//     }
+// }
 
 
 function startCountdown() {
@@ -113,7 +113,7 @@ function startCountdown() {
               });
         }
     }, 1000);
-
+  
     /* Pausing the countdown */
     pauseTimerBtn.addEventListener('click', function(e) {
         e.preventDefault();
