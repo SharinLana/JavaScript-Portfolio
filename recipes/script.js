@@ -53,7 +53,7 @@ function launchTimer() {
     else {
         startCountdown();
         timerField.value = '';
-      audio.pause(); 
+        audio.pause(); 
     }
 }
 timerField.addEventListener('keydown', function(e) {
@@ -71,6 +71,8 @@ function startCountdown() {
     resetTimerBtn.style.display = 'block';
     counter.style.display = 'block';
     timeLeftHeader.style.display = 'block';
+  let language = window.navigator.language;
+let currentLocation = document.querySelector('html')[0].getAttribute('lang-js')
 
     let time = timerField.value;
     let totalTime = Number(time) * 60;
@@ -96,15 +98,15 @@ function startCountdown() {
             totalTime--;
         }
       
-      if (totalTime <= 0) {
+      if (totalTime <= 0 && currentLocation = 'en') {
             audio.play();
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
             totalTime = 0;
             counter.textContent = `00 : 00 : 00`;
             Swal.fire({
-                title: `Время вышло!
-                Проверьте готовность блюда`,
+                title: `Time is up!
+                Check the readiness of the dish`,
                 imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/alarm_clock.gif?v=1648168558038',
                 imageWidth: 240,
                 imageHeight: 260,
@@ -143,7 +145,7 @@ function startCountdown() {
         resumeTimerBtn.style.display = 'none';
         timeLeftHeader.style.display = 'none';
         timerHeader.style.display = 'block';
-            
+        audio.pause();       
     })
     
 
@@ -165,7 +167,7 @@ function startCountdown() {
     pauseTimerBtn.style.display = 'none';
     resetTimerBtn.style.display = 'none';
     resumeTimerBtn.style.display = 'none';
-    // audio.pause();
+    audio.pause();
 }
 };
 /* Closing Timer-2 */
@@ -175,6 +177,7 @@ function hideTmr() {
     timerContainer.style.display = 'none';
     headerParent.style.display = 'block';
     timerField.value = '';
+    audio.pause();
 }
 
 
