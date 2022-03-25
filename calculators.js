@@ -67,13 +67,24 @@ function startConfetti() {
     gsap.from('.back-btn', {y: -40, opacity: 0, delay: 2.7, duration: 0.5, ease: "bounce"})
     gsap.from('.note', {opacity: 0, delay: 3.2, duration: 0.5, ease: "bounce"})
 
+
+
 /* Revealing the inner text on click */
 innerTexts.forEach(text => {
     text.addEventListener('click', () => {
       text.style.classList.toggle('inner-text:hover');
     })
 })
-    
+
+/* Slider */
+innerTexts.forEach(text => {
+  text.addEventListener('touchmove', () => {
+    let coord = text.clientHeight; //got access to the height of the first page 
+    let i = 10; //scrollY in px
+    text.scrollTo(0, i);
+  })
+})
+
 
 /* Button links */
 roommateBtn.addEventListener('click', () => {

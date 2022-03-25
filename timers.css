@@ -190,6 +190,7 @@ i {
 	background-color: #fc7dcf;
 	z-index: 2;
 	position: absolute;
+  color: white;
 }
 .timer-btn:hover {
 	transform: scale(1.04);
