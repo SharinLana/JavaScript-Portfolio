@@ -71,8 +71,6 @@ function startCountdown() {
     resetTimerBtn.style.display = 'block';
     counter.style.display = 'block';
     timeLeftHeader.style.display = 'block';
-  let language = window.navigator.language;
-let currentLocation = document.querySelector('html')[0].getAttribute('lang-js')
 
     let time = timerField.value;
     let totalTime = Number(time) * 60;
@@ -98,7 +96,8 @@ let currentLocation = document.querySelector('html')[0].getAttribute('lang-js')
             totalTime--;
         }
       
-      if (totalTime <= 0 && currentLocation = 'en') {
+      if (totalTime <= 0) {
+        if (document.documentElement.lang === 'eng') {
             audio.play();
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
@@ -112,6 +111,24 @@ let currentLocation = document.querySelector('html')[0].getAttribute('lang-js')
                 imageHeight: 260,
                 customClass: 'adaptation',
               });
+        }
+        else if (document.documentElement.lang === 'ru') {
+          audio.play();
+            pauseTimerBtn.style.display = 'none';
+            clearInterval(timerID);
+            totalTime = 0;
+            counter.textContent = `00 : 00 : 00`;
+            Swal.fire({
+                title: `Время вышло!
+                Проверьте готовность блюда`,
+                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/alarm_clock.gif?v=1648168558038',
+                imageWidth: 240,
+                imageHeight: 260,
+                customClass: 'adaptation',
+              });
+        }
+        
+  
         }
                
     }, 1000);
