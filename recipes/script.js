@@ -75,7 +75,7 @@ function startCountdown() {
   
     let time = timerField.value;
     let totalTime = Number(time) * 60;
-    let isPaused = false; //setting pause for setInterval, при первичном запуске функции он равен 0 (false)
+    // let isPaused = false; //setting pause for setInterval, при первичном запуске функции он равен 0 (false)
 
     let timerID = setInterval(function() {
         let hours = Math.floor((totalTime/60)/60);
@@ -92,10 +92,10 @@ function startCountdown() {
         }
         
         /* Important condition for setting a pause lately */
-        if(!isPaused) { //if the variable hasn't been set yet, do this:
+        // if(!isPaused) { //if the variable hasn't been set yet, do this:
             counter.textContent = `${hours} : ${minutes} : ${seconds}`;
             totalTime--;
-        }
+        // }
 
         if (totalTime < 0) {
             audio.play();
@@ -114,21 +114,22 @@ function startCountdown() {
         }
     }, 1000);
   
+  
     /* Pausing the countdown */
-    pauseTimerBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        isPaused = true; //stopped the countdoun
-        resumeTimerBtn.style.display = 'block';
-        pauseTimerBtn.style.display = 'none';
-    });
+    // pauseTimerBtn.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     isPaused = true; //stopped the countdoun
+    //     resumeTimerBtn.style.display = 'block';
+    //     pauseTimerBtn.style.display = 'none';
+    // });
 
     /* Resuming the countdown */
-    resumeTimerBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        isPaused = false; //resumed the countdown
-        resumeTimerBtn.style.display = 'none';
-        pauseTimerBtn.style.display = 'block';
-    })
+    // resumeTimerBtn.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     isPaused = false; //resumed the countdown
+    //     resumeTimerBtn.style.display = 'none';
+    //     pauseTimerBtn.style.display = 'block';
+    // })
 
     /* Reloading the Timer */
     resetTimerBtn.addEventListener('click', () => {
