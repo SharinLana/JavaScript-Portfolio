@@ -36,21 +36,10 @@ function showTimer() {
 startTimerBtn.addEventListener('click', launchTimer);
 timerField.addEventListener('keydown', function(e) {
     if (e.keyCode === 13) {
-      
-        if (isNaN(timerField.value)) {
-        alert('No')
-          timerField.value = '';
-    }
-      else if (timerField.value <= 0) {
-        alert('No')
-          timerField.value = '';
-    }
-      else {
-        startCountdown();
-        timerField.value = '';
-    }
+    launchTimer();
     }
 })
+
 function launchTimer() {
     if (isNaN(timerField.value)) {
         Swal.fire({
