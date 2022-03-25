@@ -73,7 +73,7 @@ gsap.from('.circle-twenty-seven', {opacity: 0, duration: 5, delay: 1, repeat: -1
 //Going to the Project Page on click
 welcomeBtn.addEventListener('click', () => {
   let coord = firstPage.clientHeight; //got access to the height of the first page 
-  let i = 10; //scrollY in px
+  let i = 20; //scrollY in px
 
   //Slowing the scroll speed down by use of setInterval()
   let int = setInterval(function() {
