@@ -7,6 +7,7 @@ const wheelBtn = document.querySelector('.wheel-btn');
 const libraryBtn = document.querySelector('.library-btn');
 const guessBtn = document.querySelector('.guess-btn');
 const floorBtn = document.querySelector('.floor-btn');
+const innerTexts = document.querySelectorAll('.inner-text');
 
 let angle = 0;
 
@@ -67,7 +68,13 @@ function startConfetti() {
     gsap.from('.note', {opacity: 0, delay: 3.2, duration: 0.5, ease: "bounce"})
 
 
-    
+/* Revealing the inner text on click */
+innerTexts.forEach(text => {
+    text.addEventListener('click', () => {
+      text.style.classList.toggle('inner-text:hover');
+    })
+})
+
 
 /* Button links */
 wheelBtn.addEventListener('click', () => {
