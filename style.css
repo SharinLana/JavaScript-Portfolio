@@ -1792,11 +1792,11 @@ h4 {
 	.skills {
 		font-size: 18px;
 		padding: 8px 20px;
-		line-height: 25px;
+		line-height: 30px;
 		margin-top: -10px;
 	}
 	.skill-item {
-		font-size: 40px;
+		font-size: 35px;
 		width: 60px;
 	}
 	.modal-content {
@@ -2015,12 +2015,12 @@ h4 {
 		width: 15px;
 	}
 	.left-bracket {
-		bottom: 66px;
+		bottom: 69px;
 		right: 185px;
 		transform: rotate(-6deg);
 	}
 	.right-bracket {
-		bottom: 78px;
+		bottom: 81px;
 		right: 77px;
 		transform: rotate(-9deg);
 	}
@@ -2108,7 +2108,7 @@ h4 {
 		line-height: 25px;
 	}
 	.skill-item {
-		font-size: 35px;
+		font-size: 25px;
 		width: 50px;
 	}
 	.cv-btn {
@@ -2177,6 +2177,18 @@ h4 {
 		opacity: 1;
 		scale: 1;
 	}
+  .arrow-container {
+		top: -30px;
+		width: 50px;
+		height: 50px;
+	}
+  .social-icons-container {
+	margin-top: -20px;
+	width: 60%;
+}
+  .watermark {
+    font-size: 12px;
+  }
 }
 
 @media all and (max-width: 300px) {

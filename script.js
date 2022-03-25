@@ -73,14 +73,14 @@ gsap.from('.circle-twenty-seven', {opacity: 0, duration: 5, delay: 1, repeat: -1
 //Going to the Project Page on click
 welcomeBtn.addEventListener('click', () => {
   let coord = firstPage.clientHeight; //got access to the height of the first page 
-  let i = 20; //scrollY in px
+  let i = 10; //scrollY in px
 
   //Slowing the scroll speed down by use of setInterval()
   let int = setInterval(function() {
     projectLink.classList.remove('nav-link');
     projectLink.classList.add('nav-changed');
       window.scrollTo(0, i); // scroll to i...
-      i += 15; //... and each time you pass through 10 px add 10 more px...
+      i += 10; //... and each time you pass through 10 px add 10 more px...
       if (i >= coord + 70) clearInterval(int); //until you leave behind the full hight of the first page + 10px. 
   }, 8) //the lower the number, the faster the scroll speed
 
