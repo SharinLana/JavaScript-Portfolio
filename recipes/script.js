@@ -57,7 +57,25 @@ function launchTimer() {
 }
 timerField.addEventListener('keydown', function(e) {
     if (e.keyCode === 13) {
-        launchTimer();
+        if (isNaN(timerField.value)) {
+        Swal.fire({
+            title: `Допустим ввод только чисел
+            и знака '.' (точка)`,
+            customClass: 'adaptation',
+          })
+          timerField.value = '';
+    }
+    else if (timerField.value <= 0) {
+        Swal.fire({
+            title: `Число должно быть выше 0`,
+            customClass: 'adaptation',
+          })
+          timerField.value = '';
+    }
+    else {
+        startCountdown();
+        timerField.value = '';
+    }
     }
 })
 
@@ -89,7 +107,11 @@ function startCountdown() {
             seconds = '0' + seconds;
         }
         
-        
+        /* Important condition for setting a pause lately */
+        if(!isPaused) { //if the variable hasn't been set yet, do this:
+            counter.textContent = `${hours} : ${minutes} : ${seconds}`;
+            totalTime--;
+        }
 
         if (totalTime < 0) {
             audio.play();
@@ -106,13 +128,6 @@ function startCountdown() {
                 customClass: 'adaptation',
               });
         }
-      
-      /* Important condition for setting a pause lately */
-        if(!isPaused) { //if the variable hasn't been set yet, do this:
-            counter.textContent = `${hours} : ${minutes} : ${seconds}`;
-            totalTime--;
-        }
-      
     }, 1000);
 
     /* Pausing the countdown */
