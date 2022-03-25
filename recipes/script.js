@@ -33,14 +33,70 @@ function showTimer() {
     gsap.from('.closeBtn', {opacity: 0, duration: .5, delay: 1, rotate: 145})
 }
 
-startTimerBtn.addEventListener('click', startCountdown);
-// timerField.addEventListener('keydown', function(e) {
-//     if (e.keyCode === 13) {
-//     launchTimer(e);
-//     }
-// })
+startTimerBtn.addEventListener('click', () => {
+  if (isNaN(timerField.value)) {
+        Swal.fire({
+            title: 'Enter numbers only!',
+            customClass: 'adaptation',
+          })
+          timerField.value = '';
+    }
+    else if (timerField.value <= 0) {
+        Swal.fire({
+            title: 'Number must be higher that 0!',
+            customClass: 'adaptation',
+          })
+          timerField.value = '';
+    }
+    else {
+        startCountdown();
+    }
+});
 
-// function launchTimer() {
+function startCountdown() {
+    
+    timerField.setAttribute('disabled', timerField.value);
+
+    let time = timerField.value;
+    let totalTime = Number(time) * 60;
+
+    let timerID = setInterval(function() {
+        let hours = Math.floor((totalTime/60)/60);
+        if (hours < 10) {
+            hours = '0' + hours;
+        }
+        let minutes = Math.floor(totalTime/60%60);
+        if (minutes < 10) {
+            minutes = '0' + minutes;
+        }
+        let seconds = totalTime%60;
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+    
+        counter.textContent = `${hours} : ${minutes} : ${seconds}`;
+        totalTime--;
+    
+        if (totalTime < 0) {
+            audio.play();
+            clearInterval(timerID);
+            totalTime = 0;
+            Swal.fire({
+                title: 'Time is Over!',
+                imageUrl: 'https://cdn.glitch.me/065b879b-3c4f-4502-bb6f-77013e7b6f8b/alarm_clock.gif?v=1641001379970',
+                imageWidth: 240,
+                imageHeight: 260,
+                imageAlt: 'Custom image',
+                customClass: 'adaptation',
+              })
+        }
+
+    }, 1000)
+};
+
+
+
+// startTimerBtn.addEventListener('click', () => {
 //     if (isNaN(timerField.value)) {
 //         Swal.fire({
 //             title: `Допустим ввод только чисел
@@ -60,122 +116,154 @@ startTimerBtn.addEventListener('click', startCountdown);
 //         startCountdown();
 //         timerField.value = '';
 //     }
+  
+// });
+// timerField.addEventListener('keydown', function(e) {
+//     if (e.keyCode === 13) {
+//     launchTimer(e);
+//     }
+// })
+
+
+
+
+// function startCountdown() {
+//     startTimerBtn.style.display = 'none'; 
+//     resumeTimerBtn.style.display = 'none';
+//     timerField.style.display = 'none';
+//     timerHeader.style.display = 'none';
+//     pauseTimerBtn.style.display = 'block';
+//     resetTimerBtn.style.display = 'block';
+//     counter.style.display = 'block';
+//     timeLeftHeader.style.display = 'block';
+  
+//     let time = timerField.value;
+//     let totalTime = Number(time) * 60;
+//     let isPaused = false; //setting pause for setInterval, при первичном запуске функции он равен 0 (false)
+
+//     let timerID = setInterval(function() {
+//         let hours = Math.floor((totalTime/60)/60);
+//         if (hours < 10) {
+//             hours = '0' + hours;
+//         }
+//         let minutes = Math.floor(totalTime/60%60);
+//         if (minutes < 10) {
+//             minutes = '0' + minutes;
+//         }
+//         let seconds = (totalTime%60).toFixed(0);
+//         if (seconds < 10) {
+//             seconds = '0' + seconds;
+//         }
+        
+//         /* Important condition for setting a pause lately */
+//         if (!isPaused) { //if the variable hasn't been set yet, do this:
+//             counter.textContent = `${hours} : ${minutes} : ${seconds}`;
+//             totalTime--;
+//         }
+
+//         if (totalTime < 0) {
+//             audio.play();
+//             pauseTimerBtn.style.display = 'none';
+//             clearInterval(timerID);
+//             totalTime = 0;
+//             counter.textContent = `00 : 00 : 00`;
+//             Swal.fire({
+//                 title: `Время вышло!
+//                 Проверьте готовность блюда`,
+//                 imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/alarm_clock.gif?v=1648168558038',
+//                 imageWidth: 240,
+//                 imageHeight: 260,
+//                 customClass: 'adaptation',
+//               });
+//         }
+//     }, 1000);
+
+//     /* Pausing the countdown */
+//     pauseTimerBtn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         isPaused = true; //stopped the countdoun
+//         resumeTimerBtn.style.display = 'block';
+//         pauseTimerBtn.style.display = 'none';
+//     });
+
+//     /* Resuming the countdown */
+//     resumeTimerBtn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         isPaused = false; //resumed the countdown
+//         resumeTimerBtn.style.display = 'none';
+//         pauseTimerBtn.style.display = 'block';
+//     })
+
+//     /* Reloading the Timer */
+//     resetTimerBtn.addEventListener('click', () => {
+//         clearInterval(timerID);
+//         totalTime = 0;
+//         counter.textContent = `00 : 00 : 00`;
+//         timerField.style.display = 'block';
+//         counter.style.display = 'none';
+//         startTimerBtn.style.display = 'block'; 
+//         pauseTimerBtn.style.display = 'none';
+//         resetTimerBtn.style.display = 'none';
+//         resumeTimerBtn.style.display = 'none';
+//         timeLeftHeader.style.display = 'none';
+//         timerHeader.style.display = 'block';
+//         audio.pause();
+//     })
+
+//     /* Closing Timer */
+//     closeTimerBtn.addEventListener('click', hideTimer);
+//     function hideTimer() {
+//     timerBtn.style.display = 'block';
+//     timerContainer.style.display = 'none';
+//     headerParent.style.display = 'block';
+//     timeLeftHeader.style.display = 'none';
+//     timerHeader.style.display = 'block';
+    
+//     clearInterval(timerID);
+//     totalTime = 0;
+//     counter.textContent = `00 : 00 : 00`;
+//     timerField.style.display = 'block';
+//     counter.style.display = 'none';
+//     startTimerBtn.style.display = 'block'; 
+//     pauseTimerBtn.style.display = 'none';
+//     resetTimerBtn.style.display = 'none';
+//     resumeTimerBtn.style.display = 'none';
+//     audio.pause();
+// }
+// };
+// /* Closing Timer-2 */
+// closeTimerBtn.addEventListener('click', hideTmr); 
+// function hideTmr() {
+//     timerBtn.style.display = 'block';
+//     timerContainer.style.display = 'none';
+//     headerParent.style.display = 'block';
+//     timerField.value = '';
 // }
 
 
-function startCountdown() {
-    startTimerBtn.style.display = 'none'; 
-    resumeTimerBtn.style.display = 'none';
-    timerField.style.display = 'none';
-    timerHeader.style.display = 'none';
-    pauseTimerBtn.style.display = 'block';
-    resetTimerBtn.style.display = 'block';
-    counter.style.display = 'block';
-    timeLeftHeader.style.display = 'block';
-  
-    let time = timerField.value;
-    let totalTime = Number(time) * 60;
-    // let isPaused = false; //setting pause for setInterval, при первичном запуске функции он равен 0 (false)
 
-    let timerID = setInterval(function() {
-        let hours = Math.floor((totalTime/60)/60);
-        if (hours < 10) {
-            hours = '0' + hours;
-        }
-        let minutes = Math.floor(totalTime/60%60);
-        if (minutes < 10) {
-            minutes = '0' + minutes;
-        }
-        let seconds = (totalTime%60).toFixed(0);
-        if (seconds < 10) {
-            seconds = '0' + seconds;
-        }
-        
-        /* Important condition for setting a pause lately */
-        // if(!isPaused) { //if the variable hasn't been set yet, do this:
-            counter.textContent = `${hours} : ${minutes} : ${seconds}`;
-            totalTime--;
-        // }
 
-        if (totalTime < 0) {
-            audio.play();
-            pauseTimerBtn.style.display = 'none';
-            clearInterval(timerID);
-            totalTime = 0;
-            counter.textContent = `00 : 00 : 00`;
-            Swal.fire({
-                title: `Время вышло!
-                Проверьте готовность блюда`,
-                imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/alarm_clock.gif?v=1648168558038',
-                imageWidth: 240,
-                imageHeight: 260,
-                customClass: 'adaptation',
-              });
-        }
-    }, 1000);
-  
-  
-    /* Pausing the countdown */
-    // pauseTimerBtn.addEventListener('click', function(e) {
-    //     e.preventDefault();
-    //     isPaused = true; //stopped the countdoun
-    //     resumeTimerBtn.style.display = 'block';
-    //     pauseTimerBtn.style.display = 'none';
-    // });
 
-    /* Resuming the countdown */
-    // resumeTimerBtn.addEventListener('click', function(e) {
-    //     e.preventDefault();
-    //     isPaused = false; //resumed the countdown
-    //     resumeTimerBtn.style.display = 'none';
-    //     pauseTimerBtn.style.display = 'block';
-    // })
 
-    /* Reloading the Timer */
-    resetTimerBtn.addEventListener('click', () => {
-        clearInterval(timerID);
-        totalTime = 0;
-        counter.textContent = `00 : 00 : 00`;
-        timerField.style.display = 'block';
-        counter.style.display = 'none';
-        startTimerBtn.style.display = 'block'; 
-        pauseTimerBtn.style.display = 'none';
-        resetTimerBtn.style.display = 'none';
-        resumeTimerBtn.style.display = 'none';
-        timeLeftHeader.style.display = 'none';
-        timerHeader.style.display = 'block';
-        audio.pause();
-    })
 
-    /* Closing Timer */
-    closeTimerBtn.addEventListener('click', hideTimer);
-    function hideTimer() {
-    timerBtn.style.display = 'block';
-    timerContainer.style.display = 'none';
-    headerParent.style.display = 'block';
-    timeLeftHeader.style.display = 'none';
-    timerHeader.style.display = 'block';
-    
-    clearInterval(timerID);
-    totalTime = 0;
-    counter.textContent = `00 : 00 : 00`;
-    timerField.style.display = 'block';
-    counter.style.display = 'none';
-    startTimerBtn.style.display = 'block'; 
-    pauseTimerBtn.style.display = 'none';
-    resetTimerBtn.style.display = 'none';
-    resumeTimerBtn.style.display = 'none';
-    audio.pause();
-}
-};
-/* Closing Timer-2 */
-closeTimerBtn.addEventListener('click', hideTmr); 
-function hideTmr() {
-    timerBtn.style.display = 'block';
-    timerContainer.style.display = 'none';
-    headerParent.style.display = 'block';
-    timerField.value = '';
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
