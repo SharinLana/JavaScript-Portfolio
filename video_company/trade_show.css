@@ -1,0 +1,329 @@
+body {
+    margin:0;
+    background-image: url(https://cdn.glitch.com/1c4876db-78a9-4610-ac96-2e6236378798%2Fshow_2.jpg?v=1629065978490);
+    background-size:cover;
+    background-attachment: fixed;
+    }
+    .nvb {
+    box-shadow: 0px 10px 20px #334257;
+    background-color: #555273;
+    border-radius: 10px;
+    border: 3px outset white;
+    }
+    .brand {
+    font-family: 'Gandhi Sans', arial;  
+    font-weight: 800;
+    font-size: 34px;
+    text-shadow: 1px 0px 2px black;
+    }
+    .brand:hover {
+    text-shadow: 3px 0px 2px black;
+    }
+    .logo {
+    filter:invert(100%);
+    }
+    .logo:hover {
+    filter: invert(5%);
+    background-color: white;
+    }
+    .positions {
+    font-family: 'Futura Std', sans-serif; 
+    font-size: 18px;
+    text-shadow: 1px 0px 2px black;
+    padding: 18px 0px;
+    }
+    .positions:hover {
+    background-color: #B42B3F;
+    border-radius: 5px;
+    }
+    .information {
+    display: flex; 
+    justify-content: center;
+    padding: 60px 10px;
+    }
+    .top-video {
+    box-shadow: 0px 15px 15px rgb(61, 60, 60);
+    border: 6px outset white;
+    border-radius: 20px;
+    }
+    .middle_area {
+    display: flex;
+    justify-content: center;
+    background-color: #494953;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .text-column {
+    display: flex;
+    justify-content: center;
+    padding: 80px 30px;
+    background-color: #F6F6F6;
+    border: 2px outset white;
+    border-radius: 15px;
+    box-shadow: 0px 15px 15px black;
+    }
+    .inner-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    }
+    h3 {
+    margin:0;
+    margin-bottom: 1%;
+    font-family: 'Gandhi Sans', arial;  
+    font-weight: 800;
+    font-size: 28px;
+    color:rgb(77, 76, 76);
+    }
+    .text {
+    margin:0;
+    margin-bottom: 5%;
+    font-family: 'Futura Std', sans-serif; 
+    font-size: 17px;
+    line-height: 1.7;   
+    }
+    .email {
+    color: #FF5656;
+    }
+    .email:hover {
+    color:#6A7EFC;
+    }
+    .examples {
+    display:flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #B42B3F;
+    }
+    h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Gandhi Sans', arial;  
+    font-weight: 800;
+    font-size: 35px;
+    text-shadow: 0px 2px 4px black;
+    }
+    .video-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    .first-two {
+    margin-top: 2%;
+    }
+    .horizontal {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+    .vdo {
+    box-shadow: 0px 15px 15px rgb(61, 60, 60);
+    border: 6px outset white;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    }
+    .vdo:hover {
+    box-shadow: 0px 15px 10px black;
+    }
+    .copyright {
+    font-family: 'Futura Std', sans-serif; 
+    color: rgb(77, 76, 76);
+    font-size: 12px;
+    }
+    .terms {
+    font-family: 'Futura Std', sans-serif; 
+    color: #709FB0;
+    }
+    .terms:hover {
+    color: #4d4d4d;
+    }
+    .social-btm {
+    filter: invert(65%);
+    }
+    .social-btm:hover {
+    filter: none;
+    color: white;
+    background-color: #B42B3F;
+    border-radius: 50%;
+    }
+    @media all and (max-width: 1100px) {
+    body {
+    background-image: none;
+    background-color: #FFE3E3;
+    }
+    .brand {
+    font-size: 30px;
+    font-weight: 500;
+    }
+    .nvb {
+    background-color:#262A53;
+    }
+    .positions {
+    font-size: 18px;
+    text-shadow: none;
+    }
+    .positions:hover {
+    background-color: #e78383;
+    text-shadow: 2px 0px 2px black;
+    }
+    .top-video {
+    width: 800px;
+    }
+    .middle_area {
+    background-color: #434772;
+    }
+    h3 {
+    font-size: 24px;
+    }
+    .text {
+    font-size: 15px;
+    }
+    .examples {
+    background-color: #e78383;
+    }
+    h2 {
+    font-size: 30px;
+    }
+    .vdo {
+    margin: 5% 0%;
+    width: 800px;
+    }
+    .social-btm:hover {
+    background-color: #262A53;
+    }
+    }
+    @media all and (max-width: 800px) {
+    .brand {
+    font-size: 30px;
+    }
+    .positions {
+    padding: 0px;
+    }
+    .top-video {
+    width: 600px;
+    }
+    .vdo {
+    width: 560px;
+    }
+    }
+    @media all and (max-width: 600px) {
+    .logo {
+    width: 50px;
+    height: 50px;
+    }
+    .brand {
+    font-size: 25px;
+    }
+    .positions {
+    font-size: 14px;
+    }
+    .top-video {
+    width: 400px;
+    border: 3px outset white;
+    }
+    .middle_area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    .text-column {
+    width: 90%;
+    }
+    h3 {
+    font-size: 16px;
+    }
+    .text {
+    font-size: 13px;
+    }
+    h2 {
+    font-size: 18px;
+    }
+    .vdo {
+    width: 400px;
+    border: 3px outset white;
+    }
+    .social-btm {
+    width: 30px;
+    }
+    }
+    @media all and (max-width: 420px) {
+    .logo {
+    width: 40px;
+    height: 40px;
+    }
+    .brand {
+    font-size: 20px;
+    }
+    .top-video {
+    width: 360px;
+    border: 2px outset white;
+    }
+    .middle_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    .text-column {
+    padding: 40px 15px;
+    }
+    h3 {
+    font-size: 13px;
+    }
+    .text {
+    font-size: 10px;
+    }
+    h2 {
+    font-size: 16px;
+    }
+    .vdo {
+    width: 340px;
+    border: 2px outset white;
+    }
+    }
+    @media all and (max-width: 380px) {
+    .top-video {
+    width: 320px;
+    }
+    .vdo {
+    width: 300px;
+    }
+    }
+    @media all and (max-width: 330px) {
+    .brand {
+    font-size: 16px;
+    }
+    .top-video {
+    width: 280px;
+    border: 2px outset white;
+    }
+    h3 {
+    font-size: 12px;
+    }
+    .text {
+    font-size: 9px;
+    }
+    h2 {
+    font-size: 14px;
+    }
+    .vdo {
+    width: 260px;
+    }
+    }
+    @media all and (max-width: 280px) {
+    .brand {
+    font-size: 14px;
+    }
+    .top-video {
+    width: 260px;
+    border: 2px outset white;
+    }
+    h3 {
+    font-size: 10px;
+    }
+    .text {
+    font-size: 8px;
+    }
+    h2 {
+    font-size: 12px;
+    }
+    .vdo {
+    width: 240px;
+    }
+    }
