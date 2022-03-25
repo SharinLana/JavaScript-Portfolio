@@ -1,0 +1,513 @@
+body {
+    margin: 0; 
+    }
+    .absolute {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:2;
+    }
+    .nav-0 {
+    background-color: white;
+    }
+    .nav-1 {
+    background-color: #eb7303;
+    border-bottom: 3px outset white;
+    box-shadow: 0px 10px 20px #334257;
+    }
+    .sms {                             
+    font-size: 26px;
+    font-weight: 700;   
+    color: rgb(63, 61, 61);
+    }
+    .vpc {
+    font-family: 'Gandhi Sans', arial;                                      
+    font-size: 16px; 
+    letter-spacing: 0.5px;
+    }
+    .social {
+    filter: invert(100%);
+    }
+    .social:hover {
+    filter: none;
+    color: white;
+    background-color: #c21d12;
+    border-radius: 50%;
+    }
+    .view {
+    padding:10px 15px;
+    text-decoration: none;
+    color: white;
+    }
+    .view:hover {
+    background-color: #c21d12;
+    color: white;
+    }
+    .font-nav {
+    font-family: 'Futura Std', sans-serif; 
+    }
+    .items {
+    font-family: 'Futura Std', sans-serif; 
+    }
+    .items:hover {
+    background-color: #7573737e;
+    color: white;
+    }
+    .hire-us {
+    font-weight: 800;
+    }
+    .hire-us:hover {
+    background-color: #c21d12;
+    }
+    .bg-video {
+    background-image: url(https://cdn.glitch.com/1c4876db-78a9-4610-ac96-2e6236378798%2Fvegas.jpg?v=1629015790638);
+    background-size:cover;
+    width: 100%;
+    position:relative;
+    z-index: 1;
+    }
+    .carousel {
+    background-color: #eb7303;
+    }
+    .reviews {
+    box-shadow: 1px 1px 4px #4d4d4d;
+    }
+    .bottom-sentence {
+    font-family: 'Futura Std', sans-serif;
+    font-size: 15px;
+    }
+    .sign {
+    font-size: 12px;
+    }
+    .clients {
+    font-family: 'Gandhi Sans', arial;
+    font-weight: 700;
+    color: #06a6ba;
+    }
+    .video-area {
+    background-color: #EDF2F6;
+    padding-bottom: 40px;
+    }
+    .our-work {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    }
+    .examples {
+    font-family: 'Gandhi Sans', arial;
+    font-weight: 700;
+    color: #686767;
+    text-shadow: none;
+    padding-top: 30px;
+    margin-bottom: -0.5%;
+    }
+    hr {
+    width: 50%;
+    border: 1px solid #494953;
+    }
+    .video-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    .first-two {
+    margin-top: 2%;
+    }
+    .horizontal {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+    .vdo {
+    box-shadow: 0px 15px 15px rgb(61, 60, 60);
+    border: 6px outset white;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    }
+    .vdo:hover {
+    box-shadow: 0px 5px 10px black;
+    }
+    .form-center {
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(https://cdn.glitch.com/1c4876db-78a9-4610-ac96-2e6236378798%2Fbk_3_copy.jpg?v=1629015644271);
+    background-size: cover;
+    }
+    .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 14px black;
+    }
+    .lines {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0px;
+    }
+    .heading {
+    margin:0;
+    line-height: 1.8;
+    text-align: center;
+    }
+    .idea {
+    font-family: 'Gandhi Sans', arial;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #c21d12;
+    }
+    .help {
+    text-transform: capitalize;
+    font-family: 'Gandhi Sans', arial;   
+    font-size: 15px;
+    color: #242323;
+    }
+    .field {
+    width: 98%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: 'Futura Std', sans-serif;
+    border: 1px solid grey;
+    }
+    .textarea {
+    width: 98%;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: 'Futura Std', sans-serif;
+    }
+    .submit {
+    font-family: 'Gandhi Sans', arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #c21d12;
+    }
+    .submit:hover {
+    color: #c21d12;
+    background-color: white;
+    transition-duration: 1s;
+    border: 2px outset #c21d12;
+    }
+    .foot {
+    background-color: #7573737e;
+    }
+    .copyright {
+    font-family: 'Futura Std', sans-serif; 
+    color: rgb(63, 61, 61);
+    font-size: 12px;
+    }
+    .middle {
+        margin-right: 6%;
+    }
+    .sign-up {
+    font-family: 'Futura Std', sans-serif; 
+    color: #666666;
+    font-size: 15px;
+    }
+    .terms {
+    font-family: 'Gandhi Sans', arial;
+    color: #06a6ba;
+    }
+    .terms:hover {
+    color: #4d4d4d;
+    }
+    .social-btm {
+    filter: invert(75%);
+    }
+    .social-btm:hover {
+    filter: none;
+    color: white;
+    background-color: #4d4d4d;
+    border-radius: 50%;
+    }
+    @media all and (max-width: 1100px) {
+    .nav-1 {
+    background-color: black;
+    }
+    .social { 
+    filter: none;
+    background-color: #ff5085; 
+    border-radius: 50%;
+    }
+    .social:hover {
+    background-color: black; 
+    }
+    .view:hover {
+    background-color: #ff5085;
+    }
+    .hire-us:hover {
+    background-color: #ff5085;
+    }
+    .video-area {
+    background-color: #ff5085;
+    }
+    .carousel {
+    background-color: #5ac9f4;
+    }
+    .examples {
+    color: white;
+    text-shadow: 0px 2px 4px black;
+    }
+    .vdo {
+    margin: 5% 0%;
+    }
+    .idea {
+    color: black;
+    }
+    .submit {
+    background-color: #ff5085;
+    }
+    .submit:hover {
+    color: #ff5085;
+    border: 1px solid #ff5085;
+    }
+    }
+    @media all and (max-width: 800px) {
+    .examples {
+    font-size: 20px;
+    }
+    .vdo {
+    width: 560px;
+    border: 3px outset white;
+    }
+    .idea {
+    font-size: 18px;
+    }
+    .help {
+    font-size: 14px;
+    }
+    .field {
+    font-size: 12px;
+    width:80%;
+    }
+    .textarea {
+    font-size: 12px;
+    width:80%;
+    }
+    }
+    @media all and (max-width: 600px) {
+    .reviews {
+    width: 150px;
+    height: 150px;
+    }
+    .bottom-sentence {
+    font-size: 12px;
+    }
+    .sign {
+    font-size: 10px;
+    }
+    .vdo {
+    width: 400px;
+    }
+    .middle {
+    margin-right: 0;
+    }
+    .bundle {
+    display: flex;
+    flex-direction:column;
+    margin-top: 5%;
+    }
+    .logo-btm {
+    width: 60px;
+    }
+    .copyright {
+    font-size: 10px;
+    }
+    .sign-up {
+    font-size: 10px;
+    }
+    .terms {
+    font-size: 12px;
+    }
+    .social-btm {
+        width: 34px;
+    }
+    }
+    @media all and (max-width: 420px) {
+    .sms {
+    font-size: 16px;
+    }
+    .vpc {
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    }
+    .social {
+    width: 22px;
+    }
+    .reviews {
+    width: 120px;
+    height: 120px;
+    }
+    .bottom-sentence {
+    font-size: 10px;
+    }
+    .sign {
+    font-size: 9px;
+    }
+    .vdo {
+    width: 360px;
+    }
+    .examples {
+    font-size: 15px;
+    }
+    .idea {
+    font-size: 15px;
+    }
+    .help {
+    font-size: 11px;
+    }
+    .field {
+    font-size: 8px;
+    }
+    .textarea {
+    font-size: 8px;
+    }
+    .submit {
+    font-size: 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    }
+    .copyright {
+    font-size: 9px;
+    }
+    .social-btm {
+    width: 30px;
+    }
+    }
+    @media all and (max-width: 380px) {
+    .logo {
+    width: 50px;
+    }
+    .sms {
+    font-size: 13px;
+    }
+    .vpc {
+    font-size: 9px;
+    letter-spacing: 0px;
+    }
+    .social {
+    width: 18px;
+    }
+    .vdo {
+    width: 300px;
+    }
+    .idea {
+    font-size: 12px;
+    }
+    .help {
+    font-size: 9px;
+    }
+    .field {
+    font-size: 8px;
+    }
+    .textarea {
+    font-size: 8px;
+    }
+    .sign-up {
+    font-size: 8px;
+    }
+    .social-btm {
+    width: 25px;
+    }
+    .logo-btm {
+    width: 55px;
+    }
+    }
+    @media all and (max-width: 330px) {
+    .logo {
+    width: 48px;
+    }
+    .sms {
+    font-size: 10px;
+    }
+    .vpc {
+    font-size: 7px;
+    letter-spacing: 0px;
+    }
+    .social {
+    width: 15px;
+    }
+    .reviews {
+    width: 100px;
+    height: 100px;
+    }
+    .vdo {
+    width: 260px;
+    }
+    .form {
+    padding: 15px 25px;
+    }
+    .idea {
+    font-size: 10px;
+    }
+    .help {
+    font-size: 7px;
+    }
+    .field {
+    font-size: 6px;
+    }
+    .textarea {
+    font-size: 6px;
+    }
+    .social-btm {
+    width: 18px;
+    }
+    .copyright {
+    font-size: 7px;
+    }
+    .logo-btm {
+    width:40px;
+    }
+    }
+    @media all and (max-width: 280px) {
+    .logo {
+    width: 36px;
+    }
+    .sms {
+    font-size: 8px;
+    }
+    .vpc {
+    font-size: 6px;
+    letter-spacing: 0px;
+    }
+    .social {
+    width: 10px;
+    }
+    .reviews {
+    width: 80px;
+    height: 80px;
+    }
+    .vdo {
+    width: 220px;
+    }
+    .idea {
+    font-size: 8px;
+    }
+    .help {
+    font-size: 6px;
+    }
+    .field {
+    font-size: 6px;
+    }
+    .textarea {
+    font-size: 6px;
+    }
+    .copyright {
+    font-size: 5px;
+    }
+    .sign-up {
+    font-size: 6px;
+    }
+    }
