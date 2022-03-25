@@ -2041,6 +2041,27 @@ h4 {
 		font-size: 14px;
 		margin: 20px 5px;
 	}
+  .col {
+		width: 240px;
+	}
+  .par-front {
+		font-size: 20px;
+	}
+  .par-front-calc {
+		padding: 80px 20px;
+	}
+	.par-front-weather {
+		padding: 70px 20px;
+	} 
+  .par-back {
+		font-size: 13px;
+	}
+	.par-back-weather {
+		font-size: 12px;
+	}
+	.project-btn {
+		padding: 3px 15px;
+	}
 	.header {
 		font-size: 25px;
 	}
