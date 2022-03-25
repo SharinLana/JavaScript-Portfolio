@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lana Sharin's Portfolio | Siberian Recipes</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main-nav-container">
+         <div class="navOne">
+            <div class="headerParent">
+               <h1 class="header">Siberian Cuisine</h1>
+               <h4 class="author">Recipes by Natalia Okoneshnikova</h4>
+            </div>
+            <!-- Timer -->
+            <div class="timer-parent">
+               <audio id="audio" src="alarm.mp3" type="mp3"></audio>
+               <span class="closeBtn">&times;</span>
+               <div class="timer-header-container">
+                  <p class="timer-header">What is the cooking time <br> (in minutes)?</p>
+                  <p class="timer-header-two">Time left:</p>
+               </div>
+               <div class="timer-input-parent"> 
+                  <input id="timer" type="text" placeholder="Values: digits and '.'" required>
+               </div>
+               <p class="time-left">00 : 00 : 00</p>
+               <div class="timer-btn-container">
+                  <button id="start" class="timerBtn">Start</button>
+                  <button id="pause" class="timerBtn">Pause</button>
+                  <button id="resume" class="timerBtn">Resume</button>
+                  <button id="reset" class="timerBtn">Reset</button>
+               </div>
+            </div>
+            <div class="right-nav-container">
+               <!-- Rus / Eng -->
+               <div class="ru-eng-container"> 
+                  <a href="index.html"><button class="language-btn ru">RUS</button></a>
+                  <a href="indexEng.html"><button class="language-btn eng">ENG</button></a>
+                  <a href="file:///Users/svetlanasharina/Desktop/JavaScript/PROJECTS/Portfolio/calculators.html"><button class="language-btn back-to-calc">EXIT</button></a>
+               </div>
+               <!-- Search Field -->
+               <input id="search" type="text" placeholder="Search">
+               <!-- Mass cobverter -->
+               <div class="converter-container">
+                  <div class="inner-converter-container">
+                     <div class="vertical-one">
+                        <select id="selectOne" class="selector">
+                           <option selected disabled value="option">Select</option>
+                           <option disabled>MASS MEASURES</option>
+                           <option value="gram">Grams</option>
+                           <option value="kg">Kilograms</option>
+                           <option value="lb">Pounds</option>
+                           <option value="oz">Ounces</option>
+                           <option disabled>VOLUME MEASURES</option>
+                           <option value="ml">Ml</option>
+                           <option value="liter">Liters</option>
+                           <option value="gal">Gallons</option>
+                           <option value="pint">Pints</option>
+                           <option value="lq-oz">Fl. ounces</option>
+                        </select>
+                        <input id="inputOne" type="text" placeholder="5" class="input-field">
+                     </div>
+                     <img class="equals" src="equals.png" alt="" width="35">
+                     <div class="vertical-two">
+                        <input id="inputTwo" type="text" placeholder="Result" class="input-field" disabled>
+                        <select id="selectTwo" class="selector">
+                           <option selected disabled value="option">Select</option>
+                           <option disabled>MASS MEASURES</option>
+                           <option value="gram" class="mass">Grams</option>
+                           <option value="kg" class="mass">Kilograms</option>
+                           <option value="lb" class="mass">Pounds</option>
+                           <option value="oz" class="mass">Ounces</option>
+                           <option disabled>МЕРЫ ОБЪЕМА</option>
+                           <option value="ml" class="volume">Ml</option>
+                           <option value="liter" class="volume">Liters</option>
+                           <option value="gal" class="volume">Gallons</option>
+                           <option value="pint" class="volume">Pints</option>
+                           <option value="lq-oz" class="volume">Fl. ounces</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <!-- Buttons (Timer, Converter, Go Back) -->
+               <div class="timer-calc-container"> 
+                  <button class="appBtn timer-btn">Kitchen Timer</button>
+                  <button class="appBtn converter-btn">Mass Converter</button>
+                  <button class="appBtn back-btn">Go Back</button>
+               </div>
+            </div>
+         </div>
+         <div class="navTwo">
+            <nav>
+               <a href="#soups" class="link">Soups</a>
+               <a href="#secondCourse" class="link">Second Course</a>
+               <a href="#savory_pastries" class="link">Savory Pastries</a>
+               <a href="#sweet_pastries" class="link">Sweet Pastries</a>
+               <a href="#cakes" class="link">Cakes</a>
+            </nav>
+         </div>
+      </div>
+      <section id="soups"></section>
+      <h1 class="courseName">Soups</h1>
+      <!-- рецепты супов -->
+      <div class="container">
+         <div class="recepie">
+            <h3>Tomato soup with mussels</h3>
+            <img src="Soup_1.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>500 gr frozen mussels in the wings;</li>
+               <li>10 medium sized tomatoes;</li>
+               <li>1 bell pepper medium size;</li>
+               <li>1 onion;</li>
+               <li>2-3 cloves of garlic;</li>
+               <li>50 ml cream 20%;</li>
+               <li>greens (parsley and basil);</li>
+               <li>salt and pepper to taste;</li>
+               <li>1 -2 tsp sugar;</li>
+               <li>1/2 tsp sweet paprika (not spicy), but you can skip this option;</li>
+               <li>juice of half a lemon;</li>
+               <li>olive oil for frying</li>
+               <li>1 cup water (or broth)</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Fry finely chopped onions, garlic in olive oil in a saucepan, add tomatoes and peppers, spices, greens, cut into medium pieces, pour water (or broth), mix and cook on a small fire for 15-20 minutes. <br> While the soup is stewing, take out the frozen mussels from the freezer, without defrosting, put them in a saucepan and set a large fire for 3 minutes, then reduce the fire to a small one, sprinkle with lemon juice and cook under a closed lid for another 3-4 minutes (do not add pepper and salt) . Mussels are ready. <br> Add cream to the boiled soup and puree with a blender. You can put the soup on the plate first, and then the mussels on top, it’s more aesthetic, sprinkle with herbs, serve with fried bread and enjoy</p>
+         </div>
+         <div class="recepie">
+            <h3>Pea soup</h3>
+            <img src="Soup_2.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 2 liters of water):</h4>
+            <ul>
+               <li>300 grams dried split peas;</li>
+               <li>400 grams of smoked meat (smoked pork ribs, smoked chicken leg or chicken wings are suitable);</li>
+               <li>1 onion;</li>
+               <li>1 carrot;</li>
+               <li>3 potatoes;</li>
+               <li>a bunch of dill;</li>
+               <li>2 bay leaves;</li>
+               <li>5-7 peas of allspice;</li>
+               <li>salt and pepper to taste;</li>
+               <li>crackers for serving;</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Thoroughly wash the peas in water. Put in a saucepan, pour a liter of water and bring to a boil, then cook over low heat for 3 minutes and drain the water. Let's do the same again. <br> For the third time, pour 2 liters of water, bring to a boil, remove the foam, put pieces of smoked meat there, close the lid and cook for 30-40 minutes over low heat (see the cooking time on the package). If the peas are whole and soaked overnight, boil for 1 hour. <br> At this time, you can dry the crackers and cook the frying. Finely chop the onion and fry in vegetable oil, add the carrots grated on a coarse grater and fry for a couple of minutes. <br> Take out the meat from the soup, cut it into pieces, remove the bones. Add fried meat, medium diced potatoes, spices to the soup and cook until the potatoes are ready. At the end, add greens, serve with crackers. Bon Appetit!</p>
+         </div>
+         <div class="recepie">
+            <h3>Lagman with chicken</h3>
+            <img src="Soup_3.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>500 grams chicken (breast or fillet);</li>
+               <li>1 large onion;</li>
+               <li>1 large carrot;</li>
+               <li>2 tomatoes;</li>
+               <li>1 red bell pepper;</li>
+               <li>2 cloves of garlic;</li>
+               <li>2 tbsp tomato paste;</li>
+               <li>500 ml of water;</li>
+               <li>2 bay leaves;</li>
+               <li>5-6 peas of allspice;</li>
+               <li>salt and pepper to taste;</li>
+               <li>a bunch of greens;</li>
+               <li>4-6 nests of noodles depending on the size;</li>
+               <li>vegetable oil for frying</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Tomatoes, carrots and bell peppers are cut into medium cubes. Finely chop the onion, herbs, garlic. Cut the chicken into large pieces. <br> Prepare the sauce: Fry the onion in vegetable oil until golden brown, add carrots, peppers, tomatoes, stir. Add tomato paste, pour water (500 ml), salt, pepper, add garlic, bay leaf, allspice, stir, cover and simmer over low heat for about 10 minutes. <br> Fry the chicken until light golden (do not need to dry out for a long time), salt, pepper and add the fried chicken to the sauce, sprinkle with herbs, mix and remove from heat. <br> Put the nests in boiling salted water (1 liter), add vegetable oil. Cook for 10-12 minutes (see package). If you like Lagman thinner, you can add boiled water from noodles to the sauce. If you like thick Lagman, you can not add. <br> We put the finished noodles in a plate or bowl, pour sauce with chicken, add chopped greens and enjoy. This is so delicious!</p>
+         </div>
+         <div class="recepie">
+            <h3>Cheese soup</h3>
+            <img src="Soup_4.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (per 1 liter of water):</h4>
+            <ul>
+               <li>3-4 chicken drumsticks;</li>
+               <li>2 potatoes ;</li>
+               <li>1 carrot;</li>
+               <li>1 onion;</li>
+               <li>2-3 cloves of garlic;</li>
+               <li>100 ml of 20% cream;</li>
+               <li>100 grams of processed cheese;</li>
+               <li>salt and pepper to taste</li>
+               <li>2 bay leaves;</li>
+               <li>5 peas of allspice;</li>
+               <li>A few slices of baguette or white bread;</li>
+               <li>15-10 grams of unsalted butter;</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Boil the drumsticks in 1 liter of salted water until tender. Cut potatoes, carrots, onions coarsely, garlic into halves and lightly fry in vegetable oil in a saucepan. <br> Pour vegetables with 500 ml of broth, add bay leaf and allspice peas, pepper, salt lightly (since the broth is salty) and cook until the vegetables are ready. <br> At this time, cut the baguette (loaf, bread) into cubes and fry with butter. <br> When the vegetables are cooked, take out the bay leaf, allspice, add cream and melted cheese, mix until the cheese is dissolved and puree with a blender. We spread it in a soup plate, on top of the croutons, chicken meat and greens. Ready! Bon Appetit 🤗 </p>
+         </div>
+         <div class="recepie">
+            <h3>Borsch</h3>
+            <img src="Soup_5.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 3 liters of water):</h4>
+            <ul>
+               <li>3 pieces of meat on the bone, 200 grams each (preferably drumsticks);</li>
+               <li>2 beets;</li>
+               <li>2 carrots;</li>
+               <li>3 potatoes;</li>
+               <li>1/4 head of cabbage;</li>
+               <li>1 onion;</li>
+               <li>3 cloves of garlic;</li>
+               <li>2 bay leaves;</li>
+               <li>3 tbsp tomato paste (or 2-3 fleshy tomatoes);</li>
+               <li>5 peas of allspice;</li>
+               <li>1 tsp sugar;</li>
+               <li>сslat and pepper to taste</li>
+               <li>herbs</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Put the meat in a saucepan with water and boil for 1.5 hours over low heat, removing the foam. At this time, prepare vegetables: cut the beets into thin strips, three carrots on a grater, chop the cabbage, chop the onion finely. <br> Fry the onion in vegetable oil until golden brown, add carrots, beets, tomato paste, half a glass of broth from the pan, salt, pepper lightly and add sugar, mix and simmer over low heat for about 10 minutes. <br> After 1.5 hours, put cabbage, bay leaf, allspice peas, salt, pepper, close the lid. At this time, clean the potatoes, cut them into cubes, add them to the pan, fry them there, stir and cook until the potatoes are ready. <br> A couple of minutes before readiness, add finely chopped greens and garlic through a garlic press.</p>
+         </div>
+         <div class="recepie">
+            <h3>Shchi with fresh cabbage</h3>
+            <img src="Soup_6.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 3 liters of water):</h4>
+            <ul>
+               <li>400 grams of beef (2 pieces - one with a bone for richness, the second with pulp);</li>
+               <li>200 grams fresh cabbage;</li>
+               <li>2 onions;</li>
+               <li>3 potatoes;</li>
+               <li>2 tomatoes;</li>
+               <li>1 carrot;</li>
+               <li>2 cloves of garlic;</li>
+               <li>herbs</li>
+               <li>2 bay leaves;</li>
+               <li>5 peas of allspice;</li>
+               <li>Salt and pepper to taste</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>In a saucepan, bring the water to a boil and put the meat (there will be less foam and lumps), the whole onion, bay leaf, allspice and peas and cook the meat until cooked over low heat for about 1.5 -2 hours. When the meat becomes soft, take it out and cut it into pieces (we take out the onion, we will no longer need it). <br> Add chopped cabbage, diced potatoes, meat, salt and pepper to the broth and continue to cook over low heat. <br> In the meantime, cut the second onion and fry until golden brown in vegetable oil, add finely chopped carrots and chopped and peeled tomatoes, garlic through the garlic squeezer, mix and simmer for about 5 minutes, add the roast to the soup, cook until the potatoes are ready, for a minute until cooked, put finely chopped greens. Serve with sour cream, bon appetit! 🤗 </p>
+         </div>
+      </div>
+      <section id="secondCourse"></section>
+      <h1 class="courseName">Second Course</h1>
+      <!-- Вторые Блюда -->
+      <div class="container">
+         <div class="recepie">
+            <h3>Beef cutlets</h3>
+            <img src="Second_course_1.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>2 small onions;</li>
+               <li>about half a loaf of white bread</li>
+               <li>salt and pepper to taste</li>
+               <li>80-100 ml cold water</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Cut the bread into slices, remove the crusts and, without crumbling, fill it with water (the amount of water depends on the capacity, it does not matter in principle, since we will squeeze out the water). Let the bread soften in water for a few minutes, do not squeeze too hard. The bread crumb should be about a third (at least a quarter) of the amount of meat. <br> First we scroll the meat, then the onion, then the crumb in the meat grinder, add salt and pepper, water, stir and beat off. But instead of beating, you can beat with a mixer until smooth for several minutes, remove the veins remaining on the whisks. <br> Form cutlets of the size you need, roll in flour or breadcrumbs and fry on both sides, then close the lid and bring to readiness over low heat.</p>
+         </div>
+         <div class="recepie">
+            <h3>Potato pancakes</h3>
+            <img src="Second_course_2.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>800 grams - 1 kg of potatoes;</li>
+               <li>2 medium sized onions;</li>
+               <li>about 1 tsp salt;</li>
+               <li>pepper to taste;</li>
+               <li>sour cream and herbs for serving</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Prepare the onions first, as the potatoes darken quickly. Grind the onion in a blender or grate on a fine grater. Grate peeled potatoes on a fine grater in a separate bowl, put on a sieve and drain the excess liquid or squeeze with your hands. Starch will remain in the liquid at the bottom, you can add it back. <br> Add onion, salt, pepper to potatoes, stir. <br> Scoop up the mixture with a tablespoon and form a cake with our hands, put it on a preheated pan, with a small amount of vegetable oil. Fry over low heat on both sides. Draniki keep their shape well, turn over with a spatula. Serve with sour cream and herbs. You can add garlic to sour cream through a press.</p>
+         </div>
+         <div class="recepie">
+            <h3>Chicken nuggets</h3>
+            <img src="Second_course_3.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>800 grams chicken fillet;</li>
+               <li>4 eggs;</li>
+               <li>1 loaf of bread for crackers;</li>
+               <li>1 tsp salt;</li>
+               <li>pepper to taste</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Ingredients:</h4>
+            <p>Cut the loaf into pieces, dry it on breadcrumbs in the oven, chop (I put it in a bag and chop it with a rolling pin). <br> Cut the fillet into medium pieces. Whisk the eggs with salt and pepper. Dip each piece in the egg mixture, then roll in breadcrumbs and repeat the procedure. You can make it once, but if you dip and roll twice, they will be more crispy. <br> Fry in vegetable oil over medium heat on both sides. Drain on paper towels and serve with any sauce of your choice.</p>
+         </div>
+         <div class="recepie">
+            <h3>Zucchini rolls with chicken</h3>
+            <img src="Second_course_4.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>1 medium sized zucchini;</li>
+               <li>400 grams of chicken meat (fillet or breast);</li>
+               <li>3 cloves of garlic;</li>
+               <li>a bunch of dill;</li>
+               <li>1 onion;</li>
+               <li>200 ml of cream;</li>
+               <li>100-150 grams of tomato sauce (you can use ketchup);</li>
+               <li>100-150 grams cheese</li>
+               <li>salt and pepper</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Boil the chicken meat in salted water, then grind the meat into small fibers. <br> Fry the onion in vegetable oil, add chicken, finely chopped dill and garlic, salt and pepper, pour cream and simmer over medium heat for literally 2 minutes. <br> Cut the zucchini into thin slices. We put the filling in each slice, wrap it up and put it in a baking dish. Salt and pepper the rolls, spread the tomato sauce, grated cheese and send it to the oven at 200 g for 15 minutes. </p>
+         </div>
+         <div class="recepie">
+            <h3>Salmon on vegetables in a creamy blanket</h3>
+            <img src="Second_course_5.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>500 grams salmon;</li>
+               <li>1 zucchini;</li>
+               <li>1 carrot;</li>
+               <li>1 onion;</li>
+               <li>1 small tomato;</li>
+               <li>250 grams sour cream;</li>
+               <li>50-70 grams hard cheese;</li>
+               <li>bunch of dill;</li>
+               <li>1/2 lemon;</li>
+               <li>1 clove of garlic;</li>
+               <li>salt, pepper to taste</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Wash the salmon, cut it into 4 pieces, remove the skin, salt and pepper on both sides and sprinkle lightly with lemon juice. <br> Zucchini and carrots cut into thin slices. Cut the onion into quarter rings, add 1/2 tsp. salt, chopped dill, mix and knead with your hands. <br> In a separate bowl, mix sour cream, grated cheese, garlic through a press, pepper and salt lightly. <br> Put parchment on a baking sheet, grease with oil. We spread the vegetables, salt and pepper, sprinkle with olive or vegetable oil, spread the salmon, onion, sauce on the salmon, put a little cubed tomato and a slice of lemon on the sauce. <br> Send it to the oven preheated to 200 gr for 20 minutes.</p>
+         </div>
+         <div class="recepie">
+            <h3>Stuffed boats</h3>
+            <img src="Second_course_6.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>Large zucchini 1.5 kg (or 2 medium zucchinis);</li>
+               <li>200 grams of chicken meat (fillet, breast or minced meat);</li>
+               <li>200 grams noodles "horns";</li>
+               <li>150 grams cream;</li>
+               <li>150-200 grams of suluguni (or any cheese to taste);</li>
+               <li>1 onion;</li>
+               <li>1-2 cloves of garlic;</li>
+               <li>herbs (parsley, dill);</li>
+               <li>salt and pepper</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Cut the zucchini lengthwise, remove the seeds, the pulp is useful to us, we also take it out, leaving about 1 cm thick boats. <br> Let's do the stuffing. Boil the horns until half cooked in salted water. Fry the onion until golden brown in a small amount of vegetable oil, add the chicken meat, cut into small pieces, fry for a minute, add the zucchini pulp, chopped into pieces, finely chopped garlic, herbs, cream, salt, pepper, mix and simmer for 7-10 minutes under closed lid over low heat. Add horns and mix. <br> Fill the boats with the filling, add grated or sliced cheese on top and send it to the oven preheated to t = 200°C for 15-20 minutes on the lower level of the oven. Bon Appetit 🤗 </p>
+         </div>
+      </div>
+      <!-- Несладкая выпечка -->
+      <section id="savory_pastries"></section>
+      <h1 class="courseName">Savory Pastries</h1>
+      <div class="container">
+         <div class="recepie">
+            <h3>Pie with chicken and zucchini</h3>
+            <img src="Savory_1.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>350 grams flour;</li>
+               <li>220 grams butter;</li>
+               <li>1 yolk;</li>
+               <li>a pinch of salt;</li>
+               <li>5-6 tbsp water</li>
+            </ul>
+            <h5>Filling:</h5>
+            <ul>
+               <li>300-350 grams of chicken meat;</li>
+               <li>1 medium sized zucchini;</li>
+               <li>1 onion;</li>
+               <li>150 grams of cream;</li>
+               <li>100 grams cheese;</li>
+               <li>3 eggs;</li>
+               <li>herbs;</li>
+               <li>salt and pepper to taste</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>In the sifted flour, add cold, grated butter, wash into crumbs. Add egg yolk, water and knead the dough. Divide it into 2 parts (one larger, the second smaller, for the top), roll it up, put it in a mold, make punctures with a fork. Roll out the second part and make the eyes and mouth of the "pumpkin". Send it to the refrigerator.</p>
+            <p>Fry the onion cut into half rings, add the chicken cut into medium pieces, fry lightly. Add zucchini, peeled from seeds and cut into thin half rings, garlic, salt, pepper, stir and simmer for 5 minutes. Cool, drain off excess liquid. At this time, put the form with the dough in the oven at 200°C mode top to bottom for 15 minutes, so that the dough is slightly baked.</p>
+            <p>Make the filling: Add eggs, grated cheese, herbs to the cream, stir. Maybe a little salt, as the cheese is salty.</p>
+            <p>Spread the filling in a form with dough, fill it with filling, put the dough with the “face” on top, grease with an egg and bake at 200°C for about 30 minutes. Decorate with green onions. Bon Appetit!</p>
+         </div>
+         <div class="recepie">
+            <h3>Baked pies with cabbage</h3>
+            <img src="Savory_2.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>500 grams of flour;</li>
+               <li>300 ml of warm water;</li>
+               <li>6 tbsp of vegetable oil;</li>
+               <li>7 grams of dry yeast;</li>
+               <li>2 tbsp of sugar;</li>
+               <li>1 tsp of salt</li>
+            </ul>
+            <h5>Filling:</h5>
+            <ul>
+               <li>500 grams of cabbage;</li>
+               <li>1 carrot;</li>
+               <li>1 onion;</li>
+               <li>bunch of dill;</li>
+               <li>salt and pepper to taste;</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>In warm water, add sugar, yeast, 2 tbsp. flour from the total mass, stir with a whisk, leave covered with a film for 15-20 minutes. If foam appears, yeast is active, add vegetable oil, salt. Sift the flour to the dough, stir first with a spoon, then knead with your hands for 7-10 minutes on a surface sprinkled with flour. If the flour is not enough, sticky, you can add a little. Put in a bowl greased with vegetable oil, cover with a towel and leave to rise for an hour.</p>
+            <p>At this time, prepare the filling, cut the cabbage into thin strips, salt and knead with your hands so that the juice stands out. Fry the onion until golden brown, add cabbage and grated carrots, stir, simmer for 5 minutes, add greens, pepper, taste for salt.</p>
+            <p>Divide the risen dough into 16 balls, form pies (you can have a classic shape, you can curly), put on a baking sheet, greased with butter, grease with a mixture of eggs and milk (if lean, do not grease) and bake for about 20 minutes at 180°C. In the middle of baking, you can brush with an egg a second time, so the risen barrels will also be greased. Bon Appetit!</p>
+         </div>
+         <div class="recepie">
+            <h3>Zucchini waffles with cheese and herbs</h3>
+            <img src="Savory_3.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>1 large zucchini;</li>
+               <li>2 eggs;</li>
+               <li>2 cloves of garlic;</li>
+               <li>70 grams of floor;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>pepper to taste;</li>
+               <li>herbs (dill, parsley);</li>
+               <li>40-50 grams hard cheese</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Peel the zucchini from the peel and seeds, three on a coarse grater, salt and mix. Salt helps the zucchini to excrete excess juice. Squeeze the zucchini from excess liquid. Add eggs, flour, garlic through a press, grated cheese, greens and pepper to the zucchini. Stir until smooth. <br> Lubricate the waffle iron with a brush with oil, heat it up well, put the dough into the waffle iron with a ladle and fry until golden brown. If you fry in a pan, then put the pancakes with a tablespoon on a frying pan heated with vegetable oil and fry over low heat on both sides, carefully turning over with a spatula, as the cheese melts during frying and the dough becomes softer. <br> Put the finished pancakes on a paper towel, the waffles are not greasy, you can immediately put them on a plate and serve with sour cream.</p>
+         </div>
+         <div class="recepie">
+            <h3>Lazy khachapuri</h3>
+            <img src="Savory_4.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 12 pieces):</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>250 ml of kefir;</li>
+               <li>1/2 tsp of soda;</li>
+               <li>1 tsp of salt;</li>
+               <li>40 grams of unsalted butter;</li>
+               <li>350 grams of floor</li>
+            </ul>
+            <h5>Fillig:</h5>
+            <ul>
+               <li>300 grams suluguni cheese;</li>
+               <li>1 egg;</li>
+               <li>40 ml of milk;</li>
+               <li>herbs (dill, scallion)</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Add soda to kefir, stir. After 5 minutes, sift flour with salt into kefir, add melted butter, stir the dough (first with a spoon, then with your hands). The dough is not tight and not sticky, wrap it in a film and leave it at room temperature.</p>
+            <p>At this time, prepare the filling: grate cheese on a grater, add the egg, herbs, milk and stir with a fork. Form a sausage from the dough and cut into 12 pieces, cover with a film so that it does not weather. Roll each ball of dough into a cake with a diameter of 14-15 (the dough is thicker in the center, thinner at the edges), put 1 tbsp filling in the center, fasten the edges like pies, twist the ends, turn the seam down and flatten with your palm.</p>
+            <p>Fry in a dry frying pan over low heat on both sides. Grease the finished cakes with melted butter, if desired.</p>
+         </div>
+         <div class="recepie">
+            <h3>Vegetable biscuit with curd cheese</h3>
+            <img src="Savory_5.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>100 grams of unsalted butter;</li>
+               <li>200 grams of floor;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>herbs;</li>
+               <li>2 cloves of garlic;</li>
+               <li>4 tbsp of water</li>
+            </ul>
+            <h5>Fillig:</h5>
+            <ul>
+               <li>2 tomatoes;</li>
+               <li>1 small zucchini (or eggplant);</li>
+               <li>1 onion;</li>
+               <li>1-2 green peppers;</li>
+               <li>150 grams of curd cheese;</li>
+               <li>slat and pepper to taste;</li>
+               <li>herbs;</li>
+               <li>olive oil (2 tbsp);</li>
+               <li>egg for greasing the dough</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift flour, add cold butter in cubes, salt, chopped herbs and garlic through a press, knead everything into crumbs, add water, roll the dough into a ball and send it to the refrigerator. Cut all the vegetables into circles, chop the greens, clean the pepper from the seeds and cut into rings.</p>
+            <p>Take out the dough, roll it out on a surface powdered with flour into a circle, cut off uneven edges, put the dough on a baking sheet with parchment (since it will be difficult to drag the biscuit onto a baking sheet later). Grease the center with curd cheese, put vegetables on it, alternating, salt, pepper, add Provencal herbs, sprinkle with olive oil, sprinkle with herbs. Brush the edges of the pastry with the egg. Send to the oven preheated to 200°C for 40-45 minutes. Bon Appetit 🤗</p>
+         </div>
+         <div class="recepie">
+            <h3>Shangis with potatoes and mushrooms</h3>
+            <img src="Savory_6.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>470 grams of floor;</li>
+               <li>130 ml of milk;</li>
+               <li>30 grams of unsalted butter;</li>
+               <li>2 tbsp of sour cream;</li>
+               <li>1 egg;</li>
+               <li>1/2 tsp of salt</li>
+            </ul>
+            <h5>Fillig:</h5>
+            <ul>
+               <li>500 grams of potatoes;</li>
+               <li>1 onion;</li>
+               <li>400 grams of mushrooms;</li>
+               <li>herbs;</li>
+               <li>salt and pepper to taste;</li>
+               <li>50 grams of unsalted butter;</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift the flour into a bowl, make an indentation, melt the butter, add all the other ingredients into the indentation and stir a fairly dense dough, wrap it with cling film and leave to rest.</p>
+            <p>Meanwhile, boil the potatoes in salted water. Fry the onion and add the mushrooms (if it’s wild, boil it first, if it’s mushrooms, then just wash it and cut it, if it’s marinated, then don’t fry it), salt and pepper to taste, fry until the excess liquid has evaporated and light golden. Mash the boiled potatoes in mashed potatoes, after draining the water, add butter, fried mushrooms, herbs, if the potatoes are loose, you can add one raw egg to the filling, stir everything.</p>
+            <p>Divide the dough into 16 pieces, roll each into a cake, put the filling in the center and pinch the edges. Put shangi on a baking sheet with parchment, greased with oil, grease with egg and send to the oven preheated to 190°C for 20-25 minutes. Bon Appetit!</p>
+         </div>
+      </div>
+      <section id="sweet_pastries"></section>
+      <h1 class="courseName">Sweet Pastries</h1>
+      <!-- Cладкая выпечка -->
+      <div class="container">
+         <div class="recepie">
+            <h3>Honey and sugar buns</h3>
+            <img src="Pastries_1.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>500 grams of floor;</li>
+               <li>100 ml of warm milk;</li>
+               <li>100 ml of warm water;</li>
+               <li>7 grams of dry yeast;</li>
+               <li>70 grams of sugar (+ 30 grams for sprinkling);</li>
+               <li>3 tsp of vanilla sugar;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>50 grams of unsalted butter;</li>
+               <li>2 yolks and 1 egg;</li>
+               <li>honey</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Pour water, milk, 1 tsp into a bowl. sugar, 1 tbsp flour, yeast and stir with a whisk, cover with a film and leave to revive the yeast for 20 minutes.</p>
+            <p>Add sugar, vanilla sugar, salt, melted butter to the yolks and stir.</p>
+            <p>If foam appears in the dough, then the yeast is good, you can work with it. Add the yeast to the egg mixture, stir with a whisk, sift the flour and stir first with a spoon, then with your hands. The dough should not be tight, you can grease your hands with vegetable oil and knead the dough until smooth into a ball.</p>
+            <p>Put the dough in a clean, oiled bowl and leave it in a warm place for 1-1.5 hours to rise, covered with a towel (I put it on a bowl of warm water of a smaller diameter so that the water does not touch the bottom).</p>
+            <p>Divide the dough into 12 balls, roll each ball into a thin cake, grease with honey, sprinkle with sugar and roll into a sausage, fasten the ends of the sausage, cut it along with a knife and open it, it turns out a heart.</p>
+            <p>Put the buns on a baking sheet with parchment, greased with oil and leave to rise for 20 minutes, grease with a mixture of eggs and 1 tbsp, milk, sprinkle with sugar and send to the oven preheated to 180°C for 20-25 minutes, on the penultimate tier from below in the mode top them. In the middle of baking, you can again brush with a mixture of eggs and milk.</p>
+         </div>
+         <div class="recepie">
+            <h3>Crispy brushwood</h3>
+            <img src="Pastries_2.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>400 grams of floor;</li>
+               <li>2 eggs;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>2 tbsp of sugar;</li>
+               <li>1 tbsp of alcohol;</li>
+               <li>1 tsp of soda;</li>
+               <li>120 ml of milk;</li>
+               <li>vegetable oil for frying;</li>
+               <li>powdered sugar for dusting</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift flour, soda, salt into a bowl, add sugar and stir with a whisk. Add milk to the eggs, stir, make a well in the flour and pour the eggs with milk and alcohol into the flour. Knead into a smooth, non-sticky dough. Put the dough in a bag and leave to rest for 30 minutes.</p>
+            <p>Divide into 3 parts. Roll out each part sooooo thinly, until translucent. We cut it into small arbitrary shapes (rectangles, squares, whatever your heart desires). Heat vegetable oil (the amount to drown the brushwood in it) and put on a small fire.</p>
+            <p>The brushwood is fried very quickly, so make the preparations in advance (cover with a towel so as not to dry) and then fry. Put in small portions and take out on a paper towel. Sprinkle generously with powdered sugar.</p>
+         </div>
+         <div class="recepie">
+            <h3>Fruit yogurt pie</h3>
+            <img src="Pastries_3.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (per 18 cm diameter mold):</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>100 grams of unsalted butter;</li>
+               <li>120 grams of sugar;</li>
+               <li>2 tsp of vanilla sugar;</li>
+               <li>150 grams of floor;</li>
+               <li>1 tbsp of sugar for sprinkling;</li>
+               <li>100 grams of thick yogurt;</li>
+               <li>2 eggs;</li>
+               <li>1 tsp of baking powder</li>
+            </ul>
+            <h5>Crumble:</h5>
+            <ul>
+               <li>80 grams of unsalted butter;</li>
+               <li>100-110 grams of floor;</li>
+               <li>70 grams of sugar;</li>
+               <li>1 tsp of vanilla sugar;</li>
+               <li>5 apricots and 100-150 grams cherries for filling</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Make the dough: beat butter at room temperature with sugar and vanilla sugar, add eggs one at a time, beating each time. Then sift flour with baking powder and stir with a spatula until smooth, add yogurt and beat with a mixer.</p>
+            <p>In a separate bowl, prepare crumbs - sift the flour, add sugar and vanilla sugar, butter and rub into crumbs.</p>
+            <p>Put the dough in a greased form, put a layer of washed and pitted cherries and apricots, sprinkle with sugar. Spread crumbs over fruit.</p>
+            <p>Bake the cake for about 40-50 minutes at 180°C. Check readiness with a skewer. Remove the form from the oven, cool slightly and cut into portioned pieces.</p>
+         </div>
+         <div class="recepie">
+            <h3>Buns with poppy seeds</h3>
+            <img src="Pastries_4.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 10-12 buns):</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>500 grams of floor;</li>
+               <li>100 ml of warm milk;</li>
+               <li>100 ml of warm water;</li>
+               <li>7 grams of dry yeast;</li>
+               <li>50 grams of sugar;</li>
+               <li>3 tsp of vanilla sugar;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>50 grams of unsalted butter;</li>
+               <li>1 egg (+1 for brushing)</li>
+            </ul>
+            <h5>Filling:</h5>
+            <ul>
+               <li>120 grams of poppy seeds;</li>
+               <li>150 grams of condensed milk;</li>
+               <li>1 tsp cinnamon;</li>
+               <li>20 grams of unsalted butter</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Pour warm water, milk, 1 tsp into a bowl. sugar and 2 tbsp flour (from the total amount), salt, yeast and stir with a whisk, cover with a film and leave to revive the yeast for 20 minutes.</p>
+            <p>Melt the butter, cool slightly, add the egg, sugar, vanilla sugar, stir with a whisk until smooth. If foam appears in the dough, then the yeast is good. Add yeast to the egg mixture, stir with a whisk, sift the flour and stir the dough first with a spoon, then with your hands. The dough should not be tight, slightly sticky, you can grease your hands with vegetable oil and knead the dough for 7-10 minutes.</p>
+            <p>Put the dough in a clean, oiled bowl and leave it in a warm place for 1-1.5 hours to rise, covered with a towel (I put it on a bowl of warm water of a smaller diameter so that the water does not touch the bottom).</p>
+            <p>Prepare the filling: rinse the poppy seeds, drain the water through a sieve, put in a bowl, add condensed milk, cinnamon, butter and cook for 15 minutes over low heat, the mass will thicken.</p>
+            <p>Divide the risen dough into 2 equal parts, roll the first part into a rectangle and grease with the filling. Roll the second layer in the same size and cover. Cut into 10-12 strips, fold each strip into a tourniquet and connect the edges, laying on a baking sheet. Let rise for 30 minutes and bake for 20-25 minutes at 180°C, brushing with egg.</p>
+         </div>
+         <div class="recepie">
+            <h3>Cottage cheese cookies</h3>
+            <img src="Pastries_6.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <ul>
+               <li>200 grams of floor;</li>
+               <li>90 grams of unsalted butter;</li>
+               <li>220 grams of cottage cheese;</li>
+               <li>1 yolk;</li>
+               <li>60 grams of powdered sugar;</li>
+               <li>pinch of salt;</li>
+               <li>1 tsp of baking soda;</li>
+               <li>2 tbsp cocoa;</li>
+               <li>boiled condensed milk for stuffing</li>
+            </ul>
+            <br>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Grind cottage cheese with a blender, add butter at room temperature, yolk and bring with a blender until smooth, add salt, baking powder and powdered sugar, stir with a spatula.</p>
+            <p>Sift the flour, stir with a spatula, and then with your hands, it turns out that the dough does not stick to your hands, divide it into 2 balls, one larger, the second smaller. Add cocoa to a smaller ball and knead, at first it will be heterogeneous, it's okay.</p>
+            <p>Roll 15 balls from each dough. Put a little boiled condensed milk into the filling in the dark dough, roll it into a ball, roll the light ball into a cake and put the dark ball with the filling into it and fasten it again.</p>
+            <p>Send the resulting cookies to a baking sheet with parchment, flatten slightly with a lid of milk or vegetable oil, sprinkle with sugar and bake in the oven for about 15 minutes at 180°C until golden brown.</p>
+         </div>
+         <div class="recepie">
+            <h3>Stollen</h3>
+            <img src="Pastries_5.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for 2 stollens):</h4>
+            <ul>
+               <li>250 grams of unsalted butter;</li>
+               <li>250 grams of fine sugar;</li>
+               <li>2 large eggs;</li>
+               <li>250 grams of farmer's cheese;</li>
+               <li>2 tbsp of vanilla sugar;</li>
+               <li>zest and juice of 1 lemon;</li>
+               <li>550-600 grams of sugar;</li>
+               <li>10 grams of baking soda;</li>
+               <li>100 grams of almonds and hazelnuts;</li>
+               <li>150 gr candied fruits;</li>
+               <li>200 gr various raisins;</li>
+               <li>70 grams of rum or liquor (can be replaced with the juice of one orange)</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Beat soft butter with sugar until creamy. Add eggs while continuing to beat. Add cottage cheese grated through a sieve, vanilla sugar, juice and lemon zest. Mix until smooth with a mixer. Add flour sifted with baking powder, stir with a spatula, then knead on the surface sprinkled with flour. The dough should be soft and tender.</p>
+            <p>Add dried fruits soaked overnight in rum (before adding, dry in a paper towel and roll in flour). Mix everything.</p>
+            <p>Divide the dough into 2 parts. From each form oval loaves. Roll out into a rectangle, fold in half. Put the stollen on a baking sheet with parchment and bake in an oven preheated to 170°C for about 1 hour (if it starts to get very dark, cover with foil on top).</p>
+            <p>While the stollen is still warm, brush it with plenty of melted butter and sprinkle generously with powdered sugar.
+               Cooled stollen wrap in parchment, then in foil and send to a cool dry place until the celebration 🤗 Can be aged for 2 weeks
+            </p>
+         </div>
+      </div>
+      <!-- Торты -->
+      <section id="cakes"></section>
+      <h1 class="courseName">Cakes</h1>
+      <div class="container">
+         <div class="recepie">
+            <h3>Pumpkin cake</h3>
+            <img src="Cake_1.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for a mold 18 cm):</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>320 grams of floor;</li>
+               <li>pinch of salt;</li>
+               <li>1 tsp of cinnamon;</li>
+               <li>1 tsp nutmeg;</li>
+               <li>2 tsp of baking powder;</li>
+               <li>1 orange;</li>
+               <li>220 grams of grated raw pumpkin;</li>
+               <li>200 ml of vegetable oil;</li>
+               <li>3 eggs;</li>
+               <li>200 grams of brown sugar;</li>
+               <li>100 grams of walnuts</li>
+            </ul>
+            <h5>Cream:</h5>
+            <ul>
+               <li>300 grams of cream;</li>
+               <li>150 grams of powdered sugar;</li>
+               <li>250 grams of mascarpone</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift flour into a bowl, add all dry ingredients, except sugar, mix with a whisk. Beat eggs with sugar until fluffy foam, add vegetable oil in a trickle, beating with a mixer. Then add grated pumpkin, orange zest and juice of half an orange. Mix until smooth. Add dry mixture and beat until smooth. Add chopped walnuts and mix with a spatula.</p>
+            <p>Put the dough in a greased mold and bake for 40-45 minutes at 180°C. Check readiness with a toothpick. Cool the cake completely and cut it into 3 cakes, cutting off the top crust (it will go to crumbs).</p>
+            <p>Whip cream with powdered sugar until creamy, add mascarpone and beat until smooth. Lubricate each cake with cream, sprinkle the edges with crumbs, decorate according to your imagination.</p>
+         </div>
+         <div class="recepie">
+            <h3>Cake "Monastic hut"</h3>
+            <img src="Cake_2.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>180 grams of cold unsalted butter;</li>
+               <li>330-350 grams of floor;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>200 grams of sour cream</li>
+            </ul>
+            <h5>Cream:</h5>
+            <ul>
+               <li>500 grams of sour cream;</li>
+               <li>150 grams of sugar;</li>
+               <li>1 tsp of vanilla essence;</li>
+               <li>600 grams of jam with pitted cherries;</li>
+               <li>chocolate for sprinkling</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Grate butter from the freezer on a grater on a silicone mat, sift the flour and salt, chop with a knife to crumbs. Add sour cream, chop and roll into a ball with your hands. You don't have to knead for a long time. The main thing is to connect into a ball. It turns out a heterogeneous dough (if the flour turned out to be a bit too much, you can add a little 1-2 tablespoons of water).</p>
+            <p>Divide the dough into 5 pieces and put in the freezer for 30 minutes. We recline the jam on a sieve so that the glass is excess liquid.</p>
+            <p>Take out and roll each piece into a rectangle measuring 30 cm by 20 cm and cut into 3 strips. Put the sweet cherry, roll it up, grease the edge with water and put it on a baking sheet with the seam down. Bake for 20 minutes at 200°C.</p>
+            <p>Add sugar, vanilla sugar to sour cream and stir until sugar dissolves. Dip each “log” into the cream and first lay out 5 logs, then 4, 3, 2, 1. Lightly pour the rest of the cream on top. Send for impregnation for several hours. Sprinkle with chocolate chips when serving.</p>
+         </div>
+         <div class="recepie">
+            <h3>Cake "Anthill"</h3>
+            <img src="Cake_3.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>470 grams of sugar;</li>
+               <li>180 grams of unsalted butter;</li>
+               <li>100 grams of sugar;</li>
+               <li>2 eggs;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>1 tsp of baking powder</li>
+            </ul>
+            <h5>Cream:</h5>
+            <ul>
+               <li>1 can of boiled condensed milk;</li>
+               <li>100 grams of unsalted butter at a room temperature</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift flour with baking powder, add salt, butter cubes and rub into crumbs. Mix the eggs with sugar with a whisk, make a funnel in the crumble and pour the egg mixture into the crumble. Stir first with a spoon, then with your hands, you get a soft, plastic, slightly sticky dough. Divide it into 2 balls and send it to the freezer for 40 minutes.</p>
+            <p>Then get each ball, and grate on a coarse grater directly on a baking sheet with parchment, distribute the dough chips evenly. Makes 2 pans.</p>
+            <p>Bake each baking sheet at a higher than average level so that the bottom of the crumbs does not burn, at 200°C for 8-10 minutes. Put in a bowl, grind with your hands into small pieces, do not overdo it so that you do not get sand.</p>
+            <p>Beat the boiled condensed milk with soft butter until smooth, add to the cooled crumbs and stir. Put on a plate with a slide, you can tamp lightly with gloved hands. Sprinkle chocolate chips or melted chocolate on top. Put into the refrigerator for 2 hours.</p>
+         </div>
+         <div class="recepie">
+            <h3>Napoleon cake</h3>
+            <img src="Cake_4.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>330 grams of floor;</li>
+               <li>180 grams of unsalted butter;</li>
+               <li>2 yolks;</li>
+               <li>1/2 tsp of salt;</li>
+               <li>80 ml of iced water;</li>
+            </ul>
+            <h5>Custard:</h5>
+            <ul>
+               <li>600 ml of milk;</li>
+               <li>1 egg and 3 yolks;</li>
+               <li>60 grams of sugar;</li>
+               <li>2 tsp of vanilla sugar;</li>
+               <li>100 grams of butter;</li>
+               <li>120 grams of sugar</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift the flour on a silicone mat or any surface convenient for you, add salt and grated butter from the freezer on a coarse grater, “chop” with a knife into crumbs (you can chop in a blender). Form a funnel from the crumbs, add the yolks and half of the water there, continue to chop with a knife, add the remaining water, the dough will begin to crumple. Combine the dough with your hands, knead for a short time, only to unite, otherwise the butter will begin to melt. Form 10 balls and send to the freezer for 30 minutes. Get each ball in turn, roll it out thinly, cut out a circle with a diameter of 18 cm, make punctures with a fork, leave the trimmings for crumbs. Bake in the oven at 200°C each cake for about 5-7 minutes. It will turn out 10 cakes and trimmings, 9 cakes will go into the cake, the 10th cake with scraps into crumbs.</p>
+            <p>Make cream: Pour milk into a saucepan, add half of the sugar, put on a small fire. Mix eggs, flour, vanilla sugar and the remaining half of the sugar until smooth in a bowl with a whisk. When the milk boils, remove from heat and pour half of the hot milk in a thin stream into the egg mixture, stirring constantly with a whisk. Then we combine the egg-milk mixture with milk and put on a small fire, stir constantly, the mass will begin to thicken, when the mass becomes creamy, remove from heat and add oil in 2-3 batches, stir with a whisk. If the cream seems watery, you can boil for a few more minutes. Lubricate each cake with a thin layer, grease the outside of the cake and sprinkle with crumbs. Put in the refrigerator for a few hours to soak.</p>
+         </div>
+         <div class="recepie">
+            <h3>Chocolate and cottage cheese pie with strawberries</h3>
+            <img src="Cake_5.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients (for a mold 18 cm):</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>180 grams of floor;</li>
+               <li>110 grams of unsalted butter;</li>
+               <li>3 tbsp of cocoa powder;</li>
+               <li>50 grams of powdered sugar;</li>
+               <li>1 tsp of cinnamon (this ingredient can be skipped);</li>
+               <li>1/2 tsp of salt;</li>
+               <li>1 egg</li>
+            </ul>
+            <h5>Filling:</h5>
+            <ul>
+               <li>230 grams of farmer's cheese;</li>
+               <li>3 eggs;</li>
+               <li>100 grams of sugar;</li>
+               <li>150 grams of sour cream;</li>
+               <li>2 tsp of vanilla sugar;</li>
+               <li>strawberries and chocolate for decoration</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Sift the flour, add all the dry ingredients and stir with a whisk, add the butter to the cubes, knead into crumbs, add the egg, roll the dough into a ball and send it to the refrigerator. <br> Place all the ingredients for the filling (except strawberries) in a bowl and beat with a blender until smooth. <br> Roll out the dough, remove uneven edges, put it in a mold, cut off irregularities if necessary, pour the filling and send it to the oven preheated to 180°C for 50 minutes. <br> Take it out, the filling will rise and settle, as it should be, cool first at room temperature, then in the refrigerator. Take out of the form, decorate with strawberries and chocolate.</p>
+         </div>
+         <div class="recepie">
+            <h3>Chopped cake</h3>
+            <img src="Cake_6.jpg" alt="" width="400">
+            <h4 class="ingredients">Ingredients:</h4>
+            <h5>Dough:</h5>
+            <ul>
+               <li>350 grams of unsalted butter;</li>
+               <li>400 grams of floor;</li>
+               <li>150 ml of iced water</li>
+            </ul>
+            <h5>Filling:</h5>
+            <ul>
+               <li>180 grams of unsalted butter;</li>
+               <li>1/2 can of condenced milk;</li>
+               <li>cowberry jam</li>
+            </ul>
+            <h4 class="ingredients">Cooking:</h4>
+            <p>Remove the butter from the freezer and rub it on a grater, quickly, until it begins to soften, add the flour sifted through a sieve and chop with a sharp knife. Then add water a little bit and chop again, knead a homogeneous dough, divide into 8 equal balls and put in the freezer for 30 minutes.</p>
+            <p>Then get one ball at a time, roll it out thinly, cut out a circle (diameter 18 cm) with a plate, make pricks in several places with a fork and send it to the oven preheated to 200°C. Bake each cake until golden brown. Take out the cakes very carefully, as they turn out to be very airy, crumbly, fragile and with bubbles. Bake the remaining dough scraps separately, this dough will go for crumbs for sprinkling the cake. Cool the cakes.</p>
+            <p>Make cream: beat condensed milk with butter at room temperature until creamy. Lubricate the first cake with cream, the second with cowberry jam, and so on in turn. Lubricate the edges with cream, sprinkle with crumbs and put in the refrigerator for impregnation.</p>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

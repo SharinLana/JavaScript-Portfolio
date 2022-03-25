@@ -1,0 +1,656 @@
+.main-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0px;
+    z-index: 2;
+    }
+    .navOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEFBF3;
+    width: 100%;
+    height: 20vh;
+    }
+    .navTwo {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0%;
+    background-color: #FCD8D4;
+    width: 100%;
+    }
+    .right-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    }
+    .ru-eng-container {
+    display: flex;
+    margin-right: 2%;
+    }
+    .timer-calc-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+    margin-right: 2%;
+    }
+    .language-btn {
+    font-size: 12px;
+    padding: 6px 16px;
+    margin: 15px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FCD8D4;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px 0px 2px #787A91;
+    cursor: pointer;
+    color: white; 
+    }
+    .ru {
+    background-image: url(ru.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+    .eng {
+    background-image: url(eng.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+    .back-to-calc {
+        background-color: #AA3A3A;
+    }
+    .appBtn {
+    font-size: 13px;
+    padding: 8px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #AA3A3A;
+    color: white;
+    cursor: pointer;
+    }
+    .back-btn {
+    display: none;
+    }
+    /* MASS CONVERTER */
+    .converter-container {
+    display: flex;
+    display: none;
+    }
+    .inner-converter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4%;
+    }
+    .vertical-one{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    .vertical-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .selector {
+    font-size: 15px;
+    -webkit-appearance: menulist-button; /* changed the appearance of the element*/
+    height: 35px; /* changed the element's size*/
+    color: #626374; 
+    border: none;
+    background-color: #787a911a !important; 
+    width: 130px;
+    }
+    select:focus {
+    outline:none; 
+    }
+    .input-field {
+    width: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #787a911a;
+    }
+    input:focus {
+    outline:none; 
+    }
+    .equals {
+    filter:invert(45%);
+    }
+    /* KITCHEN TIMER */
+    .headerParent, .timer-parent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-family: 'Rubik', sans-serif;
+    }
+    .timer-parent {
+    display: none;
+    margin-top: 15px;
+    width: 400px;
+    }
+    .closeBtn {
+    float: left;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.664);
+    color: #787A91; 
+    margin-top: -8px;
+    margin-left: 10px;
+    padding: 0px 8px;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px #787A91;
+    cursor: pointer;
+    }
+    .closeBtn:hover {
+    font-size: 26px;
+    }
+    .timer-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .timer-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .timer-header, .timer-header-two {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #AA3A3A;
+    margin: 0;
+    padding: 5px 0px;
+    }
+    .timer-header-two {
+    display: none;
+    }
+    .timer-input-parent {
+    display: flex;
+    justify-content: center;
+    }
+    #timer {
+    font-weight: 300;
+    font-size: 15px;
+    width: 200px;
+    padding: 8px;
+    margin: 10px 10px 10px 0px;
+    }
+    #timer::placeholder {
+    font-size: 12px;
+    }
+    .time-left {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 6px 0px;
+    color: #787A91; 
+    display: none;
+    }
+    .timerBtn {
+    font-size: 15px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AA3A3A;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    }
+    #resume, #pause, #reset {
+    display: none;
+    }
+    nav {
+    flex: 1;
+    text-align: center;
+    }
+    .link {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0% 1%;
+    padding: 5px 0px;
+    color: #787A91; 
+    }
+    .link:hover {
+    border-bottom: 1px solid #AA3A3A;
+    }
+    .header {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #AA3A3A;
+    margin: 0%;
+    padding: 5px 0px;
+    }
+    .author {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style:italic;
+    margin: 0%;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    color: #787A91; 
+    }
+    #search {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    width: 100%;
+    padding: 8px;
+    margin-right: 2%;
+    }
+    .container {
+    display: flex;
+    flex-wrap:wrap;
+    }
+    .courseName {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-align:center;
+    margin-top: 18vh;
+    flex: 1;
+    color: #AA3A3A;
+    z-index: -1;
+    }
+    .recepie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    margin: 2%;
+    padding: 20px 20px;
+    background-color: #FEFBF3;
+    box-shadow: 2px 0px 8px grey;
+    }
+    ul {
+    text-align: start;
+    }
+    h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #787A91; 
+    }
+    .ingredients {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #787A91; 
+    }
+    li, p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    }
+    p {
+    padding: 0px 15px;
+    }
+    h5 {
+    margin-top:2%;
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    }
+    /* VERTICAL ADAPTATION */
+    @media all and (max-height: 850px) {
+    .navOne {
+    height: 24vh;
+    }
+    .courseName {
+    margin-top: 22vh;
+    }
+    }
+    @media all and (max-height: 700px) {
+    .navOne {
+    height: 28vh;
+    }
+    .courseName {
+    margin-top: 26vh;
+    }
+    }
+    @media all and (max-height: 600px) {
+    .navOne {
+    height: 32vh;
+    }
+    .courseName {
+    margin-top: 30vh;
+    }
+    }
+    @media all and (max-height: 550px) {
+    .navOne {
+    height: 38vh;
+    }
+    .courseName {
+    margin-top: 36vh;
+    }
+    }
+    @media all and (max-height: 500px) {
+    .navOne {
+    height: 44vh;
+    }
+    .courseName {
+    margin-top: 42vh;
+    }
+    }
+    @media all and (max-height: 450px) {
+    .navOne {
+    height: 50vh;
+    }
+    .courseName {
+    margin-top: 48vh;
+    }
+    }
+    @media all and (max-height: 400px) {
+    .navOne {
+    height: 58vh;
+    }
+    .courseName {
+    margin-top: 56vh;
+    }
+    }
+    @media all and (max-height: 350px) {
+    .navOne {
+    height: 64vh;
+    }
+    .courseName {
+    margin-top: 62vh;
+    }
+    }
+    @media all and (max-height: 300px) {
+    .navOne {
+    height: 70vh;
+    }
+    .courseName {
+    margin-top: 68vh;
+    }
+    }
+    @media all and (max-height: 250px) {
+    .navOne {
+    height: 74vh;
+    }
+    .courseName {
+    margin-top: 70vh;
+    }
+    }
+    @media all and (max-height: 250px) {
+    .navOne {
+    height: 100vh;
+    }
+    .courseName {
+    margin-top: 98vh;
+    }
+    }
+    /* HORIZONTAL ADAPTATION */
+    @media all and (max-width: 1100px) {
+    .timer-header, .timer-header-two {
+    font-size: 18px;
+    }
+    .closeBtn {
+    margin-top: -5px;
+    }
+    #timer::placeholder {
+    font-size: 10px;
+    }
+    .time-left {
+    font-size: 30px;
+    }
+    }
+    @media all and (max-width: 1030px) {
+    .right-nav-container {
+    margin-right: 2%;
+    }
+    .timer-parent {
+    margin-left: 2%;
+    width: 300px;
+    }
+    .closeBtn {
+    margin-left: 7px;
+    }
+    .link {
+    font-size: 16px;
+    }
+    .header {
+    font-size: 23px;
+    }
+    .author {
+    font-size: 15px;
+    margin-bottom: 20px;
+    }
+    }
+    @media all and (max-width: 700px) {
+    .timer-parent {
+    margin-left: 1%;
+    width: 250px;
+    }
+    .timer-header, .timer-header-two {
+    font-size: 14px;
+    }
+    .equals {
+    width: 25px;
+    }
+    #timer {
+    width: 60%;
+    padding: 8px;
+    }
+    .closeBtn {
+    font-size: 18px;
+    padding: 0px 7px;
+    }
+    .closeBtn:hover {
+    font-size: 20px;
+    }
+    #search {
+    width: 80%;
+    }
+    }
+    @media all and (max-width: 600px) {
+    .language-btn {
+    font-size: 10px;
+    padding: 6px 10px;
+    }
+    .selector {
+    width: 100px;
+    }
+    .input-field {
+    padding: 12px 10px;
+    width: 80px;
+    }
+    .input-field, .selector {
+    font-size: 14px;
+    }
+    .appBtn {
+    margin-top: 15px;
+    }
+    .time-left {
+    font-size: 25px;
+    }
+    .timerBtn {
+    font-size: 12px;
+    padding: 6px 15px;
+    margin-bottom: 15px;
+    }
+    .equals {
+    width: 20px;
+    }
+    .link {
+    font-size: 14px;
+    padding: 0px;
+    }
+    }
+    @media all and (max-width: 500px) {
+    .timer-header, .timer-header-two {
+    font-size: 10px;
+    }
+    .time-left {
+    font-size: 20px;
+    }
+    #timer {
+    margin-left: 10%;
+    }
+    #timer::placeholder {
+    font-size: 9px;
+    }
+    .timer-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .timerBtn {
+    margin-bottom: 8px;
+    }
+    .ru-eng-container {
+    margin-top: 15px;
+    }
+    .language-btn {
+    font-size: 9px;
+    padding: 4px 10px;
+    margin: 15px 5px 5px 5px;
+    }
+    .selector {
+    width: 80px;
+    }
+    .input-field {
+    padding: 10px;
+    width: 60px;
+    }
+    .input-field, .selector {
+    font-size: 11px;
+    }
+    .appBtn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+    .header {
+    font-size: 18px;
+    }
+    .author {
+    font-size: 12px;
+    margin-bottom: 20px;
+    }
+    .link {
+    font-size: 10px;
+    padding: 0px;
+    }
+    #search {
+    font-size: 12px;
+    }
+    .courseName {
+    font-size: 25px;
+    }
+    img {
+    width: 340px;
+    }
+    }
+    @media all and (max-width: 400px) {
+    .navOne {
+    height: 24vh;
+    }
+    .courseName {
+    margin-top: 23vh;
+    }
+    .appBtn {
+    font-size: 11px;
+    padding: 6px 15px;
+    margin-bottom: 25px;
+    }
+    #timer::placeholder {
+    font-size: 0px;
+    }
+    .header {
+    font-size: 16px;
+    }
+    #search {
+    width: 80%;
+    }
+    img {
+    width: 280px;
+    }
+    h3 {
+    font-size: 18px;
+    }
+    .ingredients {
+    font-size: 14px;
+    }
+    p, li {
+    font-size: 12px;
+    }
+    }
+    @media all and (max-width: 320px) {
+    .navOne {
+    height: 26vh;
+    }
+    .courseName {
+    margin-top: 25vh;
+    }
+    .selector {
+    width: 60px;
+    font-size: 8px;
+    }
+    .input-field {
+    font-size: 12px;
+    width: 40px;
+    padding: 5px 10px;
+    }
+    .appBtn {
+    font-size: 10px;
+    }
+    .header {
+    font-size: 14px;
+    }
+    #search {
+    font-size: 10px;
+    }
+    .author {
+    font-size: 10px;
+    margin-bottom: 20px;
+    }
+    .link {
+    font-size: 10px;
+    margin: 0% 0.3%;
+    }
+    img {
+    width: 240px;
+    }
+    }
+    @media all and (max-width: 280px) {
+    .selector {
+    width: 60px;
+    font-size: 9px;
+    }
+    .input-field {
+    font-size: 12px;
+    width: 40px;
+    }
+    .appBtn {
+    margin: 10px 5px;
+    padding: 6px 10px;
+    }
+    .header {
+    font-size: 12px;
+    }
+    img {
+    width: 200px;
+    }
+    }
