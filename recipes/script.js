@@ -62,7 +62,6 @@ timerField.addEventListener('keydown', function(e) {
 })
 
 function startCountdown() {
-  clearInterval(timerID);
     startTimerBtn.style.display = 'none'; 
     resumeTimerBtn.style.display = 'none';
     timerField.style.display = 'none';
@@ -95,12 +94,8 @@ function startCountdown() {
             counter.textContent = `${hours} : ${minutes} : ${seconds}`;
             totalTime--;
         }
-        
-        if (totalTime > 0){
-            audio.pause();
-        }
-        else if (totalTime <= 0) {
-            audio.play();
+      
+      if (totalTime <= 0) {
             pauseTimerBtn.style.display = 'none';
             clearInterval(timerID);
             totalTime = 0;
@@ -114,6 +109,9 @@ function startCountdown() {
                 customClass: 'adaptation',
               });
         }
+        
+      
+         
        
     }, 1000);
 
