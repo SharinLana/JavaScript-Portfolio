@@ -269,6 +269,9 @@ body {
 }
 
 @media all and (max-width: 350px) {
+  .mainContainer {
+    width: 90%;
+  }
   .paragraph {
     font-size: 16px;
   }
