@@ -97,7 +97,7 @@ welcomeBtn.addEventListener('click', () => {
   gsap.from('.col', {opacity: 0, scale: 0, duration: .6, delay: 2.8, stagger: 0.2, ease: 'power1.out'})
 })
 
-//Activating project containers on click 
+//Activating project containers on click (for the mobile version)
 projectContainers.forEach(container => {
   container.addEventListener('click', () => {
   container.style.classList.toggle('container:hover');
