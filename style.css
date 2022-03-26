@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	opacity: 0;
+}
+
 .particles {
 	overflow: hidden;
 	width: 100%;

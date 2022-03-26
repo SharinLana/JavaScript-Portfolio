@@ -47,27 +47,33 @@ gsap.from('.circle-twenty-five', {opacity: 0, duration: 4, delay: 2, repeat: -1}
 gsap.from('.circle-twenty-six', {opacity: 0, duration: 6, delay: 0, repeat: -1})
 gsap.from('.circle-twenty-seven', {opacity: 0, duration: 5, delay: 1, repeat: -1})
 
+/* Setting Timeout for body */ 
+setTimeout(function() {
+  document.body.style.opacity = '1';
+}, 1500);
+
 
     /* Greeting text animation */
-    gsap.from('.hi', {opacity: 0, duration: .5, delay: 1})
-    gsap.from('.my-name', {opacity: 0, duration: 1, delay: 1.5})
+    gsap.from('.paper-picture', {opacity: 0, duration: .8, delay: 2})
+    gsap.from('.hi', {opacity: 0, duration: .5, delay: 3})
+    gsap.from('.my-name', {opacity: 0, duration: 1, delay: 3.5})
     gsap.to('.dreamer', {
       text: 'dreamer',
       duration: .7,
       ease: 'power',
       repeat: 1,
       yoyo: true,
-      delay: 2.5
+      delay: 4.5
     })
     gsap.to('.coder', {
         text: 'CODER',
         duration: .6,
-        delay: 4,
+        delay: 6,
         ease: 'power',
     })
-    gsap.from('.left-bracket', {x: -100, duration: 1, delay: 4.8, opacity: 0, ease: 'bounce'})
-    gsap.from('.right-bracket', {x: 100, duration: 1, delay: 4.8, opacity: 0, ease: 'bounce'})
-    gsap.from('.welcome-btn', {opacity: 0, duration: 1, delay: 5.8})
+    gsap.from('.left-bracket', {x: -100, duration: 1, delay: 6.6, opacity: 0, ease: 'bounce'})
+    gsap.from('.right-bracket', {x: 100, duration: 1, delay: 6.6, opacity: 0, ease: 'bounce'})
+    gsap.from('.welcome-btn', {opacity: 0, duration: 1, delay: 7.6})
 
 
 
@@ -198,6 +204,7 @@ iconTwo.addEventListener('mouseover', () => {
 iconThree.addEventListener('mouseover', () => {
   gsap.from('.icon-three', {opacity: 0, duration: .3, ease: 'power2.in'})
 });
+
 
 
 
