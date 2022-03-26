@@ -13,13 +13,24 @@ html {
 body {
 	min-height: 100vh;
 	width: 100%;
-	background-color: #2f4353;
-	background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+	background-color: #e9bcb7b2;
+	background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.carousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100vh;
+	perspective: 1600px;
+	border: 2px solid white;
 }
 
 .header-container {
@@ -33,16 +44,8 @@ body {
 	font-size: 48px;
 	color: white;
 	text-align: center;
-}
-
-.carousel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	height: 90vh;
-	width: 100%;
-	perspective: 1600px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 .carousel-cards {
@@ -52,8 +55,6 @@ body {
 	transform-style: preserve-3d;
 	transform: translateZ(-400px);
 	transition: transform 0.3s ease-in;
-	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 .carousel_card {
@@ -112,9 +113,6 @@ body {
 	padding: 40px 40px;
 	z-index: 2;
 	border-radius: 10px;
-	overflow: hidden;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);
@@ -177,7 +175,6 @@ i {
 	width: 300px;
 	position: relative;
 	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 .timer-btn {
@@ -190,6 +187,7 @@ i {
 	z-index: 2;
 	position: absolute;
 	color: white;
+	text-decoration: none;
 }
 
 .timer-btn:hover {
@@ -265,6 +263,7 @@ i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 10px;
 }
 
 .back-btn {
@@ -298,27 +297,13 @@ i {
 	color: rgba(255, 255, 255, 0.363);
 	text-align: center;
 	color: white;
-	margin-top: 15px;
-	margin-bottom: 10px;
 	padding: 5px 15px;
-}
-
-
-/* Vertical Adaptation */
-
-@media all and (max-height: 700px) {
-	.particle {
-		position: absolute;
-	}
-	.confetti-container {
-		margin-bottom: 0px;
-	}
 }
 
 
 /* Horizontal Adaptation */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 	.carousel-cards {
 		transform: translateZ(-250px);
 	}
@@ -334,131 +319,175 @@ i {
 	}
 }
 
+@media all and (max-width: 800px) {
+	.carousel-cards {
+		transform: translateZ(-190px);
+	}
+	.carousel_card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(190px);
+	}
+	.carousel_card:nth-child(2) {
+		transform: rotateY(120deg) translateZ(190px);
+	}
+	.carousel_card:nth-child(3) {
+		transform: rotateY(240deg) translateZ(190px);
+		background-size: cover;
+	}
+}
+
 @media all and (max-width: 700px) {
 	.header {
 		font-size: 38px;
 	}
 	.carousel-cards {
-		width: 450px;
-		height: 430px;
-		transform: translateZ(-200px);
+		width: 580px;
+		height: 390px;
+		transform: translateZ(-170px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(200px);
+		transform: rotateY(0deg) translateZ(170px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(200px);
+		transform: rotateY(120deg) translateZ(170px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(200px);
+		transform: rotateY(240deg) translateZ(170px);
 		background-size: cover;
 	}
-	.confetti-container {
-		margin-bottom: 0px;
-	}
 	.slide-header {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.underline {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	li {
 		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.header {
+		font-size: 30px;
+	}
+	.carousel-cards {
+		width: 480px;
+		height: 320px;
+		transform: translateZ(-140px);
+	}
+	.carousel_card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(140px);
+	}
+	.carousel_card:nth-child(2) {
+		transform: rotateY(120deg) translateZ(140px);
+	}
+	.carousel_card:nth-child(3) {
+		transform: rotateY(240deg) translateZ(140px);
+		background-size: cover;
 	}
 }
 
 @media all and (max-width: 500px) {
 	.header {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	.carousel-cards {
-		width: 360px;
-		height: 430px;
-		transform: translateZ(-105px);
+		width: 380px;
+		height: 380px;
+		transform: translateZ(-110px);
 		margin-top: 10px;
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(105px);
+		transform: rotateY(0deg) translateZ(110px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(105px);
+		transform: rotateY(120deg) translateZ(110px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(105px);
+		transform: rotateY(240deg) translateZ(110px);
 		background-size: calc(150%) calc(100%);
 	}
-	.carousel-btns,
-	.back-btn-container {
-		margin-top: -60px;
-	}
 	.carousel_btn {
-		margin: 20px;
 		padding: 4px 18px;
 		font-size: 15px;
-    margin-top: 25px;
 	}
-	.back-btn {
-		margin-top: 50px;
+	.note {
+		font-size: 12px;
 	}
 }
 
 @media all and (max-width: 400px) {
 	.header {
-		font-size: 28px;
+		font-size: 24px;
+	}
+	.carousel-cards {
+		width: 280px;
+		height: 280px;
+		transform: translateZ(-80px);
+		margin-top: 10px;
+	}
+	.carousel_card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(80px);
+	}
+	.carousel_card:nth-child(2) {
+		transform: rotateY(120deg) translateZ(80px);
+	}
+	.carousel_card:nth-child(3) {
+		transform: rotateY(240deg) translateZ(80px);
+		background-size: calc(150%) calc(100%);
+	}
+	.slide-header {
+		font-size: 15px;
+		margin-bottom: -15px;
+	}
+	.underline {
+		font-size: 14px;
+	}
+	li {
+		font-size: 13px;
+	}
+	.timer-btn {
+		font-size: 13px;
+		padding: 4px 18px;
 	}
 }
 
 @media all and (max-width: 350px) {
 	.header {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.carousel-cards {
-		width: 270px;
-		height: 480px;
-		transform: translateZ(-78px);
+		width: 260px;
+		height: 280px;
+		transform: translateZ(-75px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(78px);
+		transform: rotateY(0deg) translateZ(75px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(78px);
+		transform: rotateY(120deg) translateZ(75px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(78px);
+		transform: rotateY(240deg) translateZ(75px);
 		background-size: calc(150%) calc(100%);
 	}
 	.inner-text {
-		padding: 10px 10px;
+		padding: 35px 20px 40px 20px;
 	}
 	.slide-header {
 		font-size: 13px;
-		margin-top: 40px;
-    margin-bottom: -15px;
+		margin-bottom: -5px;
+	}
+	.underline {
+		font-size: 13px;
 	}
 	.confetti-container {
-		height: 40px;
-		width: 200px;
-		margin-bottom: 0px;
-		margin-top: 30px;
+		margin-top: 25px;
 	}
 	.timer-btn {
 		font-size: 12px;
 		padding: 5px 18px;
 	}
-	.underline {
-		font-size: 13px;
-	}
-	li {
-		font-size: 13px;
-	}
-	.confetti-container {
-		height: 40px;
-		width: 200px;
-		margin-bottom: 60px;
-		margin-right: 10px;
-	}
 	.carousel_btn {
-		margin-top: 50px;
 		padding: 4px 18px;
 		font-size: 12px;
 	}
@@ -466,13 +495,10 @@ i {
 		padding: 4px 16px;
 		font-size: 14px;
 	}
-	.note {
-		font-size: 12px;
-	}
 }
 
 @media all and (max-width: 300px) {
 	.header {
-		font-size: 24px;
+		font-size: 20px;
 	}
 }
