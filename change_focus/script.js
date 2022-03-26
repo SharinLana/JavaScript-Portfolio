@@ -19,12 +19,12 @@ window.addEventListener('load', ()=> {
     let timeoutTwo = setTimeout(function() {
         firstPar.style.display = 'none';
         secondPar.style.display = 'block';
-    }, 6000)
+    }, 3000)
     let timeoutThree = setTimeout(function () {
         firstPar.style.display = 'none';
         secondPar.style.display = 'none';
         thirdPar.style.display = 'block';
-    }, 12000);
+    }, 6000);
     
     input.addEventListener('input', () => {
         clearTimeout(timeoutOne);
@@ -118,12 +118,13 @@ resetBtn.addEventListener('click', () => {
 /* Animation on load */
 gsap.from('.header', {opacity: 0, duration: 1, delay: .3})
 gsap.from('.parContainer', {opacity: 0, duration: 1, delay: .3})
-gsap.from('.reminder', {scale: 0, duration: .5, delay: 13})
-gsap.from('#input', {scale: 0, duration: .5, delay: 13.2})
-gsap.from('#btn', {scale: 0, duration: .5, delay: 13.4})
-gsap.from('h3', {scale: 0, duration: .5, delay: 13.6})
-gsap.from('h2', {scale: 0, duration: .5, delay: 13.8})
-gsap.from('.exit-btn', {scale: 0, duration: .5, delay: 14.2})
+gsap.from('.reminder', {scale: 0, duration: .5, delay: 6.2})
+gsap.from('#input', {scale: 0, duration: .5, delay: 6.4})
+gsap.from('#btn', {scale: 0, duration: .5, delay: 6.6})
+gsap.from('h3', {scale: 0, duration: .5, delay: 6.8})
+gsap.from('h2', {scale: 0, duration: .5, delay: 7})
+gsap.from('.exit-btn', {scale: 0, duration: .5, delay: 7.2})
+
 
 
 
