@@ -98,7 +98,7 @@ button {
     padding: 5px 18px;
     box-shadow: 2px 1px 2px black;
     text-align: center;
-   color: rgba(108, 108, 108, 0.87);
+    color: black;
 }
 @-webkit-keyframes swing {
     15% {transform: rotate(4deg);}
