@@ -58,6 +58,7 @@ noBtn.addEventListener('click', ()=> {
         imageWidth: 300,
         imageHeight: 300,
         imageAlt: 'Custom image',
+        customClass: 'mob-adapt',
       })
 })
 
@@ -117,6 +118,7 @@ function validateGuess() {
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
+                customClass: 'mob-adapt',
               })
         }
         else {
@@ -127,6 +129,7 @@ function validateGuess() {
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
+                customClass: 'mob-adapt',
               })
         }
         attemptsLeft.textContent = 0;
@@ -144,6 +147,7 @@ function validateGuess() {
             icon: 'error',
             title: 'Oops...',
             text: 'Choose a number between 1 and 25 only!',
+            customClass: 'mob-adapt',
           })
         }
         
@@ -152,6 +156,7 @@ function validateGuess() {
             icon: 'error',
             title: 'Nope!',
             text: 'Only numbers are valid in this game!',
+            customClass: 'mob-adapt',
           })
           //Deduction ban when entering a non-number
           attempts++;
@@ -164,7 +169,7 @@ function validateGuess() {
         else {
             if (guess > randomNumber) {
             Swal.fire(`Try a lower number. 
-            I am winning so far!`); 
+            I am winning so far!`);
             }
             
             else if (guess < randomNumber) {
@@ -180,6 +185,7 @@ function validateGuess() {
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
+                customClass: 'mob-adapt',
               })
             inputField.setAttribute('disabled', '');// disabled the input field
             enterBtn.setAttribute('disabled', ''); //disabled the Enter button
@@ -195,3 +201,4 @@ function validateGuess() {
 playAgainBtn.addEventListener('click', ()=> {
     window.location.reload();
 })
+

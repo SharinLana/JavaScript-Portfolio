@@ -269,6 +269,9 @@ body {
 }
 
 @media all and (max-width: 350px) {
+  .paragraph {
+    font-size: 16px;
+  }
 	#startBtn {
 		padding: 6px 20px;
 		font-size: 13px;
