@@ -26,6 +26,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 50px;
 }
 
 .header {
@@ -33,7 +34,6 @@ body {
 	font-size: 48px;
 	color: white;
 	text-align: center;
-  margin-top: 15px;
 }
 
 .carousel {
@@ -53,8 +53,8 @@ body {
 	transform-style: preserve-3d;
 	transform: translateZ(-400px);
 	transition: transform 0.3s ease-in;
-  margin-top: 10px;
-  margin-bottom: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .carousel_card {
@@ -113,9 +113,9 @@ body {
 	padding: 40px 40px;
 	z-index: 2;
 	border-radius: 10px;
-	overflow: auto; 
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+	overflow: auto;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);
@@ -132,7 +132,6 @@ body {
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 60px 0px -15px 0px;
 	font-family: 'Architects Daughter', cursive;
 }
 
@@ -192,18 +191,22 @@ i {
 	z-index: 2;
 	position: absolute;
 }
+
 .game-link {
 	text-decoration: none;
 	color: white;
 }
+
 .game-btn:hover {
 	transform: scale(1.04);
 }
+
 .particle {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
 }
+
 .p-one,
 .p-seven {
 	width: 20px;
@@ -217,6 +220,7 @@ i {
 	height: 10px;
 	background-color: rgb(255, 240, 105);
 }
+
 .p-three,
 .p-nine {
 	width: 15px;
@@ -300,6 +304,7 @@ i {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
+	margin-bottom: 10px;
 	padding: 5px 15px;
 }
 
@@ -313,49 +318,44 @@ i {
 	.confetti-container {
 		margin-bottom: 0px;
 	}
-	.inner-text {
-		padding-top: 0px;
-	}
-	.recipe-inner-text {
-		padding-top: 40px;
-	}
-	.roommate-inner-text {
-		padding-top: 40px;
-	}
-}
-@media all and (max-height: 600px) {
-	.inner-text {
-		padding-top: 130px;
-	}
-	.recipe-inner-text {
-		padding-top: 160px;
-	}
-	.roommate-inner-text {
-		padding-top: 160px;
-	}
 }
 
 
 /* Horizontal Adaptation */
 
+@media all and (max-width: 800px) {
+	.carousel-cards {
+		transform: translateZ(-250px);
+	}
+	.carousel_card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(250px);
+	}
+	.carousel_card:nth-child(2) {
+		transform: rotateY(120deg) translateZ(250px);
+	}
+	.carousel_card:nth-child(3) {
+		transform: rotateY(240deg) translateZ(250px);
+		background-size: cover;
+	}
+}
+
 @media all and (max-width: 700px) {
-	.carousel  {
-		width: 90%;
+	.header {
+		font-size: 38px;
 	}
 	.carousel-cards {
 		width: 450px;
 		height: 430px;
-		transform: translateZ(-300px);
-  
+		transform: translateZ(-200px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(300px);
+		transform: rotateY(0deg) translateZ(200px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(300px);
+		transform: rotateY(120deg) translateZ(200px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(300px);
+		transform: rotateY(240deg) translateZ(200px);
 		background-size: cover;
 	}
 	.confetti-container {
@@ -363,7 +363,6 @@ i {
 	}
 	.slide-header {
 		font-size: 18px;
-		margin-top: 80px;
 	}
 	.underline {
 		font-size: 16px;
@@ -372,43 +371,26 @@ i {
 		font-size: 14px;
 	}
 }
-@media all and (max-width: 600px) {
-	.currency-header {
-		margin-top: -10px;
-	}
-	.recipe-header {
-		margin-top: 40px;
-	}
-	.dutch-header {
-		margin-top: 10px;
-	}
-}
-
 
 @media all and (max-width: 500px) {
-	.header-container {
-		margin-bottom: -30px;
-	}
 	.header {
 		font-size: 32px;
 	}
 	.carousel-cards {
 		width: 360px;
 		height: 430px;
-		transform: translateZ(-180px);
+		transform: translateZ(-105px);
+		margin-top: 10px;
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(180px);
+		transform: rotateY(0deg) translateZ(105px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(180px);
+		transform: rotateY(120deg) translateZ(105px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(180px);
+		transform: rotateY(240deg) translateZ(105px);
 		background-size: calc(150%) calc(100%);
-	}
-	.slide-header {
-		margin: 0px 0px -15px 0px;
 	}
 	.carousel-btns,
 	.back-btn-container {
@@ -423,50 +405,54 @@ i {
 		margin-top: 35px;
 	}
 	.back-btn {
-		margin-top: 25px;
+		margin-top: 35px;
+	}
+	.note {
+		font-size: 12px;
 	}
 }
+
 @media all and (max-width: 400px) {
 	.header {
 		font-size: 28px;
 		margin-bottom: 20px;
 	}
-	.currency-header, .dutch-header {
-		margin-top: 30px;
+	.carousel-cards {
+		margin-bottom: 20px;
 	}
 }
 
 @media all and (max-width: 350px) {
 	.header {
 		font-size: 24px;
-    margin-top: 10px;
 	}
 	.carousel-cards {
-		width: 300px;
-		height: 430px;
-		transform: translateZ(-150px);
+		width: 270px;
+		height: 480px;
+		transform: translateZ(-78px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(150px);
+		transform: rotateY(0deg) translateZ(78px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(150px);
+		transform: rotateY(120deg) translateZ(78px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(150px);
+		transform: rotateY(240deg) translateZ(78px);
+		background-size: calc(150%) calc(100%);
 	}
 	.inner-text {
-		padding: 110px 20px 20px 20px;
+		padding: 10px 10px;
 	}
 	.slide-header {
-		font-size: 17px;
-		margin-top: 80px;
+		font-size: 14px;
 	}
-	.roommate-header, .recipe-header {
-		margin-top: 140px;
+	.roommate-header {
+		margin-bottom: -15px;
+		margin-top: 15px;
 	}
 	.underline {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	li {
 		font-size: 13px;
@@ -474,8 +460,12 @@ i {
 	.confetti-container {
 		height: 40px;
 		width: 200px;
-		margin-bottom: 60px;
-		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	.calc-btn {
+		font-size: 12px;
+		padding: 5px 18px;
 	}
 	.carousel_btn {
 		margin-top: 50px;
@@ -495,32 +485,7 @@ i {
 }
 
 @media all and (max-width: 300px) {
-	.carousel-cards {
-		width: 270px;
-		height: 480px;
-		transform: translateZ(-135px);
-	}
-	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(135px);
-		background-size: calc(200%) calc(100%);
-	}
-	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(135px);
-	}
-	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(135px);
-	}
-	.slide-header {
-		font-size: 17px;
-		margin-top: 130px;
-	}
-	.dutch-header, .currency-header{
-		margin-top: 50px;
+	.header {
+		font-size: 20px;
 	}
 }
-
-
-
-
-
-

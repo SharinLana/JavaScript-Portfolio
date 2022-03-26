@@ -52,8 +52,8 @@ body {
 	transform-style: preserve-3d;
 	transform: translateZ(-400px);
 	transition: transform 0.3s ease-in;
-  margin-top: 30px;
-  margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .carousel_card {
@@ -112,9 +112,9 @@ body {
 	padding: 40px 40px;
 	z-index: 2;
 	border-radius: 10px;
-	overflow: auto; 
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+	overflow: hidden;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);
@@ -131,7 +131,6 @@ body {
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 60px 0px -15px 0px;
 	font-family: 'Architects Daughter', cursive;
 }
 
@@ -190,16 +189,19 @@ i {
 	background-color: #fc7dcf;
 	z-index: 2;
 	position: absolute;
-  color: white;
+	color: white;
 }
+
 .timer-btn:hover {
 	transform: scale(1.04);
 }
+
 .particle {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
 }
+
 .p-one,
 .p-seven {
 	width: 20px;
@@ -213,6 +215,7 @@ i {
 	height: 10px;
 	background-color: rgb(255, 240, 105);
 }
+
 .p-three,
 .p-nine {
 	width: 15px;
@@ -296,6 +299,7 @@ i {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
+	margin-bottom: 10px;
 	padding: 5px 15px;
 }
 
@@ -309,46 +313,44 @@ i {
 	.confetti-container {
 		margin-bottom: 0px;
 	}
-	.inner-text {
-		padding-top: 0px;
-	}
-}
-@media all and (max-height: 600px) {
-	.inner-text {
-		padding-top: 100px;
-	}
-}
-@media all and (max-height: 500px) {
-	.inner-text {
-		padding-top: 150px;
-	}
-}
-@media all and (max-height: 400px) {
-	.inner-text {
-		padding-top: 170px;
-	}
 }
 
 
 /* Horizontal Adaptation */
 
+@media all and (max-width: 800px) {
+	.carousel-cards {
+		transform: translateZ(-250px);
+	}
+	.carousel_card:nth-child(1) {
+		transform: rotateY(0deg) translateZ(250px);
+	}
+	.carousel_card:nth-child(2) {
+		transform: rotateY(120deg) translateZ(250px);
+	}
+	.carousel_card:nth-child(3) {
+		transform: rotateY(240deg) translateZ(250px);
+		background-size: cover;
+	}
+}
+
 @media all and (max-width: 700px) {
-	.carousel  {
-		width: 90%;
+	.header {
+		font-size: 38px;
 	}
 	.carousel-cards {
 		width: 450px;
 		height: 430px;
-		transform: translateZ(-300px);
+		transform: translateZ(-200px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(300px);
+		transform: rotateY(0deg) translateZ(200px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(300px);
+		transform: rotateY(120deg) translateZ(200px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(300px);
+		transform: rotateY(240deg) translateZ(200px);
 		background-size: cover;
 	}
 	.confetti-container {
@@ -356,7 +358,6 @@ i {
 	}
 	.slide-header {
 		font-size: 18px;
-		margin-top: 10px;
 	}
 	.underline {
 		font-size: 16px;
@@ -367,29 +368,24 @@ i {
 }
 
 @media all and (max-width: 500px) {
-	.header-container {
-		margin-bottom: -30px;
-	}
 	.header {
 		font-size: 32px;
 	}
 	.carousel-cards {
 		width: 360px;
 		height: 430px;
-		transform: translateZ(-180px);
+		transform: translateZ(-105px);
+		margin-top: 10px;
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(180px);
+		transform: rotateY(0deg) translateZ(105px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(180px);
+		transform: rotateY(120deg) translateZ(105px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(180px);
+		transform: rotateY(240deg) translateZ(105px);
 		background-size: calc(150%) calc(100%);
-	}
-	.website-header, .focus-header {
-		margin-top: 90px;
 	}
 	.carousel-btns,
 	.back-btn-container {
@@ -404,49 +400,51 @@ i {
 		margin-top: 35px;
 	}
 	.back-btn {
-		margin-top: 25px;
+		margin-top: 35px;
 	}
 }
+
 @media all and (max-width: 400px) {
 	.header {
 		font-size: 28px;
-	}
-	.focus-header, .website-header, .meditation-header{
-		margin-top: 20px;
-	}
-	.website-header {
-		font-size: 16px;
 	}
 }
 
 @media all and (max-width: 350px) {
 	.header {
 		font-size: 24px;
-    margin-top: 10px;
 	}
 	.carousel-cards {
-		width: 300px;
-		height: 430px;
-		transform: translateZ(-150px);
+		width: 270px;
+		height: 480px;
+		transform: translateZ(-78px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(150px);
+		transform: rotateY(0deg) translateZ(78px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(150px);
+		transform: rotateY(120deg) translateZ(78px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(150px);
+		transform: rotateY(240deg) translateZ(78px);
+		background-size: calc(150%) calc(100%);
 	}
 	.inner-text {
-		padding: 110px 20px 20px 20px;
+		padding: 10px 10px;
 	}
 	.slide-header {
-		font-size: 17px;
-		margin-top: 200px;
+		font-size: 14px;
+		margin-top: 40px;
 	}
-	.meditation-header {
-		margin-top: 150px;
+	.confetti-container {
+		height: 40px;
+		width: 200px;
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+	.timer-btn {
+		font-size: 12px;
+		padding: 5px 18px;
 	}
 	.underline {
 		font-size: 15px;
@@ -478,43 +476,7 @@ i {
 }
 
 @media all and (max-width: 300px) {
-	.carousel-cards {
-		width: 270px;
-		height: 480px;
-		transform: translateZ(-135px);
-	}
-	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(135px);
-		background-size: calc(200%) calc(100%);
-	}
-	.carousel_card:nth-child(2) {
-		transform: rotateY(120deg) translateZ(135px);
-	}
-	.carousel_card:nth-child(3) {
-		transform: rotateY(240deg) translateZ(135px);
-	}
-	.slide-header {
-		font-size: 17px;
-		margin-top: 130px;
-	}
-	.meditation-header {
-		margin-top: 80px;
-	}
-	.focus-header {
-		margin-top: 160px;
+	.header {
+		font-size: 24px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

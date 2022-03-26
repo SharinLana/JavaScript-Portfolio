@@ -51,8 +51,8 @@ body {
 	transform-style: preserve-3d;
 	transform: translateZ(-400px);
 	transition: transform 0.3s ease-in;
-  margin-top: 30px;
-  margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .carousel_card {
@@ -116,12 +116,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Lato', sans-serif;
-	padding: 60px 40px;
+	padding: 40px 40px;
 	z-index: 2;
 	border-radius: 10px;
-	overflow: auto; 
-  overflow: scroll;
-  -webkit-overflow-scrolling: auto;
+	overflow: auto;
+	overflow: scroll;
+	-webkit-overflow-scrolling: auto;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(39, 39, 39, 0.822);
@@ -138,7 +138,6 @@ body {
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 60px 0px -15px 0px;
 	font-family: 'Architects Daughter', cursive;
 }
 
@@ -198,18 +197,22 @@ i {
 	z-index: 2;
 	position: absolute;
 }
+
 .game-link {
 	text-decoration: none;
 	color: white;
 }
+
 .game-btn:hover {
 	transform: scale(1.04);
 }
+
 .particle {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
 }
+
 .p-one,
 .p-seven {
 	width: 20px;
@@ -223,6 +226,7 @@ i {
 	height: 10px;
 	background-color: rgb(255, 240, 105);
 }
+
 .p-three,
 .p-nine {
 	width: 15px;
@@ -306,6 +310,7 @@ i {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
+	margin-bottom: 10px;
 	padding: 5px 15px;
 }
 
@@ -320,43 +325,13 @@ i {
 		margin-bottom: 0px;
 	}
 }
-@media all and (max-height: 600px) {
-	.inner-text {
-		padding-top: 140px;
-	}
-  .wheel-header {
-    margin-top: 100px;
-  }
-  .read-header {
-    margin-top: 80px;
-  }
-}
-@media all and (max-height: 500px) {
-	.inner-text {
-		padding-top: 160px;
-	}
-  .floor-header {
-    margin-top: 50px;
-  }
-  .read-header {
-    margin-top: 100px;
-  }
-  .wheel-header {
-    margin-top: 120px;
-  }
-}
-@media all and (max-height: 400px) {
-	.inner-text {
-		padding-top: 180px;
-	}
-}
 
 
 /* Horizontal Adaptation */
 
 @media all and (max-width: 700px) {
-	.carousel  {
-		width: 90%;
+	.header {
+		font-size: 38px;
 	}
 	.carousel-cards {
 		width: 450px;
@@ -381,10 +356,6 @@ i {
 	}
 	.slide-header {
 		font-size: 18px;
-		margin-top: 80px;
-	}
-	.guess-header, .floor-header {
-		margin-top: 10px;
 	}
 	.underline {
 		font-size: 16px;
@@ -419,11 +390,14 @@ i {
 	.carousel_card:nth-child(4) {
 		transform: rotateY(270deg) translateZ(180px);
 	}
-	.slide-header {
-		margin: 0px 0px -15px 0px;
+	.read-header {
+		margin-bottom: -15px;
 	}
-	.read-header, .wheel-header {
-		margin-top: 60px;
+	.confetti-container {
+		height: 40px;
+		width: 200px;
+		margin-bottom: 10px;
+		margin-top: 30px;
 	}
 	.carousel-btns,
 	.back-btn-container {
@@ -438,14 +412,14 @@ i {
 		margin-top: 35px;
 	}
 	.back-btn {
-		margin-top: 25px;
+		margin-top: 35px;
 	}
 }
 
 @media all and (max-width: 350px) {
 	.header {
 		font-size: 24px;
-    margin-top: 10px;
+		margin-top: 10px;
 	}
 	.carousel-cards {
 		width: 300px;
@@ -465,27 +439,19 @@ i {
 		transform: rotateY(270deg) translateZ(150px);
 		background-size: calc(190%) calc(100%);
 	}
-	.inner-text {
-		padding: 110px 20px 20px 20px;
-	}
 	.slide-header {
-		font-size: 17px;
-		margin-top: 150px;
-	}
-	.read-header, .wheel-header {
-		margin-top: 200px;
+		font-size: 14px;
+		margin-bottom: -15px;
 	}
 	.underline {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	li {
 		font-size: 13px;
 	}
-	.confetti-container {
-		height: 40px;
-		width: 200px;
-		margin-bottom: 60px;
-		margin-right: 10px;
+	.game-btn {
+		font-size: 12px;
+		padding: 5px 18px;
 	}
 	.carousel_btn {
 		margin-top: 50px;
@@ -505,28 +471,7 @@ i {
 }
 
 @media all and (max-width: 300px) {
-	.carousel-cards {
-		width: 270px;
-		height: 480px;
-		transform: translateZ(-135px);
-	}
-	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(135px);
-		background-size: calc(200%) calc(100%);
-	}
-	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(135px);
-	}
-	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(135px);
-	}
-	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(135px);
-	}
-	.guess-header {
-		margin-top: 80px;
-	}
-	.floor-header {
-		margin-top: 155px;
+	.header {
+		font-size: 20px;
 	}
 }
