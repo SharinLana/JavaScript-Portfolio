@@ -389,18 +389,16 @@ i {
 	}
 	.carousel-btns,
 	.back-btn-container {
-		margin-top: -40px;
+		margin-top: -50px;
 	}
 	.carousel_btn {
 		margin: 20px;
 		padding: 4px 18px;
 		font-size: 15px;
-	}
-	.carousel_btn {
-		margin-top: 35px;
+    margin-top: 35px;
 	}
 	.back-btn {
-		margin-top: 35px;
+		margin-top: 25px;
 	}
 }
 
@@ -462,9 +460,6 @@ i {
 		margin-top: 50px;
 		padding: 4px 18px;
 		font-size: 12px;
-	}
-	.back-btn-container {
-		margin-top: -20px;
 	}
 	.back-btn {
 		padding: 4px 16px;

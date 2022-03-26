@@ -381,6 +381,7 @@ i {
 		height: 430px;
 		transform: translateZ(-105px);
 		margin-top: 10px;
+    margin-bottom: 20px;
 	}
 	.carousel_card:nth-child(1) {
 		transform: rotateY(0deg) translateZ(105px);
@@ -394,7 +395,7 @@ i {
 	}
 	.carousel-btns,
 	.back-btn-container {
-		margin-top: -40px;
+		margin-top: -50px;
 	}
 	.carousel_btn {
 		margin: 20px;
@@ -413,12 +414,11 @@ i {
 }
 
 @media all and (max-width: 400px) {
+  .header-container {
+    margin-top: 30px;
+  }
 	.header {
 		font-size: 28px;
-		margin-bottom: 20px;
-	}
-	.carousel-cards {
-		margin-bottom: 20px;
 	}
 }
 
@@ -472,15 +472,15 @@ i {
 		padding: 4px 18px;
 		font-size: 12px;
 	}
-	.back-btn-container {
-		margin-top: -20px;
-	}
+	
 	.back-btn {
 		padding: 4px 16px;
 		font-size: 14px;
+    margin-top: 40px;
 	}
 	.note {
 		font-size: 12px;
+    margin-bottom: 0px;
 	}
 }
 
