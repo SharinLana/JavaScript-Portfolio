@@ -154,9 +154,14 @@ a:hover {
 	border: 2px outset rgba(255, 255, 255, 0.8);
 }
 
+.link-exit {
+  text-decoration: none;
+}
+
 .back-btn {
 	background-color: #fcecde;
 	margin-bottom: -20px;
+  color: black;
 	border: 2px outset rgba(255, 255, 255, 0.8);
 }
 
