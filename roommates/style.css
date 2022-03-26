@@ -136,6 +136,8 @@ input {
     animation: dollarCoin 5s linear 0s normal infinite;
     -webkit-animation: dollarCoin 5s linear 0s normal infinite;
 }
+
+/* Second Container */
 .secondContainer {
     display: flex;
     justify-content: center;
@@ -172,13 +174,14 @@ input {
 .month {
     align-self: center;
     text-align: center;
-    width: 40%;
+    width: 80%;
     background-color: #d1bad2;
     margin-top: 4%;
     padding: 6px 10px; 
 }
 .monthHeader {
     font-size: 30px;
+    text-align: center;
     margin: 0;
 }
 .summaryHeader {
@@ -188,7 +191,7 @@ input {
     border-bottom: 3px outset skyblue;
     border-left: 6px outset skyblue;
     padding: 3px 6px;
-    width: 60%;
+    width: 90%;
 }
 .name {
     font-weight: 400;
@@ -203,13 +206,13 @@ input {
     font-weight: 400;
     font-size: 15px;
     border: 1px outset skyblue;
-    width: 30%;
+    width: 60%;
     padding: 3px 6px;
 }
 .recapParent {
     align-self: center;
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin-top: 2%;
     background-color: #d1bad2;
     padding: 10px 20px;
@@ -222,7 +225,7 @@ input {
     margin: 2%;
 }
 .assessmentParent {
-    width: 60%;
+    width: 80%;
     margin-top: 3%;
     margin-bottom: 1%;
     align-self: center;
@@ -242,7 +245,7 @@ input {
     font-weight: 400;
     margin-bottom: 5%;
     border: 3px outset skyblue;
-    width: 50%;
+    width: 70%;
     padding: 10px 15px;
     background-color: rgba(255, 255, 255, 0.815);
 }
@@ -377,4 +380,5 @@ input {
         font-size: 12px;
     }
 }
+
 
