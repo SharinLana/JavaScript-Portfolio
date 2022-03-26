@@ -366,9 +366,7 @@ i {
 }
 
 @media all and (max-width: 500px) {
-	.header-container {
-		margin-bottom: -30px;
-	}
+	
 	.header {
 		font-size: 32px;
 	}
@@ -401,7 +399,7 @@ i {
 	}
 	.carousel-btns,
 	.back-btn-container {
-		margin-top: -40px;
+		margin-top: -30px;
 	}
 	.carousel_btn {
 		margin: 20px;
@@ -421,21 +419,21 @@ i {
 		font-size: 24px;
 	}
 	.carousel-cards {
-		width: 300px;
+		width: 270px;
 		height: 430px;
-		transform: translateZ(-150px);
+		transform: translateZ(-140px);
 	}
 	.carousel_card:nth-child(1) {
-		transform: rotateY(0deg) translateZ(150px);
+		transform: rotateY(0deg) translateZ(140px);
 	}
 	.carousel_card:nth-child(2) {
-		transform: rotateY(90deg) translateZ(150px);
+		transform: rotateY(90deg) translateZ(140px);
 	}
 	.carousel_card:nth-child(3) {
-		transform: rotateY(180deg) translateZ(150px);
+		transform: rotateY(180deg) translateZ(140px);
 	}
 	.carousel_card:nth-child(4) {
-		transform: rotateY(270deg) translateZ(150px);
+		transform: rotateY(270deg) translateZ(140px);
 		background-size: calc(190%) calc(100%);
 	}
 	.slide-header {
