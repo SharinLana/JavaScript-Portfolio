@@ -355,10 +355,10 @@ i {
 		margin-bottom: 0px;
 	}
 	.slide-header {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.underline {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	li {
 		font-size: 14px;
@@ -424,8 +424,6 @@ i {
 		width: 300px;
 		height: 430px;
 		transform: translateZ(-150px);
-    margin-top: 10px;
-	margin-bottom: 10px;
 	}
 	.carousel_card:nth-child(1) {
 		transform: rotateY(0deg) translateZ(150px);
@@ -441,11 +439,11 @@ i {
 		background-size: calc(190%) calc(100%);
 	}
 	.slide-header {
-		font-size: 14px;
+		font-size: 13px;
 		margin-bottom: -15px;
 	}
 	.underline {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	li {
 		font-size: 13px;
@@ -457,15 +455,12 @@ i {
 	.carousel_btn {
 		margin-top: 30px;
 		padding: 4px 18px;
-		font-size: 12px;
+		font-size: 10px;
 	}
-/* 	.back-btn-container {
-		margin-top: -20px;
-	} */
 	.back-btn {
 		padding: 4px 16px;
 		font-size: 14px;
-    margin-top: 45px;
+    margin-top: 40px;
 	}
 	.note {
 		font-size: 12px;
