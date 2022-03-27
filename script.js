@@ -80,7 +80,7 @@ setTimeout(function() {
 //Going to the Project Page on click
 welcomeBtn.addEventListener('click', () => {
   
-  /*
+  
   let coord = firstPage.clientHeight; //got access to the height of the first page 
   let i = 10; //scrollY in px
 
@@ -93,10 +93,9 @@ welcomeBtn.addEventListener('click', () => {
       if (i >= coord + 70) clearInterval(int); //until you leave behind the full hight of the first page + 10px. 
   }, 8) //the lower the number, the faster the scroll speed 
   
-  */
+  
 
   /* GSAP Animation of the Project Page on click */
-  gsap.to('.particles', {y: 0, duration: 1, delay: .5})
   gsap.from('.navbar', {y: -100, opacity: 0, duration: 1, delay: 1.3, ease: 'bounce'})
   gsap.from('.header-container', {opacity: 0, scale: 0, duration: .7, delay: 2, ease: 'power1.in'})
   gsap.from('.col', {opacity: 0, scale: 0, duration: .6, delay: 2.8, stagger: 0.2, ease: 'power1.out'})
