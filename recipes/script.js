@@ -127,8 +127,6 @@ function startCountdown() {
                 customClass: 'adaptation',
               });
         }
-        
-  
         }
                
     }, 1000);
@@ -457,9 +455,10 @@ document.addEventListener('DOMContentLoaded', ready);
 
 function ready() {
     let scroll = setTimeout(function() {
-        window.scrollTo(0, 130);
+        window.scrollTo(0, 150);
     }, 10);
 }
+
 
 
 

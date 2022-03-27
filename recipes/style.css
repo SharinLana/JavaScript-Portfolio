@@ -145,7 +145,7 @@
     font-size: 24px;
     background-color: rgba(255, 255, 255, 0.664);
     color: #787A91; 
-    margin-top: -8px;
+    margin-top: 10px;
     margin-left: 10px;
     padding: 0px 8px;
     border: none;
@@ -173,7 +173,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #AA3A3A;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     padding: 5px 0px;
     }
     .timer-header-two {
@@ -465,9 +465,8 @@
     }
     }
     @media all and (max-width: 600px) {
-    .language-btn {
-    font-size: 10px;
-    padding: 6px 10px;
+    .navOne {
+    height: 40vh;
     }
     .selector {
     width: 100px;
@@ -497,6 +496,9 @@
     font-size: 14px;
     padding: 0px;
     }
+    .courseName {
+        margin-top: 34vh;
+    }
     }
     @media all and (max-width: 500px) {
     .timer-header, .timer-header-two {
@@ -524,19 +526,11 @@
     margin-top: 15px;
     }
     .language-btn {
-    font-size: 9px;
-    padding: 4px 10px;
-    margin: 15px 5px 5px 5px;
-    }
-    .selector {
-    width: 80px;
-    }
-    .input-field {
-    padding: 10px;
-    width: 60px;
+    font-size: 10px;
+    padding: 8px 10px;
     }
     .input-field, .selector {
-    font-size: 11px;
+    font-size: 12px;
     }
     .appBtn {
     margin-top: 10px;
@@ -558,17 +552,29 @@
     }
     .courseName {
     font-size: 25px;
+    margin-top: 36vh;
     }
     img {
     width: 340px;
     }
     }
     @media all and (max-width: 400px) {
-    .navOne {
-    height: 24vh;
+    .selector {
+    width: 80px;
+    font-size: 11px;
+    border-radius: 1px;
     }
-    .courseName {
-    margin-top: 23vh;
+    .input-field {
+    font-size: 12px;
+    height: 20px;
+    padding: 5px 10px;
+    }
+    .input-field[type=text] {
+    height: 30px;
+    width: 60px;
+    }
+    .language-btn {
+    margin: 15px 5px 10px 5px;
     }
     .appBtn {
     font-size: 11px;
@@ -597,21 +603,14 @@
     font-size: 12px;
     }
     }
-    @media all and (max-width: 320px) {
-    .navOne {
-    height: 26vh;
+    @media all and (max-width: 350px) {
+    .right-nav-container {
+        margin-right: 5px;
     }
-    .courseName {
-    margin-top: 25vh;
-    }
-    .selector {
-    width: 60px;
-    font-size: 8px;
-    }
-    .input-field {
-    font-size: 12px;
-    width: 40px;
-    padding: 5px 10px;
+    .timer-calc-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
     }
     .appBtn {
     font-size: 10px;
@@ -634,13 +633,16 @@
     width: 240px;
     }
     }
-    @media all and (max-width: 280px) {
+    @media all and (max-width: 300px) {
     .selector {
     width: 60px;
     font-size: 9px;
     }
     .input-field {
     font-size: 12px;
+    }
+    .input-field[type=text] {
+    height: 30px;
     width: 40px;
     }
     .appBtn {
