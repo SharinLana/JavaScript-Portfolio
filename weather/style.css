@@ -138,6 +138,7 @@ body {
 	border: 3px solid #CDF3A2;
 	background-color: transparent;
 	color: white;
+  z-index: 3;
 }
 
 .exit-btn:hover {
@@ -158,6 +159,7 @@ body {
 	text-align: center;
 	color: white;
 	margin-top: 15px;
+	padding: 5px 20px;
 }
 
 
@@ -167,50 +169,72 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+  z-index: -1;
 }
 
-@media all and (max-width: 400px) {
-	#city {
-		font-size: 35px;
+@media all and (max-width: 600px) {
+	#input {
+		border: 2px solid #CDF3A2;
+		font-size: 15px;
+		margin-top: 20px;
 	}
-	#date {
-		font-size: 22px;
-	}
-	#degrees {
-		font-size: 55px;
-		text-shadow: 3px 5px black;
-	}
-	#feelsLike {
-		font-size: 25px;
-	}
-	#min,
-	#max {
-		font-size: 24px;
-	}
-	#wind {
-		font-size: 24px;
-	}
-}
-
-@media all and (max-width: 350px) {
 	#city {
 		font-size: 30px;
 	}
+	
 	#date {
-		font-size: 22px;
+		font-size: 20px;
 	}
+	
 	#degrees {
-		font-size: 45px;
-		text-shadow: 2px 4px black;
+		font-size: 50px;
 	}
+	
 	#feelsLike {
-		font-size: 22px;
+		font-size: 20px;
 	}
+	
+	#conditions {
+		font-size: 26px;
+	}
+	
 	#min,
 	#max {
-		font-size: 22px;
+		font-size: 20px;
 	}
+	
 	#wind {
-		font-size: 22px;
+		font-size: 20px;
+	}
+	
+	.exit-btn {
+		font-size: 16px;
+		padding: 8px 30px;
+		border: 2px solid #CDF3A2;
+	}
+	
+	.note {
+		font-family: 'Lato', sans-serif;
+		font-size: 13px;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.363);
+		text-align: center;
+		color: white;
+		margin-top: 25px;
+	}
+}
+@media all and (max-width: 400px) {
+	#input {
+		margin-top: 8px;
+	}
+	#city {
+		font-size: 20px;
+	}
+	#degrees {
+		font-size: 40px;
+	}
+	#date, #feelsLike, #min,
+	#max, #wind {
+		font-size: 16px;
 	}
 }
