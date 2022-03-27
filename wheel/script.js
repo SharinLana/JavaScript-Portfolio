@@ -1,10 +1,18 @@
 const button = document.querySelector('#btn');
 const wheel = document.querySelector('#wheel');
 const marker = document.querySelector('#marker');
+const wheelContainer = document.querySelector('.wheel-container');
+const ruleContainer = document.querySelector('.rule-container');
+const firstBtnsContainer = document.querySelector('.first-container-btns');
+const attemptContainer = document.querySelector('.attempt-container');
+const statueContainer = document.querySelector('.statue-container');
 const score = document.querySelector('.score');
 const submit = document.querySelectorAll('.submit');
 const closeBtn = document.querySelectorAll('.closeBtn');
 const reloadBtn = document.querySelector('#reloadBtn');
+const reloadBtnOne = document.querySelector('#reloadBtnOne');
+const exitBtn = document.querySelector('.back-btn');
+const exitBtnTwo = document.querySelector('.exit-btn');
 const quoteText = document.querySelector('.quote');
 const remainingAttempts = document.querySelector('.paragraph');
 const intro = document.querySelectorAll('.intro');
@@ -12,6 +20,8 @@ const rules = document.querySelector('.rules');
 const spanOne = document.querySelectorAll('.spanOne');
 const spanTwo = document.querySelectorAll('.spanTwo');
 const playTatira = document.querySelector('.play');
+const libertyBtn = document.querySelector('.liberty-btn-play');
+const gif = document.querySelector('#libertyGif');
 
 const tickAudio = document.querySelector('#tickAudio');
 const taTiraAudio = document.querySelector('#taTiraAudio');
@@ -65,7 +75,6 @@ const motivationQuotes = [
     But don't give up! keep trying!`
 ]
 
-const gif = document.querySelector('#libertyGif');
 
 let deg = 0; //reference point for rotation degrees
 let zoneSize = 45; //8 zones in the circle, each takes 45 degrees (360 / 8)
@@ -121,64 +130,65 @@ const outroMain = [
 ]
 
 /* Start spinning */
-button.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    button.style.pointerEvents = 'none'; 
-    rules.style.display = 'none';
-
-    tickAudio.play();
-
-    /* Random choice of a music track + a song quote */
-    let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    quoteText.textContent = randomQuote;
-    quoteText.style.display = 'block';
-
-    if (randomQuote === 'Boop-Boop-a-Doop!') {
-        marilyn.play();
-    }
-    else if (randomQuote === `Oh, Those Russians!`) {
-        russians.play();
-    }
-    else if (randomQuote === `She's Got It! Your Baby, She's Got It!`) {
-        shesGotIt.play();
-    }
-    else if (randomQuote === 'Take a Chance, Take a Chance, Take a - Take a Chance - Chance!') {
-        chance.play();
-    }
-    else if (randomQuote === 'Anybody Seeeeen My Baby?') {
-        myBaby.play();
-    }
-    else if (randomQuote === 'Feel the Bit from The Tambourin!') {
-        dancingQueen.play();
-    }
-
-    /* Deducting attempts */
-    attempts--; 
-    remainingAttempts.textContent = `Remaining Attempts: ${attempts}`;
-    remainingAttempts.style.display = 'block';
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
     
-    /* Setting the number of spins for the wheel */
-    deg = Math.floor(5000 + Math.random() * 5000);
-
-    /* Animating the wheel */
-    wheel.style.transform = `rotate(${deg}deg)`;  
-    wheel.style.transition = 'all 5s ease-out'; 
-
-    wheel.classList.add('opacity'); 
+        firstBtnsContainer.style.display = 'none';
+        ruleContainer.style.display = 'none';
+        attemptContainer.style.display = 'block';
     
-})
-
+        tickAudio.play();
+    
+        /* Random choice of a music track + a song quote */
+        let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quoteText.textContent = randomQuote;
+        quoteText.style.display = 'block';
+    
+        if (randomQuote === 'Boop-Boop-a-Doop!') {
+            marilyn.play();
+        }
+        else if (randomQuote === `Oh, Those Russians!`) {
+            russians.play();
+        }
+        else if (randomQuote === `She's Got It! Your Baby, She's Got It!`) {
+            shesGotIt.play();
+        }
+        else if (randomQuote === 'Take a Chance, Take a Chance, Take a - Take a Chance - Chance!') {
+            chance.play();
+        }
+        else if (randomQuote === 'Anybody Seeeeen My Baby?') {
+            myBaby.play();
+        }
+        else if (randomQuote === 'Feel the Bit from The Tambourin!') {
+            dancingQueen.play();
+        }
+    
+        /* Deducting attempts */
+        attempts--; 
+        remainingAttempts.textContent = `Remaining Attempts: ${attempts}`;
+        remainingAttempts.style.display = 'block';
+        
+        /* Setting the number of spins for the wheel */
+        deg = Math.floor(5000 + Math.random() * 5000);
+    
+        /* Animating the wheel */
+        wheel.style.transform = `rotate(${deg}deg)`;  
+        wheel.style.transition = 'all 5s ease-out'; 
+    
+        wheel.classList.add('opacity'); 
+        
+    })
 
 /* Actions after stopping the wheel */
 wheel.addEventListener('transitionend', () => {
     tickAudio.pause();
+    firstBtnsContainer.style.display = 'none';
+    ruleContainer.style.display = 'none';
+    attemptContainer.style.display = 'none';
 
-    quoteText.style.display = 'none';
+    
     wheel.style.transition = 'none'; 
     wheel.classList.remove('opacity');
-
-    quoteText.style.display = 'none';
     
     /* Finding out the stopping point of the wheel */
     const actualDeg = deg % 360; 
@@ -191,8 +201,7 @@ wheel.addEventListener('transitionend', () => {
 
     if (attempts >= 1) {
         setTimeout(function() {
-            marker.style.display = 'none';
-            wheel.style.display = 'none';
+            wheelContainer.style.display = 'none';
             outroMain[winningSymbol].style.display = 'none';
         }, 2500);
 
@@ -206,8 +215,7 @@ wheel.addEventListener('transitionend', () => {
     }
     else if (attempts <= 0) {
         setTimeout(function() {
-            marker.style.display = 'none';
-            wheel.style.display = 'none';
+            wheelContainer.style.display = 'none';
             outroMain[winningSymbol].style.display = 'none';
         }, 2500);
 
@@ -236,7 +244,7 @@ wheel.addEventListener('transitionend', () => {
                     }
                 })
                 Swal.fire({
-                    title: `Your points: ${points}`,
+                    title: `Total points: ${points}`,
                     customClass: 'adaptation'
                   })
                 score.textContent = `Your points: ${points}`;
@@ -247,30 +255,29 @@ wheel.addEventListener('transitionend', () => {
                 /* Actions if the number of points >= 4 */
                 if (points >= 4) {
                     setTimeout(function() {
-                    marker.style.display = 'none';
-                    wheel.style.display = 'none';
-                    remainingAttempts.style.display = 'none';
-                    gif.style.display = 'block';
+                    wheelContainer.style.display = 'none';
+                    attemptContainer.style.display = 'none';
+                    statueContainer.style.display = 'block';
+                    libertyBtn.style.display = 'block';
                     taTiraAudio.play();
 
                     zoneSymbolDupicate[winningSymbol].style.display = 'none';
                     closeBtn.forEach(close => {
                         close.style.display = 'none';
                     })
-                    }, 3500);
+                    }, 3000);
                     
-                    setTimeout(function() {
                     reloadBtn.style.display = 'block';
+                    exitBtnTwo.style.display = 'block';
                     reloadBtn.addEventListener('click', () => {
                         window.location.reload();
                     })
-                }, 5500);
                 }
 
                 /* Actions if the number of points is less than 4  */
                 else if (points < 4 && attempts === 0) {
                     Swal.fire({
-                        title: `Your points: ${points}`,
+                        title: `Total points: ${points}`,
                         text: randomMotivationQuote,
                         customClass: 'adaptation'
                       })  
@@ -303,11 +310,12 @@ wheel.addEventListener('transitionend', () => {
                 
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    marker.style.display = 'block';
-                    wheel.style.display = 'block';
+
+                    wheelContainer.style.display = 'block';
                     zoneSymbol[winningSymbol].style.display = 'none';
                     zoneSymbolDupicate[winningSymbol].style.display = 'none';
-                    button.style.pointerEvents = 'auto';
+                    firstBtnsContainer.style.display = 'block';
+                    button.style.display = 'none';
                     spanOne.forEach(answer => {
                         answer.style.color = 'black';
                     })
@@ -317,33 +325,32 @@ wheel.addEventListener('transitionend', () => {
                     })
     
                     if (attempts <= 0) {
-                        button.style.display = 'none';
-                        reloadBtn.style.display = 'block';
-                        reloadBtn.addEventListener('click', () => {
+                        reloadBtnOne.style.display = 'block';
+                        reloadBtnOne.addEventListener('click', () => {
                                     window.location.reload();
                                 })
                     }
                     else {
                         button.style.display = 'block';
-                        reloadBtn.style.display = 'none';
+                        reloadBtnOne.style.display = 'none';
                     }
                 })
             })
         })
-
-    button.style.display = 'none';
     closeBtn.forEach(btn => {
         btn.style.display = 'none';
     })
-    })
+})
 
-    /* Activating/deactivaling the Statue of Liberty gif */
-    gif.addEventListener('click', () => {
-        if (taTiraAudio.played) {
-            taTiraAudio.pause();
+/* Activating/deactivaling the Statue of Liberty music */
+    libertyBtn.addEventListener('click', () => {
+        if (taTiraAudio.paused) {
+            taTiraAudio.play();
+            libertyBtn.classList.toggle('liberty-btn-pause');
         }
         else {
-            taTiraAudio.play();
+            taTiraAudio.pause();
+            libertyBtn.classList.toggle('liberty-btn-pause');
         }
     })
 
@@ -354,4 +361,5 @@ gsap.from('#marker', {y: -30, opacity: 0, duration: .4, delay: 0.3, ease: 'bounc
 gsap.from('.rules', {opacity: 0, delay: .7, duration: .6})
 gsap.from('#btn', {opacity: 0, duration: .5, delay: 1.2})
 gsap.from('.back-btn', {opacity: 0, duration: .5, delay: 1.6})
+
 

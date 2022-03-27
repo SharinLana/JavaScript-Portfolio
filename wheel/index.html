@@ -11,7 +11,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
    </head>
    <body>
-      <div class="container">
          <audio id="tickAudio" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/wheel-of-fortune.mp3?v=1648104886058"></audio>
          <audio id="taTiraAudio" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/tatira.mp3?v=1648104874193"></audio>
          <audio id="marilyn" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/marilyn.mp3?v=1648104810980"></audio>
@@ -20,857 +19,924 @@
          <audio id="myBaby" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/my_baby.mp3?v=1648104824475"></audio>
          <audio id="chance" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/take_a_chance.mp3?v=1648104868572"></audio>
          <audio id="russians" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/those_russians.mp3?v=1648104879151"></audio>
-         <img id="marker" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/marker.png?v=1648104816209">
-         <img id="wheel" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/wheel.png?v=1648104893344" width="400">
-         <p class="paragraph">Remaining Attempts: <span id="attempts"></span></p>
-         <div class="dancingParent">
-            <p class="score"></p>
+         
+    <div class="main-container">
+         <!-- First Container (Wheel) -->
+         <div class="first-container">
+            <div class="wheel-container"> 
+                <img id="marker" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/marker.png?v=1648104816209">
+                <img id="wheel" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/wheel.png?v=1648104893344" >
+            </div>
+            <div class="rule-container">
+                <h4 class="rules">Whimsical animals are wondering how well you know US laws.
+                    Answer their questions, get at least 4 points and dance with the Statue of Liberty!
+                 </h4>
+            </div>
+            <div class="extra-container-one">
+                <div class="first-container-btns">
+                    <button id="btn">Spin</button>
+                    <button id="reloadBtnOne">Play Again!</button>
+                    <a href="https://lana-sharin-portfolio.glitch.me/games.html" class="exit-link"><button class="back-btn">Back To All Games</button></a>
+                </div>
+            </div>
+            <div class="attempt-container">
+                <p class="paragraph">Remaining Attempts: <span id="attempts"></span></p>
+                <h3 class="quote"></h3>
+            </div>
+        </div>
+
+        <!-- QUIZ CONTAINER -->
+        <div class="form-container"> 
+        <!-- 0  ****************** -->
+        <h2 class="outro" id="allAnimals">Be ready for the questions from All the Animals!</h2>
+        <form class="questionZero">
+           <h2 class="intro all-animals">Questions from All The Animals</h2>
+           <div class="extra-container-two"> 
+              <label>What is illegal to wear in Alabama's churches?</label>
+              <div> 
+                 <input type="radio" name="question1">Fake eyelashes 
+              </div>
+              <div> 
+                 <input type="radio" name="question1">Makeup
+              </div>
+              <div> 
+                 <input type="radio" name="question1">Fake hair (wigs)
+              </div>
+              <div> 
+                 <input type="radio" name="question1" class="correctAnswer"><span class="spanOne">Fake moustache</span> 
+              </div>
+              <label>In which state is incestuous marriage allowed?</label>
+              <div> 
+                 <input type="radio" name="question2" class="correctAnswer"><span class="spanOne">In Alabama</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question2">In New Jersey 
+              </div>
+              <div> 
+                 <input type="radio" name="question2">In California
+              </div>
+              <div> 
+                 <input type="radio" name="question2">In Florida
+              </div>
+              <label>In Arkansas, what shouldn't a teacher do if he/she wants to get a raise?</label>        
+              <div> 
+                 <input type="radio" name="question3">A teached should never yell at students
+              </div>
+              <div> 
+                 <input type="radio" name="question3" class="correctAnswer"><span class="spanOne">A teacher should never cut his/her hair into a bob</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question3">A teacher should never wear high heels
+              </div>
+              <div> 
+                 <input type="radio" name="question3">A teacher should never be late for class
+              </div>
+            </div>
+            <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
+            </div>
+        </form>
+        <!-- 0 - DUPLICATE -->
+        <h2 class="outro" id="allAnimalsTwo">Be ready for the questions from All the Animals!</h2>
+        <form class="questionZero-duplicate">
+           <h2 class="intro all-animals">Questions from All The Animals</h2>
+           <div class="extra-container-two"> 
+              <label>Is it illegal to fart in Florida?</label>
+              <div> 
+                 <input type="radio" name="question1">No, it is a joke. Feel free to fart wherever and whenever you want!
+              </div>
+              <div> 
+                 <input type="radio" name="question1">It is illegal to fart in a public place in Florida
+              </div>
+              <div> 
+                 <input type="radio" name="question1" class="answerDuplicate"><span class="spanTwo">It is legal to fart in public place in Florida but only until 6 p.m. After 6 p.m. you may be fined for that</span>
+              </div>
+              <label>If you are a woman who lives in New Mexico, it is against the law for you to...</label>
+              <div> 
+                 <input type="radio" name="question2" class="answerDuplicate"><span class="spanTwo">refuel a car yourself</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question2">drive a car
+              </div>
+              <div> 
+                 <input type="radio" name="question2">buy and sell a car
+              </div>
+              <div> 
+                 <input type="radio" name="question2">wash a car
+              </div>
+              <label>In which state it is illegal to deny the existence of God?</label>        
+              <div> 
+                 <input type="radio" name="question3">Texas
+              </div>
+              <div> 
+                 <input type="radio" name="question3" class="answerDuplicate"><span class="spanTwo">Vermont</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question3">North Carolina
+              </div>
+              <div> 
+                 <input type="radio" name="question3">Oklahoma
+              </div>
          </div>
-         <!-- 0  ****************** -->
-         <h2 class="outro" id="allAnimals">Be ready for the questions from All the Animals!</h2>
-         <form class="questionZero">
-            <h2 class="intro all-animals">Questions from All The Animals</h2>
-            <div class="center">
-               <label>What is illegal to wear in Alabama's churches?</label>
-               <div> 
-                  <input type="radio" name="question1">Fake eyelashes 
-               </div>
-               <div> 
-                  <input type="radio" name="question1">Makeup
-               </div>
-               <div> 
-                  <input type="radio" name="question1">Fake hair (wigs)
-               </div>
-               <div> 
-                  <input type="radio" name="question1" class="correctAnswer"><span class="spanOne">Fake moustache</span> 
-               </div>
-               <label>In which state is incestuous marriage allowed?</label>
-               <div> 
-                  <input type="radio" name="question2" class="correctAnswer"><span class="spanOne">In Alabama</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question2">In New Jersey 
-               </div>
-               <div> 
-                  <input type="radio" name="question2">In California
-               </div>
-               <div> 
-                  <input type="radio" name="question2">In Florida
-               </div>
-               <label>In Arkansas, what shouldn't a teacher do if he/she wants to get a raise?</label>        
-               <div> 
-                  <input type="radio" name="question3">A teached should never yell at students
-               </div>
-               <div> 
-                  <input type="radio" name="question3" class="correctAnswer"><span class="spanOne">A teacher should never cut his/her hair into a bob</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question3">A teacher should never wear high heels
-               </div>
-               <div> 
-                  <input type="radio" name="question3">A teacher should never be late for class
-               </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 0 - DUPLICATE -->
-         <h2 class="outro" id="allAnimalsTwo">Be ready for the questions from All the Animals!</h2>
-         <form class="questionZero-duplicate">
-            <h2 class="intro all-animals">Questions from All The Animals</h2>
-            <div class="center">
-               <label>Is it illegal to fart in Florida?</label>
-               <div> 
-                  <input type="radio" name="question1">No, it is a joke. Feel free to fart wherever and whenever you want!
-               </div>
-               <div> 
-                  <input type="radio" name="question1">It is illegal to fart in a public place in Florida
-               </div>
-               <div> 
-                  <input type="radio" name="question1" class="answerDuplicate"><span class="spanTwo">It is legal to fart in public place in Florida but only until 6 p.m. After 6 p.m. you may be fined for that</span>
-               </div>
-               <label>If you are a woman who lives in New Mexico, it is against the law for you to...</label>
-               <div> 
-                  <input type="radio" name="question2" class="answerDuplicate"><span class="spanTwo">refuel a car yourself</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question2">drive a car
-               </div>
-               <div> 
-                  <input type="radio" name="question2">buy and sell a car
-               </div>
-               <div> 
-                  <input type="radio" name="question2">wash a car
-               </div>
-               <label>In which state it is illegal to deny the existence of God?</label>        
-               <div> 
-                  <input type="radio" name="question3">Texas
-               </div>
-               <div> 
-                  <input type="radio" name="question3" class="answerDuplicate"><span class="spanTwo">Vermont</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question3">North Carolina
-               </div>
-               <div> 
-                  <input type="radio" name="question3">Oklahoma
-               </div>
+        </form>
+        <!-- 1 ************** -->
+        <h2 class="outro" id="frogQuestions">Be ready for the FROG's questions!</h2>
+        <form class="questionOne">
+           <h2 class="intro frog">Frog's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>Is it illegal to wear slippers in public in NYC?</label>
+              <div> 
+                 <input type="radio" name="question1">It is legal   
+              </div>
+              <div> 
+                 <input type="radio" name="question1">It is illegal
+              </div>
+              <div> 
+                 <input type="radio" name="question1" class="correctAnswer"><span class="spanOne">It's legal but only until 10 pm </span>
+              </div>
+              <label>What you are not allowed to ride on the highway in Nevada?</label>
+              <div> 
+                 <input type="radio" name="question2">A bicycle 
+              </div>
+              <div> 
+                 <input type="radio" name="question2">A horse
+              </div>
+              <div> 
+                 <input type="radio" name="question2">A Tesla
+              </div>
+              <div> 
+                 <input type="radio" name="question2" class="correctAnswer"><span class="spanOne">A camel</span>
+              </div>
+              <label>How many dogs are you allowed to own in Arizona?</label>
+              <div> 
+                 <input type="radio" name="question3">No more than 2 
+              </div>
+              <div> 
+                 <input type="radio" name="question3">No more than 1
+              </div>
+              <div> 
+                 <input type="radio" name="question3" class="correctAnswer"><span class="spanOne">No more than 4</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question3">You can own as many dogs as you want
+              </div>
+       </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 1 ************** -->
-         <h2 class="outro" id="frogQuestions">Be ready for the FROG's questions!</h2>
-         <form class="questionOne">
-            <h2 class="intro frog">Frog's Questions</h2>
-            <div class="center">
-               <label>Is it illegal to wear slippers in public in NYC?</label>
-               <div> 
-                  <input type="radio" name="question1">It is legal   
-               </div>
-               <div> 
-                  <input type="radio" name="question1">It is illegal
-               </div>
-               <div> 
-                  <input type="radio" name="question1" class="correctAnswer"><span class="spanOne">It's legal but only until 10 pm </span>
-               </div>
-               <label>What you are not allowed to ride on the highway in Nevada?</label>
-               <div> 
-                  <input type="radio" name="question2">A bicycle 
-               </div>
-               <div> 
-                  <input type="radio" name="question2">A horse
-               </div>
-               <div> 
-                  <input type="radio" name="question2">A Tesla
-               </div>
-               <div> 
-                  <input type="radio" name="question2" class="correctAnswer"><span class="spanOne">A camel</span>
-               </div>
-               <label>How many dogs are you allowed to own in Arizona?</label>
-               <div> 
-                  <input type="radio" name="question3">No more than 2 
-               </div>
-               <div> 
-                  <input type="radio" name="question3">No more than 1
-               </div>
-               <div> 
-                  <input type="radio" name="question3" class="correctAnswer"><span class="spanOne">No more than 4</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question3">You can own as many dogs as you want
-               </div>
+        </form>
+        <!--  1 - DUPLICATE -->
+        <h2 class="outro" id="frogQuestionsTwo">Be ready for the FROG's questions!</h2>
+        <form class="questionOne-duplicate">
+           <h2 class="intro frog">Frog's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>Women who live in Vermont must get written permission from their husbands to...</label>
+              <div> 
+                 <input type="radio" name="question1">wear high heels   
+              </div>
+              <div> 
+                 <input type="radio" name="question1">wear a wig
+              </div>
+              <div> 
+                 <input type="radio" name="question1" class="answerDuplicate"><span class="spanTwo">wear false teeth</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question1">wear short skirt
+              </div>
+              <label>In West Virginia, you can sue a fireman for...</label>
+              <div> 
+                 <input type="radio" name="question2">too sexy and masculine look
+              </div>
+              <div> 
+                 <input type="radio" name="question2">scaring you with a fire truck siren
+              </div>
+              <div> 
+                 <input type="radio" name="question2" class="answerDuplicate"><span class="spanTwo">flirting with and whistling at a woman who are passing a firehouse </span>
+              </div>
+              <label>In which state you can be fined or jailed for making ugly face at a dog?</label>
+              <div> 
+                 <input type="radio" name="question3">New Jersey
+              </div>
+              <div> 
+                 <input type="radio" name="question3">New York
+              </div>
+              <div> 
+                 <input type="radio" name="question3" class="answerDuplicate"><span class="spanTwo">Oklahoma</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question3">New Mexico
+              </div>
+         </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!--  1 - DUPLICATE -->
-         <h2 class="outro" id="frogQuestionsTwo">Be ready for the FROG's questions!</h2>
-         <form class="questionOne-duplicate">
-            <h2 class="intro frog">Frog's Questions</h2>
-            <div class="center">
-               <label>Women who live in Vermont must get written permission from their husbands to...</label>
-               <div> 
-                  <input type="radio" name="question1">wear high heels   
-               </div>
-               <div> 
-                  <input type="radio" name="question1">wear a wig
-               </div>
-               <div> 
-                  <input type="radio" name="question1" class="answerDuplicate"><span class="spanTwo">wear false teeth</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question1">wear short skirt
-               </div>
-               <label>In West Virginia, you can sue a fireman for...</label>
-               <div> 
-                  <input type="radio" name="question2">too sexy and masculine look
-               </div>
-               <div> 
-                  <input type="radio" name="question2">scaring you with a fire truck siren
-               </div>
-               <div> 
-                  <input type="radio" name="question2" class="answerDuplicate"><span class="spanTwo">flirting with and whistling at a woman who are passing a firehouse </span>
-               </div>
-               <label>In which state you can be fined or jailed for making ugly face at a dog?</label>
-               <div> 
-                  <input type="radio" name="question3">New Jersey
-               </div>
-               <div> 
-                  <input type="radio" name="question3">New York
-               </div>
-               <div> 
-                  <input type="radio" name="question3" class="answerDuplicate"><span class="spanTwo">Oklahoma</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question3">New Mexico
-               </div>
+        </form>
+        <!-- 2 ************* -->
+        <h2 class="outro" id="snailQuestions">Be ready for the SNAIL's questions!</h2>
+        <form class="questionTwo">
+           <h2 class="intro snail">Snail's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>in California, women are not allowed to drive a motor vahicle while wearing...</label>
+              <div> 
+                 <input type="radio" name="question4" class="correctAnswer"><span class="spanOne">a housecoat</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question4">a swimsuit
+              </div>
+              <div> 
+                 <input type="radio" name="question4">nothing
+              </div>
+              <div> 
+                 <input type="radio" name="question4">a skirt
+              </div>
+              <label>Is it legal or illegal to walk arond barefoot in Texas?</label>
+              <div> 
+                 <input type="radio" name="question5">It is legal
+              </div>
+              <div> 
+                 <input type="radio" name="question5" class="correctAnswer"><span class="spanOne">It is illegal</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question5">It is legal but only in rural areas
+              </div>
+              <label>Do you need a license to skateboard in Florida?</label>
+              <div> 
+                 <input type="radio" name="question6" class="correctAnswer"><span class="spanOne">Yes, you need a license to do so</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question6">No, you don't need a license to skateboard
+              </div>
+              <div> 
+                 <input type="radio" name="question6">You only need a license if you organize skateboard racing
+              </div>
+         </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 2 ************* -->
-         <h2 class="outro" id="snailQuestions">Be ready for the SNAIL's questions!</h2>
-         <form class="questionTwo">
-            <h2 class="intro snail">Snail's Questions</h2>
-            <div class="center">
-               <label>in California, women are not allowed to drive a motor vahicle while wearing...</label>
-               <div> 
-                  <input type="radio" name="question4" class="correctAnswer"><span class="spanOne">a housecoat</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question4">a swimsuit
-               </div>
-               <div> 
-                  <input type="radio" name="question4">nothing
-               </div>
-               <div> 
-                  <input type="radio" name="question4">a skirt
-               </div>
-               <label>Is it legal or illegal to walk arond barefoot in Texas?</label>
-               <div> 
-                  <input type="radio" name="question5">It is legal
-               </div>
-               <div> 
-                  <input type="radio" name="question5" class="correctAnswer"><span class="spanOne">It is illegal</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question5">It is legal but only in rural areas
-               </div>
-               <label>Do you need a license to skateboard in Florida?</label>
-               <div> 
-                  <input type="radio" name="question6" class="correctAnswer"><span class="spanOne">Yes, you need a license to do so</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question6">No, you don't need a license to skateboard
-               </div>
-               <div> 
-                  <input type="radio" name="question6">You only need a license if you organize skateboard racing
-               </div>
+        </form>
+        <!-- 2 - DUPLICATE -->
+        <h2 class="outro" id="snailQuestionsTwo">Be ready for the SNAIL's questions!</h2>
+        <form class="questionTwo-duplicate">
+           <h2 class="intro snail">Snail's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>A married man or woman in Mississippi will be fined $500 and/or imprisoned for 6 months if he/she...</label>
+              <div> 
+                 <input type="radio" name="question4" class="answerDuplicate"><span class="spanTwo">cheated on his/her spouse</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question4">beats his/her spouse
+              </div>
+              <div> 
+                 <input type="radio" name="question4">blackmails his/her spouse
+              </div>
+              <label>In which state it is a crime promising that you will marry a woman just to seduce her?</label>
+              <div> 
+                 <input type="radio" name="question5">Tennessee
+              </div>
+              <div> 
+                 <input type="radio" name="question5" class="answerDuplicate"><span class="spanTwo">Mississippi</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question5">Maryland
+              </div>
+              <label>What should not be done in a car in a public place in Delaware?</label>
+              <div> 
+                 <input type="radio" name="question6" class="answerDuplicate"><span class="spanTwo">Changing clothes</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question6">Eating
+              </div>
+              <div> 
+                 <input type="radio" name="question6">Kissing
+              </div>
+        </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 2 - DUPLICATE -->
-         <h2 class="outro" id="snailQuestionsTwo">Be ready for the SNAIL's questions!</h2>
-         <form class="questionTwo-duplicate">
-            <h2 class="intro snail">Snail's Questions</h2>
-            <div class="center">
-               <label>A married man or woman in Mississippi will be fined $500 and/or imprisoned for 6 months if he/she...</label>
-               <div> 
-                  <input type="radio" name="question4" class="answerDuplicate"><span class="spanTwo">cheated on his/her spouse</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question4">beats his/her spouse
-               </div>
-               <div> 
-                  <input type="radio" name="question4">blackmails his/her spouse
-               </div>
-               <label>In which state it is a crime promising that you will marry a woman just to seduce her?</label>
-               <div> 
-                  <input type="radio" name="question5">Tennessee
-               </div>
-               <div> 
-                  <input type="radio" name="question5" class="answerDuplicate"><span class="spanTwo">Mississippi</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question5">Maryland
-               </div>
-               <label>What should not be done in a car in a public place in Delaware?</label>
-               <div> 
-                  <input type="radio" name="question6" class="answerDuplicate"><span class="spanTwo">Changing clothes</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question6">Eating
-               </div>
-               <div> 
-                  <input type="radio" name="question6">Kissing
-               </div>
+        </form>
+        <!-- 3 **************** -->
+        <h2 class="outro" id="dolphinQuestions">Be ready for the DOLPHIN's questions!</h2>
+        <form class="questionThree">
+           <h2 class="intro dolphin">Dolphin's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>In Illinois, is it allowed to drink alcohol if you are under 21?</label>
+              <div> 
+                 <input type="radio" name="question7">No 
+              </div>
+              <div> 
+                 <input type="radio" name="question7">Yes, but adult supervision required
+              </div>
+              <div> 
+                 <input type="radio" name="question7">Yes, if nobody sees you
+              </div>
+              <div> 
+                 <input type="radio" name="question7" class="correctAnswer"><span class="spanOne">Yes, but you must be enrolled in a culinary program </span>
+              </div>
+              <label>What is forbidden to do on Sunday in Washington state?</label>
+              <div> 
+                 <input type="radio" name="question8">Buy a mattress
+              </div>
+              <div> 
+                 <input type="radio" name="question8">Buy meat
+              </div>
+              <div> 
+                 <input type="radio" name="question8" class="correctAnswer"><span class="spanOne">Buy mattresses and meat </span>
+              </div>
+              <label>Is there an annual "unmarried tax" for single people in Missouri state?</label>
+              <div> 
+                 <input type="radio" name="question9">Yes, for single women
+              </div>
+              <div> 
+                 <input type="radio" name="question9" class="correctAnswer"><span class="spanOne">Yes, for single men</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question9">No
+              </div>
+              <div> 
+                 <input type="radio" name="question9">Yes, for both - single men and women
+              </div>
+       </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 3 **************** -->
-         <h2 class="outro" id="dolphinQuestions">Be ready for the DOLPHIN's questions!</h2>
-         <form class="questionThree">
-            <h2 class="intro dolphin">Dolphin's Questions</h2>
-            <div class="center">
-               <label>In Illinois, is it allowed to drink alcohol if you are under 21?</label>
-               <div> 
-                  <input type="radio" name="question7">No 
-               </div>
-               <div> 
-                  <input type="radio" name="question7">Yes, but adult supervision required
-               </div>
-               <div> 
-                  <input type="radio" name="question7">Yes, if nobody sees you
-               </div>
-               <div> 
-                  <input type="radio" name="question7" class="correctAnswer"><span class="spanOne">Yes, but you must be enrolled in a culinary program </span>
-               </div>
-               <label>What is forbidden to do on Sunday in Washington state?</label>
-               <div> 
-                  <input type="radio" name="question8">Buy a mattress
-               </div>
-               <div> 
-                  <input type="radio" name="question8">Buy meat
-               </div>
-               <div> 
-                  <input type="radio" name="question8" class="correctAnswer"><span class="spanOne">Buy mattresses and meat </span>
-               </div>
-               <label>Is there an annual "unmarried tax" for single people in Missouri state?</label>
-               <div> 
-                  <input type="radio" name="question9">Yes, for single women
-               </div>
-               <div> 
-                  <input type="radio" name="question9" class="correctAnswer"><span class="spanOne">Yes, for single men</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question9">No
-               </div>
-               <div> 
-                  <input type="radio" name="question9">Yes, for both - single men and women
-               </div>
+        </form>
+        <!-- 3 - DUPLICATE -->
+        <h2 class="outro" id="dolphinQuestionsTwo">Be ready for the DOLPHIN's questions!</h2>
+        <form class="questionThree-duplicate">
+           <h2 class="intro dolphin">Dolphin's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>Which type of sex is officially banned in Maryland?</label>
+              <div> 
+                 <input type="radio" name="question7">All the types of sex listed below 
+              </div>
+              <div> 
+                 <input type="radio" name="question7">Gay sex
+              </div>
+              <div> 
+                 <input type="radio" name="question7">Group sex
+              </div>
+              <div> 
+                 <input type="radio" name="question7" class="answerDuplicate"><span class="spanTwo">Oral sex</span> 
+              </div>
+              <label>If you are a woman who lives in Maryland and is married to a man, it is illegal for you...</label>
+              <div> 
+                 <input type="radio" name="question8">gossip with your girlfriends about your husband
+              </div>
+              <div> 
+                 <input type="radio" name="question8">disobey your husband’s orders in critical situations
+              </div>
+              <div> 
+                 <input type="radio" name="question8" class="answerDuplicate"><span class="spanTwo">to go through your husband’s pockets while he is sleeping</span>
+              </div>
+              <label>In Baltimore, Maryland, you will be arrested if you decide to go to the movies with a...</label>
+              <div> 
+                 <input type="radio" name="question9">gun
+              </div>
+              <div> 
+                 <input type="radio" name="question9" class="answerDuplicate"><span class="spanTwo">lion</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question9">unleashed dog
+              </div>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 3 - DUPLICATE -->
-         <h2 class="outro" id="dolphinQuestionsTwo">Be ready for the DOLPHIN's questions!</h2>
-         <form class="questionThree-duplicate">
-            <h2 class="intro dolphin">Dolphin's Questions</h2>
-            <div class="center">
-               <label>Which type of sex is officially banned in Maryland?</label>
-               <div> 
-                  <input type="radio" name="question7">All the types of sex listed below 
-               </div>
-               <div> 
-                  <input type="radio" name="question7">Gay sex
-               </div>
-               <div> 
-                  <input type="radio" name="question7">Group sex
-               </div>
-               <div> 
-                  <input type="radio" name="question7" class="answerDuplicate"><span class="spanTwo">Oral sex</span> 
-               </div>
-               <label>If you are a woman who lives in Maryland and is married to a man, it is illegal for you...</label>
-               <div> 
-                  <input type="radio" name="question8">gossip with your girlfriends about your husband
-               </div>
-               <div> 
-                  <input type="radio" name="question8">disobey your husband’s orders in critical situations
-               </div>
-               <div> 
-                  <input type="radio" name="question8" class="answerDuplicate"><span class="spanTwo">to go through your husband’s pockets while he is sleeping</span>
-               </div>
-               <label>In Baltimore, Maryland, you will be arrested if you decide to go to the movies with a...</label>
-               <div> 
-                  <input type="radio" name="question9">gun
-               </div>
-               <div> 
-                  <input type="radio" name="question9" class="answerDuplicate"><span class="spanTwo">lion</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question9">unleashed dog
-               </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 4 ***************** -->
-         <h2 class="outro" id="ladybugQuestions">Be ready for the LADYBUG's questions!</h2>
-         <form class="questionFour">
-            <h2 class="intro ladybug">Ladybug's Questions</h2>
-            <div class="center">
-               <label> When would a private home in Tennessee be considered a brothel?</label>
-               <div> 
-                  <input type="radio" name="question10">If there are more than 10 women live there 
-               </div>
-               <div> 
-                  <input type="radio" name="question10">If there are more than 6 women live there
-               </div>
-               <div> 
-                  <input type="radio" name="question10">If the neighbors call the inhabitants of the house whores
-               </div>
-               <div> 
-                  <input type="radio" name="question10" class="correctAnswer"><span class="spanOne">If there are more than 8 women live there</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question10">If different men often visit the house
-               </div>
-               <label>In Georgia state, you will be fined if you are driving...</label>
-               <div> 
-                  <input type="radio" name="question11">drunk
-               </div>
-               <div> 
-                  <input type="radio" name="question11">with one hand
-               </div>
-               <div> 
-                  <input type="radio" name="question11">and talking on the phone
-               </div>
-               <div> 
-                  <input type="radio" name="question11" class="correctAnswer"><span class="spanOne">with headphones </span>
-               </div>
-               <label>In Georgia state, it is illegal to keep a donkey...</label>
-               <div> 
-                  <input type="radio" name="question12" class="correctAnswer"><span class="spanOne">in a bathtub</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question12">in a house
-               </div>
-               <div> 
-                  <input type="radio" name="question12">in a car. 
-               </div>
-               <div> 
-                  <input type="radio" name="question12">in the front yard. 
-               </div>
+        </form>
+        <!-- 4 ***************** -->
+        <h2 class="outro" id="ladybugQuestions">Be ready for the LADYBUG's questions!</h2>
+        <form class="questionFour">
+           <h2 class="intro ladybug">Ladybug's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> When would a private home in Tennessee be considered a brothel?</label>
+              <div> 
+                 <input type="radio" name="question10">If there are more than 10 women live there 
+              </div>
+              <div> 
+                 <input type="radio" name="question10">If there are more than 6 women live there
+              </div>
+              <div> 
+                 <input type="radio" name="question10">If the neighbors call the inhabitants of the house whores
+              </div>
+              <div> 
+                 <input type="radio" name="question10" class="correctAnswer"><span class="spanOne">If there are more than 8 women live there</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question10">If different men often visit the house
+              </div>
+              <label>In Georgia state, you will be fined if you are driving...</label>
+              <div> 
+                 <input type="radio" name="question11">drunk
+              </div>
+              <div> 
+                 <input type="radio" name="question11">with one hand
+              </div>
+              <div> 
+                 <input type="radio" name="question11">and talking on the phone
+              </div>
+              <div> 
+                 <input type="radio" name="question11" class="correctAnswer"><span class="spanOne">with headphones </span>
+              </div>
+              <label>In Georgia state, it is illegal to keep a donkey...</label>
+              <div> 
+                 <input type="radio" name="question12" class="correctAnswer"><span class="spanOne">in a bathtub</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question12">in a house
+              </div>
+              <div> 
+                 <input type="radio" name="question12">in a car. 
+              </div>
+              <div> 
+                 <input type="radio" name="question12">in the front yard. 
+              </div>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 4 - DUPLICATE -->
-         <h2 class="outro" id="ladybugQuestionsTwo">Be ready for the LADYBUG's questions!</h2>
-         <form class="questionFour-duplicate">
-            <h2 class="intro ladybug">Ladybug's Questions</h2>
-            <div class="center">
-               <label> Between 7 a.m. and 7 p.m., barbers in Nebraska are forbidden from eating...</label>
-               <div> 
-                  <input type="radio" name="question10">garlic
-               </div>
-               <div> 
-                  <input type="radio" name="question10">curry
-               </div>
-               <div> 
-                  <input type="radio" name="question10" class="answerDuplicate"><span class="spanTwo">onions</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question10">celery
-               </div>
-               <label>What percentage of alcohol in candy does the state of Massachusetts allow?</label>
-               <div> 
-                  <input type="radio" name="question11">5%
-               </div>
-               <div> 
-                  <input type="radio" name="question11">25%
-               </div>
-               <div> 
-                  <input type="radio" name="question11">10%
-               </div>
-               <div> 
-                  <input type="radio" name="question11" class="answerDuplicate"><span class="spanTwo">1%</span>
-               </div>
-               <label>Which US city still allows duels to the death (but only on Sundays and in the presence of the governor)?</label>
-               <div> 
-                  <input type="radio" name="question12" class="answerDuplicate"><span class="spanTwo">Boston</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question12">Houston
-               </div>
-               <div> 
-                  <input type="radio" name="question12">Las Vegas
-               </div>
-               <div> 
-                  <input type="radio" name="question12">Seattle
-               </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 5 ***************** -->
-         <h2 class="outro" id="coalaQuestions">Be ready for the COALA's questions!</h2>
-         <form class="questionFive">
-            <h2 class="intro coala">Coala's Questions</h2>
-            <div class="center">
-               <label> In Alabama, it is illegal to tie an alligator...</label>
-               <div> 
-                  <input type="radio" name="question13">to a tree
-               </div>
-               <div> 
-                  <input type="radio" name="question13" class="correctAnswer"><span class="spanOne">to a fire hydrant</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question13">to a front door handle
-               </div>
-               <div> 
-                  <input type="radio" name="question13">to a car bumper
-               </div>
-               <div> 
-                  <input type="radio" name="question13">to another alligator
-               </div>
-               <label>In Alaska, it's forbidden to drop a moose...</label>
-               <div> 
-                  <input type="radio" name="question14">from a window
-               </div>
-               <div> 
-                  <input type="radio" name="question14">from a boat 
-               </div>
-               <div> 
-                  <input type="radio" name="question14" class="correctAnswer"><span class="spanOne">from an airplane</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question14">from a rooftop
-               </div>
-               <label>In Idaho, it's illegal to sell chickens...</label>
-               <div> 
-                  <input type="radio" name="question15">at dawn
-               </div>
-               <div> 
-                  <input type="radio" name="question15" class="correctAnswer"><span class="spanOne">after sundown</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question15">outside 
-               </div>
-               <div> 
-                  <input type="radio" name="question15">in the front yard. 
-               </div>
+        </form>
+        <!-- 4 - DUPLICATE -->
+        <h2 class="outro" id="ladybugQuestionsTwo">Be ready for the LADYBUG's questions!</h2>
+        <form class="questionFour-duplicate">
+           <h2 class="intro ladybug">Ladybug's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> Between 7 a.m. and 7 p.m., barbers in Nebraska are forbidden from eating...</label>
+              <div> 
+                 <input type="radio" name="question10">garlic
+              </div>
+              <div> 
+                 <input type="radio" name="question10">curry
+              </div>
+              <div> 
+                 <input type="radio" name="question10" class="answerDuplicate"><span class="spanTwo">onions</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question10">celery
+              </div>
+              <label>What percentage of alcohol in candy does the state of Massachusetts allow?</label>
+              <div> 
+                 <input type="radio" name="question11">5%
+              </div>
+              <div> 
+                 <input type="radio" name="question11">25%
+              </div>
+              <div> 
+                 <input type="radio" name="question11">10%
+              </div>
+              <div> 
+                 <input type="radio" name="question11" class="answerDuplicate"><span class="spanTwo">1%</span>
+              </div>
+              <label>Which US city still allows duels to the death (but only on Sundays and in the presence of the governor)?</label>
+              <div> 
+                 <input type="radio" name="question12" class="answerDuplicate"><span class="spanTwo">Boston</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question12">Houston
+              </div>
+              <div> 
+                 <input type="radio" name="question12">Las Vegas
+              </div>
+              <div> 
+                 <input type="radio" name="question12">Seattle
+              </div>
+        </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 5 - DUPLICATE -->
-         <h2 class="outro" id="coalaQuestionsTwo">Be ready for the COALA's questions!</h2>
-         <form class="questionFive-duplicate">
-            <h2 class="intro coala">Coala's Questions</h2>
-            <div class="center">
-               <label>In Nebraska, parents may be arrested if their child...</label>
-               <div> 
-                  <input type="radio" name="question13">is yelling in a public place for more than 3 minutes
-               </div>
-               <div> 
-                  <input type="radio" name="question13" class="answerDuplicate"><span class="spanTwo">burps during church</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question13">is swearing out loud 
-               </div>
-               <div> 
-                  <input type="radio" name="question13">is bullying another kid at school
-               </div>
-               <label>In Massachusetts, women are officially prohibited from having sex...</label>
-               <div> 
-                  <input type="radio" name="question14">while she is fully dressed
-               </div>
-               <div> 
-                  <input type="radio" name="question14">during pregnancy
-               </div>
-               <div> 
-                  <input type="radio" name="question14" class="answerDuplicate"><span class="spanTwo">in a top position</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question14">with themselves
-               </div>
-               <label>Virginia has a law that prohibits...</label>
-               <div> 
-                  <input type="radio" name="question15">tickling a man (women may be tickled)
-               </div>
-               <div> 
-                  <input type="radio" name="question15" class="answerDuplicate"><span class="spanTwo">tickling a woman (men, however, may be tickled)</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question15">tickling someone else's kid  
-               </div>
-               <div> 
-                  <input type="radio" name="question15">tickling a wild animal
-               </div>
+        </form>
+        <!-- 5 ***************** -->
+        <h2 class="outro" id="coalaQuestions">Be ready for the COALA's questions!</h2>
+        <form class="questionFive">
+           <h2 class="intro coala">Coala's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> In Alabama, it is illegal to tie an alligator...</label>
+              <div> 
+                 <input type="radio" name="question13">to a tree
+              </div>
+              <div> 
+                 <input type="radio" name="question13" class="correctAnswer"><span class="spanOne">to a fire hydrant</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question13">to a front door handle
+              </div>
+              <div> 
+                 <input type="radio" name="question13">to a car bumper
+              </div>
+              <div> 
+                 <input type="radio" name="question13">to another alligator
+              </div>
+              <label>In Alaska, it's forbidden to drop a moose...</label>
+              <div> 
+                 <input type="radio" name="question14">from a window
+              </div>
+              <div> 
+                 <input type="radio" name="question14">from a boat 
+              </div>
+              <div> 
+                 <input type="radio" name="question14" class="correctAnswer"><span class="spanOne">from an airplane</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question14">from a rooftop
+              </div>
+              <label>In Idaho, it's illegal to sell chickens...</label>
+              <div> 
+                 <input type="radio" name="question15">at dawn
+              </div>
+              <div> 
+                 <input type="radio" name="question15" class="correctAnswer"><span class="spanOne">after sundown</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question15">outside 
+              </div>
+              <div> 
+                 <input type="radio" name="question15">in the front yard. 
+              </div>
+              </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 6 ***************** -->
-         <h2 class="outro" id="unicornQuestions">Be ready for the UNICORN's questions!</h2>
-         <form class="questionSix">
-            <h2 class="intro unicorn">Unicorn's Questions</h2>
-            <div class="center">
-               <label> In Oregon, you can be fined for...</label>
-               <div> 
-                  <input type="radio" name="question16" class="correctAnswer"><span class="spanOne">walking down the streen with untied shoelaces</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question16">swearing loudly
-               </div>
-               <div> 
-                  <input type="radio" name="question16">slurping and lip smaking in a restaurant
-               </div>
-               <div> 
-                  <input type="radio" name="question16">sleeping on the street
-               </div>
-               <label>In Pennsylvania, it's not allowed to sing in...</label>
-               <div> 
-                  <input type="radio" name="question17" class="correctAnswer"><span class="spanOne">the bathtub</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question17">a car
-               </div>
-               <div> 
-                  <input type="radio" name="question17">a church
-               </div>
-               <div> 
-                  <input type="radio" name="question17">a garage
-               </div>
-               <label>Where are you not allowed to sleep in South Dakota?</label>
-               <div> 
-                  <input type="radio" name="question18">in an amusement park
-               </div>
-               <div> 
-                  <input type="radio" name="question18">in the office
-               </div>
-               <div> 
-                  <input type="radio" name="question18">in a railway station
-               </div>
-               <div> 
-                  <input type="radio" name="question18" class="correctAnswer"><span class="spanOne">in a cheese factory</span>
-               </div>
+        </form>
+        <!-- 5 - DUPLICATE -->
+        <h2 class="outro" id="coalaQuestionsTwo">Be ready for the COALA's questions!</h2>
+        <form class="questionFive-duplicate">
+           <h2 class="intro coala">Coala's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>In Nebraska, parents may be arrested if their child...</label>
+              <div> 
+                 <input type="radio" name="question13">is yelling in a public place for more than 3 minutes
+              </div>
+              <div> 
+                 <input type="radio" name="question13" class="answerDuplicate"><span class="spanTwo">burps during church</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question13">is swearing out loud 
+              </div>
+              <div> 
+                 <input type="radio" name="question13">is bullying another kid at school
+              </div>
+              <label>In Massachusetts, women are officially prohibited from having sex...</label>
+              <div> 
+                 <input type="radio" name="question14">while she is fully dressed
+              </div>
+              <div> 
+                 <input type="radio" name="question14">during pregnancy
+              </div>
+              <div> 
+                 <input type="radio" name="question14" class="answerDuplicate"><span class="spanTwo">in a top position</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question14">with themselves
+              </div>
+              <label>Virginia has a law that prohibits...</label>
+              <div> 
+                 <input type="radio" name="question15">tickling a man (women may be tickled)
+              </div>
+              <div> 
+                 <input type="radio" name="question15" class="answerDuplicate"><span class="spanTwo">tickling a woman (men, however, may be tickled)</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question15">tickling someone else's kid  
+              </div>
+              <div> 
+                 <input type="radio" name="question15">tickling a wild animal
+              </div>
+   </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 6 - DUPLICATE -->
-         <h2 class="outro" id="unicornQuestionsTwo">Be ready for the UNICORN's questions!</h2>
-         <form class="questionSix-duplicate">
-            <h2 class="intro unicorn">Unicorn's Questions</h2>
-            <div class="center">
-               <label>Massachusetts can fine you $50 and put you in a jail for up to 2 months if you give a hospital patient...</label>
-               <div> 
-                  <input type="radio" name="question16" class="answerDuplicate"><span class="spanTwo">some beer</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question16">cigarettes
-               </div>
-               <div> 
-                  <input type="radio" name="question16">exotic fruits
-               </div>
-               <div> 
-                  <input type="radio" name="question16">a reason to be sad
-               </div>
-               <label>Virginia still has an outrageous law that allows a man to beat his wife under certain conditions. What are these conditions?</label>
-               <div> 
-                  <input type="radio" name="question17" class="answerDuplicate"><span class="spanTwo">He can only do this on the steps of the Stafford County Courthouse and only until 8 p.m.</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question17">He can beat his wife only in the presence of her relatives who can intercede for her
-               </div>
-               <div> 
-                  <input type="radio" name="question17">He can hit his wife if there is documentary evidence of her infidelity
-               </div>
-               <div> 
-                  <input type="radio" name="question17">He can beat her only at night, with the lights off and no witnesses
-               </div>
-               <label>In Wyoming, a drunk person is forbidden not only to drive a car, but also...</label>
-               <div> 
-                  <input type="radio" name="question18">Talk to strangers or flirt with a bartender
-               </div>
-               <div> 
-                  <input type="radio" name="question18">Ride a horse
-               </div>
-               <div> 
-                  <input type="radio" name="question18">Go for a jog
-               </div>
-               <div> 
-                  <input type="radio" name="question18" class="answerDuplicate"><span class="spanTwo">Work in a mine or go skiing</span>
-               </div>
+        </form>
+        <!-- 6 ***************** -->
+        <h2 class="outro" id="unicornQuestions">Be ready for the UNICORN's questions!</h2>
+        <form class="questionSix">
+           <h2 class="intro unicorn">Unicorn's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> In Oregon, you can be fined for...</label>
+              <div> 
+                 <input type="radio" name="question16" class="correctAnswer"><span class="spanOne">walking down the streen with untied shoelaces</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question16">swearing loudly
+              </div>
+              <div> 
+                 <input type="radio" name="question16">slurping and lip smaking in a restaurant
+              </div>
+              <div> 
+                 <input type="radio" name="question16">sleeping on the street
+              </div>
+              <label>In Pennsylvania, it's not allowed to sing in...</label>
+              <div> 
+                 <input type="radio" name="question17" class="correctAnswer"><span class="spanOne">the bathtub</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question17">a car
+              </div>
+              <div> 
+                 <input type="radio" name="question17">a church
+              </div>
+              <div> 
+                 <input type="radio" name="question17">a garage
+              </div>
+              <label>Where are you not allowed to sleep in South Dakota?</label>
+              <div> 
+                 <input type="radio" name="question18">in an amusement park
+              </div>
+              <div> 
+                 <input type="radio" name="question18">in the office
+              </div>
+              <div> 
+                 <input type="radio" name="question18">in a railway station
+              </div>
+              <div> 
+                 <input type="radio" name="question18" class="correctAnswer"><span class="spanOne">in a cheese factory</span>
+              </div>
+              </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 7 ***************** -->
-         <h2 class="outro" id="dragonQuestions">Be ready for the DRAGON's questions!</h2>
-         <form class="questionSeven">
-            <h2 class="intro dragon">Dragon's Questions</h2>
-            <div class="center">
-               <label> In Colorado, on Sunday it's forbidden to sell...</label>
-               <div> 
-                  <input type="radio" name="question19">ice cream
-               </div>
-               <div> 
-                  <input type="radio" name="question19">dogs
-               </div>
-               <div> 
-                  <input type="radio" name="question19">jewelry
-               </div>
-               <div> 
-                  <input type="radio" name="question19" class="correctAnswer"><span class="spanOne">cars</span>
-               </div>
-               <label>In North Dakota, it's prohibited for bars or restaurants to serve...</label>
-               <div> 
-                  <input type="radio" name="question20">appetizers and main course at the same time
-               </div>
-               <div> 
-                  <input type="radio" name="question20">mac & cheese
-               </div>
-               <div> 
-                  <input type="radio" name="question20" class="correctAnswer"><span class="spanOne">both beer and pretzels at the same time</span> 
-               </div>
-               <div> 
-                  <input type="radio" name="question20">coffee at the end of the day
-               </div>
-               <label>Is it allowed to throw eggs or tomatoes at a public speaker in Kentucky?</label>
-               <div> 
-                  <input type="radio" name="question21">Yes, that's why public speakers there are so nervous.
-               </div>
-               <div> 
-                  <input type="radio" name="question21" class="correctAnswer"><span class="spanOne">No, you will be fined for such disrespect!</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question21">Only if the speaker is promoting racism or fascism.
-               </div>
-               <div> 
-                  <input type="radio" name="question21">Only if the speaker insulted you personally.
-               </div>
+        </form>
+        <!-- 6 - DUPLICATE -->
+        <h2 class="outro" id="unicornQuestionsTwo">Be ready for the UNICORN's questions!</h2>
+        <form class="questionSix-duplicate">
+           <h2 class="intro unicorn">Unicorn's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>Massachusetts can fine you $50 and put you in a jail for up to 2 months if you give a hospital patient...</label>
+              <div> 
+                 <input type="radio" name="question16" class="answerDuplicate"><span class="spanTwo">some beer</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question16">cigarettes
+              </div>
+              <div> 
+                 <input type="radio" name="question16">exotic fruits
+              </div>
+              <div> 
+                 <input type="radio" name="question16">a reason to be sad
+              </div>
+              <label>Virginia still has an outrageous law that allows a man to beat his wife under certain conditions. What are these conditions?</label>
+              <div> 
+                 <input type="radio" name="question17" class="answerDuplicate"><span class="spanTwo">He can only do this on the steps of the Stafford County Courthouse and only until 8 p.m.</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question17">He can beat his wife only in the presence of her relatives who can intercede for her
+              </div>
+              <div> 
+                 <input type="radio" name="question17">He can hit his wife if there is documentary evidence of her infidelity
+              </div>
+              <div> 
+                 <input type="radio" name="question17">He can beat her only at night, with the lights off and no witnesses
+              </div>
+              <label>In Wyoming, a drunk person is forbidden not only to drive a car, but also...</label>
+              <div> 
+                 <input type="radio" name="question18">Talk to strangers or flirt with a bartender
+              </div>
+              <div> 
+                 <input type="radio" name="question18">Ride a horse
+              </div>
+              <div> 
+                 <input type="radio" name="question18">Go for a jog
+              </div>
+              <div> 
+                 <input type="radio" name="question18" class="answerDuplicate"><span class="spanTwo">Work in a mine or go skiing</span>
+              </div>
+       </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 7 - DUPLICATE -->
-         <h2 class="outro" id="dragonQuestionsTwo">Be ready for the DRAGON's questions!</h2>
-         <form class="questionSeven-duplicate">
-            <h2 class="intro dragon">Dragon's Questions</h2>
-            <div class="center">
-               <label> Which animal should not sit in the back seat of a car in Massachusetts?</label>
-               <div> 
-                  <input type="radio" name="question19">Cat
-               </div>
-               <div> 
-                  <input type="radio" name="question19">Dog
-               </div>
-               <div> 
-                  <input type="radio" name="question19">Racoon
-               </div>
-               <div> 
-                  <input type="radio" name="question19" class="answerDuplicate"><span class="spanTwo">Gorilla</span>
-               </div>
-               <label>If you are a man and you live in Omaha, Nebraska, you should not run around with...</label>
-               <div> 
-                  <input type="radio" name="question20">shaved legs
-               </div>
-               <div> 
-                  <input type="radio" name="question20">shaved armpits
-               </div>
-               <div> 
-                  <input type="radio" name="question20" class="answerDuplicate"><span class="spanTwo">a shaved chest </span>
-               </div>
-               <div> 
-                  <input type="radio" name="question20">shaved cheeks
-               </div>
-               <label>What is forbidden to eat in Texas?</label>
-               <div> 
-                  <input type="radio" name="question21">Vegetation and fruit from private front yards 
-               </div>
-               <div> 
-                  <input type="radio" name="question21" class="answerDuplicate"><span class="spanTwo">Your neighbor's garbage without their permission</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question21">Bats and rodents
-               </div>
-               <div> 
-                  <input type="radio" name="question21">Waterfowls from public waters
-               </div>
+        </form>
+        <!-- 7 ***************** -->
+        <h2 class="outro" id="dragonQuestions">Be ready for the DRAGON's questions!</h2>
+        <form class="questionSeven">
+           <h2 class="intro dragon">Dragon's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> In Colorado, on Sunday it's forbidden to sell...</label>
+              <div> 
+                 <input type="radio" name="question19">ice cream
+              </div>
+              <div> 
+                 <input type="radio" name="question19">dogs
+              </div>
+              <div> 
+                 <input type="radio" name="question19">jewelry
+              </div>
+              <div> 
+                 <input type="radio" name="question19" class="correctAnswer"><span class="spanOne">cars</span>
+              </div>
+              <label>In North Dakota, it's prohibited for bars or restaurants to serve...</label>
+              <div> 
+                 <input type="radio" name="question20">appetizers and main course at the same time
+              </div>
+              <div> 
+                 <input type="radio" name="question20">mac & cheese
+              </div>
+              <div> 
+                 <input type="radio" name="question20" class="correctAnswer"><span class="spanOne">both beer and pretzels at the same time</span> 
+              </div>
+              <div> 
+                 <input type="radio" name="question20">coffee at the end of the day
+              </div>
+              <label>Is it allowed to throw eggs or tomatoes at a public speaker in Kentucky?</label>
+              <div> 
+                 <input type="radio" name="question21">Yes, that's why public speakers there are so nervous.
+              </div>
+              <div> 
+                 <input type="radio" name="question21" class="correctAnswer"><span class="spanOne">No, you will be fined for such disrespect!</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question21">Only if the speaker is promoting racism or fascism.
+              </div>
+              <div> 
+                 <input type="radio" name="question21">Only if the speaker insulted you personally.
+              </div>
+         </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 8 ****************** -->
-         <h2 class="outro" id="snowmanQuestions">Be ready for the SNOWMAN's questions!</h2>
-         <form class="questionEight">
-            <h2 class="intro snowman">Snowman's Questions</h2>
-            <div class="center">
-               <label> In Kentucky, a woman cannot remarry the same man...</label>
-               <div> 
-                  <input type="radio" name="question22">more than twice
-               </div>
-               <div> 
-                  <input type="radio" name="question22" class="correctAnswer"><span class="spanOne">more than three times</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question22">more than once
-               </div>
-               <div> 
-                  <input type="radio" name="question22">more than four times
-               </div>
-               <label>What you are not allowed to do in public in Maine state?</label>
-               <div> 
-                  <input type="radio" name="question23">to fart
-               </div>
-               <div> 
-                  <input type="radio" name="question23">to swear
-               </div>
-               <div> 
-                  <input type="radio" name="question23" class="correctAnswer"><span class="spanOne">to blow your nose</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question23">to sneeze
-               </div>
-               <label>In Iowa, it's illegal for a kiss to last longer than... </label>
-               <div> 
-                  <input type="radio" name="question24" class="correctAnswer"><span class="spanOne">5 minutes</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question24">10 minutes
-               </div>
-               <div> 
-                  <input type="radio" name="question24">30 minutes
-               </div>
-               <div> 
-                  <input type="radio" name="question24">1 minute
-               </div>
+        </form>
+        <!-- 7 - DUPLICATE -->
+        <h2 class="outro" id="dragonQuestionsTwo">Be ready for the DRAGON's questions!</h2>
+        <form class="questionSeven-duplicate">
+           <h2 class="intro dragon">Dragon's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> Which animal should not sit in the back seat of a car in Massachusetts?</label>
+              <div> 
+                 <input type="radio" name="question19">Cat
+              </div>
+              <div> 
+                 <input type="radio" name="question19">Dog
+              </div>
+              <div> 
+                 <input type="radio" name="question19">Racoon
+              </div>
+              <div> 
+                 <input type="radio" name="question19" class="answerDuplicate"><span class="spanTwo">Gorilla</span>
+              </div>
+              <label>If you are a man and you live in Omaha, Nebraska, you should not run around with...</label>
+              <div> 
+                 <input type="radio" name="question20">shaved legs
+              </div>
+              <div> 
+                 <input type="radio" name="question20">shaved armpits
+              </div>
+              <div> 
+                 <input type="radio" name="question20" class="answerDuplicate"><span class="spanTwo">a shaved chest </span>
+              </div>
+              <div> 
+                 <input type="radio" name="question20">shaved cheeks
+              </div>
+              <label>What is forbidden to eat in Texas?</label>
+              <div> 
+                 <input type="radio" name="question21">Vegetation and fruit from private front yards 
+              </div>
+              <div> 
+                 <input type="radio" name="question21" class="answerDuplicate"><span class="spanTwo">Your neighbor's garbage without their permission</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question21">Bats and rodents
+              </div>
+              <div> 
+                 <input type="radio" name="question21">Waterfowls from public waters
+              </div>
+       </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <!-- 8 - DUPLICATE -->
-         <h2 class="outro" id="snowmanQuestionsTwo">Be ready for the SNOWMAN's questions!</h2>
-         <form class="questionEight-duplicate">
-            <h2 class="intro snowman">Snowman's Questions</h2>
-            <div class="center">
-               <label>Texas bans organ trade. However, this prohibition does not apply to some parts of the body. Which ones exactly?</label>
-               <div> 
-                  <input type="radio" name="question22">Kidneys and lungs
-               </div>
-               <div> 
-                  <input type="radio" name="question22" class="answerDuplicate"><span class="spanTwo">Blood and hair</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question22">Skin and hair
-               </div>
-               <label>In Wyoming, it is illegal to fish with...</label>
-               <div> 
-                  <input type="radio" name="question23">nets
-               </div>
-               <div> 
-                  <input type="radio" name="question23">knives
-               </div>
-               <div> 
-                  <input type="radio" name="question23" class="answerDuplicate"><span class="spanTwo">firearm</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question23">fishing rods
-               </div>
-               <label>Virginia law prohibits having sex while...</label>
-               <div> 
-                  <input type="radio" name="question24" class="answerDuplicate"><span class="spanTwo">the lights are on</span>
-               </div>
-               <div> 
-                  <input type="radio" name="question24">you are drunk
-               </div>
-               <div> 
-                  <input type="radio" name="question24">eating
-               </div>
-               <div> 
-                  <input type="radio" name="question24">being in a car
-               </div>
+        </form>
+        <!-- 8 ****************** -->
+        <h2 class="outro" id="snowmanQuestions">Be ready for the SNOWMAN's questions!</h2>
+        <form class="questionEight">
+           <h2 class="intro snowman">Snowman's Questions</h2>
+           <div class="extra-container-two"> 
+              <label> In Kentucky, a woman cannot remarry the same man...</label>
+              <div> 
+                 <input type="radio" name="question22">more than twice
+              </div>
+              <div> 
+                 <input type="radio" name="question22" class="correctAnswer"><span class="spanOne">more than three times</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question22">more than once
+              </div>
+              <div> 
+                 <input type="radio" name="question22">more than four times
+              </div>
+              <label>What you are not allowed to do in public in Maine state?</label>
+              <div> 
+                 <input type="radio" name="question23">to fart
+              </div>
+              <div> 
+                 <input type="radio" name="question23">to swear
+              </div>
+              <div> 
+                 <input type="radio" name="question23" class="correctAnswer"><span class="spanOne">to blow your nose</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question23">to sneeze
+              </div>
+              <label>In Iowa, it's illegal for a kiss to last longer than... </label>
+              <div> 
+                 <input type="radio" name="question24" class="correctAnswer"><span class="spanOne">5 minutes</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question24">10 minutes
+              </div>
+              <div> 
+                 <input type="radio" name="question24">30 minutes
+              </div>
+              <div> 
+                 <input type="radio" name="question24">1 minute
+              </div>
+   </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
             </div>
-            <button type="submit" class="submit">Get Points!</button>
-            <button class="closeBtn">Close</button>
-         </form>
-         <h4 class="rules">Whimsical animals are wondering how well you know US laws.
-            Answer their questions, get at least 4 points and dance with the Statue of Liberty!
-         </h4>
-         <h3 class="quote"></h3>
+        </form>
+        <!-- 8 - DUPLICATE -->
+        <h2 class="outro" id="snowmanQuestionsTwo">Be ready for the SNOWMAN's questions!</h2>
+        <form class="questionEight-duplicate">
+           <h2 class="intro snowman">Snowman's Questions</h2>
+           <div class="extra-container-two"> 
+              <label>Texas bans organ trade. However, this prohibition does not apply to some parts of the body. Which ones exactly?</label>
+              <div> 
+                 <input type="radio" name="question22">Kidneys and lungs
+              </div>
+              <div> 
+                 <input type="radio" name="question22" class="answerDuplicate"><span class="spanTwo">Blood and hair</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question22">Skin and hair
+              </div>
+              <label>In Wyoming, it is illegal to fish with...</label>
+              <div> 
+                 <input type="radio" name="question23">nets
+              </div>
+              <div> 
+                 <input type="radio" name="question23">knives
+              </div>
+              <div> 
+                 <input type="radio" name="question23" class="answerDuplicate"><span class="spanTwo">firearm</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question23">fishing rods
+              </div>
+              <label>Virginia law prohibits having sex while...</label>
+              <div> 
+                 <input type="radio" name="question24" class="answerDuplicate"><span class="spanTwo">the lights are on</span>
+              </div>
+              <div> 
+                 <input type="radio" name="question24">you are drunk
+              </div>
+              <div> 
+                 <input type="radio" name="question24">eating
+              </div>
+              <div> 
+                 <input type="radio" name="question24">being in a car
+              </div>
+     </div>
+              <div class="quiz-btns-container"> 
+                <button class="submit quiz-btn" >Get Points!</button>
+                <button class="closeBtn quiz-btn">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Last Container -->
+    <div class="statue-container">
+        <div class="dancingParent">
+            <p class="score">Total points: 5</p>
+            <button class="liberty-btn-play"></button>
+         </div>
          <div class="gifContainer">
             <img id="libertyGif" src="https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/statue_of_liberty.gif?v=1648104865616" width="350" height="450">
          </div>
-         <button id="btn">Spin</button>
-         <button id="reloadBtn">Play Again!</button>
-         <a href="https://lana-sharin-portfolio.glitch.me/games.html"><button class="back-btn">Back To All Games</button></a>
-      </div>
+
+         <div class="statue-btns-container">
+            <button id="reloadBtn">Play Again!</button>
+            <a href="https://lana-sharin-portfolio.glitch.me/games.html" class="exit-link"><button class="exit-btn">EXIT</button></a>
+         </div>
+    </div>
+</div>
+   
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

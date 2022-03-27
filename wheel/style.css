@@ -3,86 +3,57 @@
     50% {background-position: 20% 100%;}
     100% {background-position: 80% 0%;}
 }
+
 body {
     background: linear-gradient(149deg, rgba(231, 201, 222, 0.87) 0%, rgba(133, 46, 106, 0.808) 42%, rgba(72, 136, 160, 0.788) 72%, rgba(22, 36, 66, 0.719) 100%);
     animation: gradient 5s infinite linear;
     background-size: 400%; 
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
     min-height: 100vh;
 }
-form {
+
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    height: 800px;
-    background-color: whitesmoke;
-    padding: 30px 40px;
-    box-shadow: 2px 2px 30px white;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: -60px;
+    width: 100%;
 }
-.center {
-    display: flex;
+.first-container {
+    display: flex; 
     flex-direction: column;
     justify-content: center;
-    font-size: 15px;
-    margin-left: 10%;
-    margin-top: 4%;
+    align-items: center;
+    margin-top: 50px;
 }
-input {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 10%;
-    font-weight: 300;
-    font-size: 20px;
-}
-label {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: underline;
-    
-}
-.submit, .closeBtn {
-    width: 40%;
-    margin-top: 5%;
-    margin-left: 30%;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    padding: 8px 0px;
-}
-.submit {
-    background-color: #FEE3EC;
-}
-.closeBtn {
-    display: none;
-    background-color: rgb(120, 139, 178);
-    color: white;
-}
-.adaptation {
-    width: 360px !important;
-}
-#wheel {
+
+.wheel-container {
     position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#wheel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
+
 #marker {
     position: absolute;
     z-index: 2;
-    top: 5%;
+    top: 0;
+    left: 127px;
+    width: 50px;
+}
+
+.rule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rules {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     background-color: #FEE3EC;
     padding: 15px 25px;
@@ -90,37 +61,22 @@ label {
     width: 40%;
     border: 4px groove rgb(120, 139, 178);
     border-radius: 10px;
-    margin-top: -1%;
-    margin-bottom: 6%;
 }
-.paragraph {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    background-color: #FEE3EC;
-    padding: 15px 25px;
-    border: 4px groove rgb(120, 139, 178);
-    border-radius: 10px;
-    font-size: 20px;
+
+.extra-container-one {
+    display: flex;
+    justify-content: center;
 }
-.score {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-size: 25px;
+
+.first-container-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
 }
-.quote {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 25px;
-    margin-top: -1%;
-    color: white;
-    font-style: italic;
-    width: 50%;
-}
-.text {
-    text-align: center;
-    font-size: 18px;
-}
+
 @keyframes flicker {
     
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -140,34 +96,30 @@ label {
     20%, 24%, 55% {        
         text-shadow: none;
     }    
-  }
+}
+
 #btn {
     font-family: 'Lato', sans-serif;
     background-color: rgb(133, 46, 106);
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     text-transform: uppercase;
-    padding: 8px 20px;
-    border-radius: 8px;
-    margin-top: -5%;
-    z-index: 2;
-    animation: flicker 1.5s infinite alternate;
-    color: #fff;
-}
-#reloadBtn {
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(133, 46, 106);
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
-    padding: 8px 20px;
+    padding: 8px 24px;
     border-radius: 8px;
     z-index: 2;
     animation: flicker 1.5s infinite alternate;
-    color: #fff;
-    display: none;
+    margin: auto;
 }
-.back-btn {
+
+#btn:hover {
+    transform: scale(1.04);
+}
+
+.exit-link {
+    text-decoration: none;
+}
+
+.back-btn, .exit-btn {
     font-family: 'Lato', sans-serif;
     background-color: rgba(133, 46, 106, 0.788);
     color: white;
@@ -177,241 +129,331 @@ label {
     border-radius: 8px;
     z-index: 2;
     color: #fff;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-#btn:hover, #reloadBtn:hover, .back-btn:hover {
-    transform: scale(1.04);
-}
-.opacity {
-    filter: opacity(0.8);
+    margin-top: 20px;
 }
 
-.questionZero, .questionOne, .questionTwo, .questionThree, .questionFour, .questionFive, .questionSix, .questionSeven, .questionEight,
-.questionZero-duplicate, .questionOne-duplicate, .questionTwo-duplicate, .questionThree-duplicate, .questionFour-duplicate, .questionFive-duplicate,
-.questionSix-duplicate, .questionSeven-duplicate, .questionEight-duplicate {
+.back-btn:hover, .exit-btn:hover {
+    transform: scale(1.04);
+}
+
+.attempt-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.paragraph {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #FEE3EC;
+    padding: 8px 30px;
+    border: 4px groove rgb(120, 139, 178);
+    border-radius: 10px;
+    font-size: 18px;
     display: none;
 }
+.quote {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
+
+/* Quizz Container */
+
 .outro {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 30px;
-    width: 50%;
+    font-size: 22px;
     text-align: center;
     padding: 6px 20px;
     display: none;
     color: white;
-    margin-top: -15px;
-}
-.intro {
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    display: none;
-    margin-bottom: -20px;
-    margin-top: -5px;
 }
 
-.showAnswer {
-    font-size: 15px;
-    color: blueviolet;
-    display: none;
-}
-
-.gifContainer {
+.form-container {
     display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 4%;
-}
-#libertyGif {
-    display: none;
-}
-.dancingParent {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin-bottom: 2%;
-}
-.all-animals {
-    color:rgb(120, 139, 178);
-}
-.frog {
-    color: rgb(72, 136, 160);
-}
-.snail {
-    color: rgb(58, 80, 126);
-}
-.dolphin {
-    color: rgb(231, 201, 222);
-    text-shadow: 1px 1px 1px black;
-}
-.ladybug {
-    color: rgb(133, 46, 106);
-}
-.coala {
-    color: rgb(72, 136, 160);
-}
-.unicorn {
-    color: rgb(58, 80, 126);
-}
-.dragon {
-    color: rgb(219, 152, 199);
-    text-shadow: 1px 1px 1px black;
-}
-.snowman {
-    color: rgb(133, 46, 106);
+    width: 600px;
 }
 
-@media all and (max-width: 700px) {
-    #wheel {
-        width: 300px;
-    }
-    #marker {
-        width: 50px;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 30px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.397);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+.intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgba(133, 46, 106, 0.87);
+}
+
+.extra-container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;  
+    margin-bottom: 10px; 
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px;
+    width: 30px;
+    align-self: flex-start
+}
+
+.quiz-btns-container {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+}
+
+.quiz-btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+}
+
+.quiz-btn:hover {
+    transform: scale(1.04);
+}
+
+.submit {
+    background-color: rgba(133, 46, 106, 0.87);
+}
+
+.closeBtn {
+    display: none;
+    background-color: rgb(120, 139, 178);
+}
+
+/* Last Container */
+
+.statue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.dancingParent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.score {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 22px;
+}
+
+.liberty-btn-play {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: white;
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/sound.png?v=1648092859510);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.liberty-btn-pause {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: white;
+    background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/mute.png?v=1648092838054);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#libertyGif {
+    border-radius: 15px;
+}
+
+.statue-btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#reloadBtn, #reloadBtnOne {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    color: rgb(133, 46, 106);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 20px;
+    display: none;
+}
+
+#reloadBtnOne {
+    margin-left: 6%;
+}
+
+#reloadBtn:hover, #reloadBtnOne:hover {
+    transform: scale(1.04);
+}
+
+/* SweetAlert Window correction */
+.adaptation {
+    width: 300px !important;
+}
+
+/* Horizontal Adaptation */
+
+@media all and (max-width: 600px) {
     .rules {
-        font-size: 15px;
-        padding: 15px 25px;
-        margin-top: -1%;
-        margin-bottom: 6%;
+        font-size: 14px;
+        width: 60%;
     }
-    #btn {
-        font-size: 18px;
+    .form-container {
+        width: 440px;
     }
-    #reloadBtn {
-        font-size: 18px;
-    }
-    .paragraph {
-        font-size: 16px;
-        padding: 10px 20px;
-        margin-bottom: -2%;
-    }
-    .score {
-        font-size: 20px;
-        margin-bottom: 4%;
-    }
-    .quote {
-        font-size: 18px;
-    }
-    .outro {
-        font-size: 20px;
-    }
-    .intro {
-        font-size: 20px;
-    }
-    form {
-        width: 70%;
-    }
-    label {
-        font-size: 16px;
-    }
-    .submit, .closeBtn {
-        width: 40%;
-        margin-top: 7%;
-        font-size: 16px;
-        padding: 8px 0px;
+    #libertyGif {
+        width: 250px;
+        height: 320px;
+        margin-left: 20px;
     }
 }
 
 @media all and (max-width: 500px) {
-    #marker {
-        top: 3%;
-    }
     .rules {
-        width: 70%;
+        font-size: 12px;
+        width: 80%;
+    }
+    #btn {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+    .back-btn, .exit-btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .attempt-container {
+        width: 300px;
+    }
+    .paragraph {
+        padding: 8px 20px;
+        border: 2px groove rgb(120, 139, 178);
+        font-size: 15px;
+    }
+    .quote {
+        font-size: 20px;
+    }
+    .form-container {
+        width: 390px;
+    }
+    form {
+        font-size: 13px;
+    }
+    label {
+        font-size: 15px;
+    }
+    input {
+        margin-top: 3px;
+    }
+    .dancingParent {
+        margin-top: -20px;
+    }
+    #reloadBtn, #reloadBtnOne {
+        font-size: 16px;
+        padding: 6px 16px;
+    }
+    .liberty-btn-play, .liberty-btn-pause {
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
     }
 }
 
 @media all and (max-width: 400px) {
-    #wheel {
-        width: 260px;
+    .wheel-container {
+        width: 250px;
+        height: 250px;
+        margin-top: -20px;
     }
     #marker {
+        top: 0;
+        left: 107px;
         width: 40px;
     }
-    .rules {
-        font-size: 13px;
-        padding: 15px 25px;
-        margin-top: -1%;
-        margin-bottom: 6%;
-        width: 60%;
+    .attempt-container {
+        width: 220px;
     }
     .quote {
-        width: 65%;
+        font-size: 16px;
     }
-    #btn {
-        font-size: 15px;
-    }
-    #reloadBtn {
-        font-size: 15px;
-    }
-    .intro {
-        font-size: 23px;
-    }
-    .center {
-        font-size: 14px;
-    }
-    .adaptation {
-        width: 300px !important;
-    }
-    #libertyGif {
-        width: 280px;
-        height: 380px;
-    }
-}
-
-@media all and (max-width: 350px) {
-    form {
-        height: 900px;
-    }
-    .submit, .closeBtn {
-        width: 50%;
-        margin-left: 25%;
-    }
-    .intro {
+    .outro {
         font-size: 18px;
+    }
+    .form-container {
+        width: 290px;
     }
     label {
         font-size: 14px;
     }
-    input {
+    .quiz-btn {
         font-size: 14px;
-    }
-    .adaptation {
-        width: 270px !important;
-    }
-    #libertyGif {
-        width: 270px;
-        height: 370px;
-    }
-    .dancingParent  {
-        width: 60%;
+        padding: 8px 18px;
+        border-radius: 8px;
     }
 }
 
-@media all and (max-width: 300px) {
-    #wheel {
-        width: 240px;
+@media all and (max-width: 350px) {
+    .wheel-container {
+        width: 230px;
+        height: 230px;
+        margin-top: -30px;
     }
     #marker {
+        top: 0;
+        left: 100px;
         width: 35px;
-        top: 2%;
     }
-    .adaptation {
-        width: 250px !important;
-    }
-    #libertyGif {
-        width: 250px;
-        height: 350px;
-    }
-    .dancingParent  {
-        width: 70%;
+    .paragraph {
+        padding: 4px 14px;
+        border: 2px groove rgb(120, 139, 178);
+        font-size: 13px;
     }
 }
-
-
