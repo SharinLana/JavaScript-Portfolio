@@ -30,7 +30,6 @@ body {
 	width: 100%;
 	height: 100vh;
 	perspective: 1600px;
-	border: 2px solid white;
 }
 
 .header-container {
