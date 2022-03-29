@@ -134,7 +134,7 @@ function actionYes() {
     noThree.addEventListener('click', mistakesNo);
 }
 function mistakesNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/psychology.gif?v=1648156378473');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/psychology.gif?v=1648591675257');
     question.textContent = 'Are you interested in psychology?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -188,7 +188,7 @@ function psychologyYes() {
     noSeven.addEventListener('click', expressionNo);
 }
 function actionNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/potter.gif?v=1648156365624');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/potter.gif?v=1648591559902');
     question.textContent = 'Do you think that there is something in this world that is beyond human understanding?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -215,7 +215,7 @@ function actionNo() {
     noTwo.addEventListener('click', beyondNo);
 }
 function beyondYes() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/curiosity.gif?v=1648156294804');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/curiosity.gif?v=1648591270371');
     question.textContent = 'Are you a curious person?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -440,7 +440,7 @@ function expressionYes() {
     noEight.addEventListener('click', politicNo);
 }
 function politicsYes() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648159493233');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648591408987');
     question.textContent = 'Do you want to immerse yourself in a fantasy world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -500,7 +500,7 @@ function fantasyYes() {
     document.location.assign('literature.html');
 }
 function beyondNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/psychology.gif?v=1648156378473');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/psychology.gif?v=1648591675257');
     question.textContent = 'Are you interested in psychology?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -749,7 +749,7 @@ function blackWhiteNo() {
     noTwo.addEventListener('click', wordsNo); 
 }
 function wordsYes() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648159493233');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/fantasy.gif?v=1648591408987');
     question.textContent = 'Do you want to immerse yourself in a fantasy world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
