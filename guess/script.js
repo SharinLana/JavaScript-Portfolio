@@ -54,7 +54,7 @@ yesBtn.addEventListener('click', ()=> {
 noBtn.addEventListener('click', ()=> {
     Swal.fire({
         title: 'Hmmm...',
-        imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/loser.gif?v=1648103085804',
+        imageUrl: 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/loser.gif?v=1648592564210',
         imageWidth: 300,
         imageHeight: 300,
         imageAlt: 'Custom image',
