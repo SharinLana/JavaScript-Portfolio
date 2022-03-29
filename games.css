@@ -86,7 +86,7 @@ body {
 
 .carousel_card:nth-child(2) {
 	transform: rotateY(90deg) translateZ(400px);
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/library.jpg?v=1648091026565);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/library-cover.jpg?v=1648589168790);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
