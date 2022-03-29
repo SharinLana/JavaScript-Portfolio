@@ -18,7 +18,7 @@ body {
 }
 
 .rainy-background {
-	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/rain.gif?v=1648094049452);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/rain.gif?v=1648590378738);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
 }
 
 .cloudy-background {
-	background-image: url(https://cdn.glitch.me/2352592e-0222-4a73-ae43-2de112bee7dc/clouds-3.gif?v=1648107410341);
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/clouds.gif?v=1648590091156);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
