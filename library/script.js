@@ -80,7 +80,7 @@ yesBtn.addEventListener('click', yesOne);
 noBtn.addEventListener('click', noOne);
 
 function yesOne() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/action_first.gif?v=1648156241756');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/action_first.gif?v=1648590718300');
     question.textContent = 'Do you act first and think later?';
     yesBtn.style.display = 'block';
     yesTwo.style.display = 'none';
@@ -272,7 +272,7 @@ function mythsYes() {
     document.location.assign('religion.html');
 }
 function mythsNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cat_reading.gif?v=1648156265877');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cat_reading.gif?v=1648591073536');
     question.textContent = 'Are you looking for wisdom in this world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -383,7 +383,7 @@ function curiousYes() {
     noSeven.addEventListener('click', expressionNo);
 }
 function expressionNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cat_reading.gif?v=1648156265877');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/cat_reading.gif?v=1648591073536');
     question.textContent = 'Are you looking for wisdom in this world?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
@@ -833,7 +833,7 @@ function abstractYes() {
     noThree.addEventListener('click', mistakesNo);
 }
 function abstractNo() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/ancestors.gif?v=1648156247483');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/ancestors.gif?v=1648590927812');
     question.textContent = 'Do you think that elders should be listened to?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
