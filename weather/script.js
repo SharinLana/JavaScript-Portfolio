@@ -259,10 +259,12 @@ window.addEventListener('load', currentLocation);
 async function currentLocation() {
     const resultLocation = await fetch(`${apiLocation.endpoint}api_key=${apiLocation.key}`);
     const resultLocationReceived = await resultLocation.json();
+  console.log(resultLocation.url)
   console.log(resultLocationReceived);
         
     const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},${resultLocationReceived.country}&units=metric&appID=${api.key}`)
     const resultWeatherReceived = await resultWeather.json(); 
+  console.log(resultWeather.url)
   console.log(resultWeatherReceived);
   
     
