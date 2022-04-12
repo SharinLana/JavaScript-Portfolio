@@ -215,7 +215,7 @@ function actionNo() {
     noTwo.addEventListener('click', beyondNo);
 }
 function beyondYes() {
-    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/curiosity.gif?v=1648591270371');
+    gif.setAttribute('src', 'https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/curiosity.gif?v=1649735140359');
     question.textContent = 'Are you a curious person?';
     yesBtn.style.display = 'none';
     yesTwo.style.display = 'none';
