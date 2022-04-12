@@ -262,21 +262,24 @@ async function currentLocation() {
         
     const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},${resultLocationReceived.country}&units=metric&appID=${api.key}`)
     const resultWeatherReceived = await resultWeather.json(); 
-    console.log(resultWeatherReceived)
+  
+    const localWeather = await fetch(`${api.endpoint}weather?q=${resultWeatherReceived.name},${resultWeatherReceived.sys.country}&units=metric&appID=${api.key}`)
+    const resultLocalWeather = await localWeather.json();
     
     displayCurrentLocation(resultLocationReceived);
-    displayCurrentLocationWeather(resultWeatherReceived);
+    // displayCurrentLocationWeather(resultWeatherReceived);
+  displayCurrentLocationWeather(resultLocalWeather);
     }
 
 function displayCurrentLocation(resultLocationReceived) {
     city.textContent = `${resultLocationReceived.city}, ${resultLocationReceived.country}`;
     getDate();
 }
-function displayCurrentLocationWeather(resultWeatherReceived) {
-    temperature.textContent = `${Math.round(resultWeatherReceived.main.temp)}°C / ${Math.round((resultWeatherReceived.main.temp * 1.8) + 32)}°F`;
-    feelsLike.textContent = `Feels like: ${Math.round(resultWeatherReceived.main.feels_like)}°C / ${Math.round((resultWeatherReceived.main.temp * 1.8) + 32)}°F`;
-    conditions.textContent = `${resultWeatherReceived.weather[0].main}`; 
-    if (resultWeatherReceived.weather[0].main === 'Clear') {
+function displayCurrentLocationWeather(resultLocalWeather) {
+    temperature.textContent = `${Math.round(resultLocalWeather.main.temp)}°C / ${Math.round((resultLocalWeather.main.temp * 1.8) + 32)}°F`;
+    feelsLike.textContent = `Feels like: ${Math.round(resultLocalWeather.main.feels_like)}°C / ${Math.round((resultLocalWeather.main.temp * 1.8) + 32)}°F`;
+    conditions.textContent = `${resultLocalWeather.weather[0].main}`; 
+    if (resultLocalWeather.weather[0].main === 'Clear') {
         snow.style.display = 'none';
         document.body.classList.remove('foggy-background');
         document.body.classList.remove('rainy-background');
@@ -284,7 +287,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('cloudy-background');
         document.body.classList.add('sunny-background');
     }
-    else if (resultWeatherReceived.weather[0].main === 'Clouds') {
+    else if (resultLocalWeather.weather[0].main === 'Clouds') {
         snow.style.display = 'none';
         document.body.classList.remove('foggy-background');
         document.body.classList.remove('rainy-background');
@@ -292,7 +295,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.add('cloudy-background');
         document.body.classList.remove('sunny-background');
     }
-    else if (resultWeatherReceived.weather[0].main === 'Mist') {
+    else if (resultLocalWeather.weather[0].main === 'Mist') {
         snow.style.display = 'none';
         document.body.classList.add('foggy-background');
         document.body.classList.remove('rainy-background');
@@ -300,7 +303,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('cloudy-background');
         document.body.classList.remove('sunny-background');
     }
-    else if (resultWeatherReceived.weather[0].main === 'Rain') {
+    else if (resultLocalWeather.weather[0].main === 'Rain') {
         snow.style.display = 'none';
         document.body.classList.remove('foggy-background');
         document.body.classList.remove('winter-background');
@@ -309,7 +312,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('sunny-background');
 
     }
-    else if (resultWeatherReceived.weather[0].main === 'Snow') {
+    else if (resultLocalWeather.weather[0].main === 'Snow') {
         document.body.classList.remove('rainy-background');
         document.body.classList.remove('foggy-background');
         document.body.classList.remove('cloudy-background');
@@ -436,33 +439,33 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('sunny-background');
         document.body.classList.add('regular-background');
     }
-    min.textContent = `Min: ${Math.round(resultWeatherReceived.main.temp_min)}°C / ${Math.round((resultWeatherReceived.main.temp * 1.8) + 32)}°F`;
-    max.textContent = `Max: ${Math.round(resultWeatherReceived.main.temp_max)}°C / ${Math.round((resultWeatherReceived.main.temp * 1.8) + 32)}°F`;
+    min.textContent = `Min: ${Math.round(resultLocalWeather.main.temp_min)}°C / ${Math.round((resultLocalWeather.main.temp * 1.8) + 32)}°F`;
+    max.textContent = `Max: ${Math.round(resultLocalWeather.main.temp_max)}°C / ${Math.round((resultLocalWeather.main.temp * 1.8) + 32)}°F`;
         
     const mph = 0.621371192; 
-        if (resultWeatherReceived.wind.deg >= 23 && resultWeatherReceived.wind.deg < 68) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, NE`;
+        if (resultLocalWeather.wind.deg >= 23 && resultLocalWeather.wind.deg < 68) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, NE`;
         }
-        else if (resultWeatherReceived.wind.deg >= 68 && resultWeatherReceived.wind.deg < 113) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, E`;
+        else if (resultLocalWeather.wind.deg >= 68 && resultLocalWeather.wind.deg < 113) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, E`;
         }
-        else if (resultWeatherReceived.wind.deg >= 113 && resultWeatherReceived.wind.deg < 158) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, SE`;
+        else if (resultLocalWeather.wind.deg >= 113 && resultLocalWeather.wind.deg < 158) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, SE`;
         }
-        else if (resultWeatherReceived.wind.deg >= 158 && resultWeatherReceived.wind.deg < 203) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, S`;
+        else if (resultLocalWeather.wind.deg >= 158 && resultLocalWeather.wind.deg < 203) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, S`;
         }
-        else if (resultWeatherReceived.wind.deg >= 203 && resultWeatherReceived.wind.deg < 248) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, SW`;
+        else if (resultLocalWeather.wind.deg >= 203 && resultLocalWeather.wind.deg < 248) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, SW`;
         }
-        else if (resultWeatherReceived.wind.deg >= 248 && resultWeatherReceived.wind.deg < 293) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, W`;
+        else if (resultLocalWeather.wind.deg >= 248 && resultLocalWeather.wind.deg < 293) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, W`;
         }
-        else if (resultWeatherReceived.wind.deg >= 293 && resultWeatherReceived.wind.deg < 338) {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, NW`;
+        else if (resultLocalWeather.wind.deg >= 293 && resultLocalWeather.wind.deg < 338) {
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, NW`;
         }
         else {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultWeatherReceived.wind.speed * mph)} mph, N`;
+            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, N`;
         }
     }
 
