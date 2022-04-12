@@ -260,7 +260,7 @@ async function currentLocation() {
     const resultLocation = await fetch(`${apiLocation.endpoint}api_key=${apiLocation.key}`);
     const resultLocationReceived = await resultLocation.json();
         
-    const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},${resultLocationReceived.country}&units=metric&appID=${api.key}`)
+    const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city}&units=metric&appID=${api.key}`)
     const resultWeatherReceived = await resultWeather.json(); 
   
     const localWeather = await fetch(`${api.endpoint}weather?q=${resultWeatherReceived.name},${resultWeatherReceived.sys.country}&units=metric&appID=${api.key}`)
@@ -465,7 +465,7 @@ function displayCurrentLocationWeather(resultLocalWeather) {
             wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, NW`;
         }
         else {
-            wind.textContent = `Wind: ${Math.round(resultWeatherReceived.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, N`;
+            wind.textContent = `Wind: ${Math.round(resultLocalWeather.wind.speed)} kph / ${Math.round(resultLocalWeather.wind.speed * mph)} mph, N`;
         }
     }
 
