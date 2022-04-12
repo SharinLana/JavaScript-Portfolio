@@ -45,6 +45,13 @@ body {
 	background-repeat: no-repeat;
 }
 
+.haze-background {
+	background-image: url(https://cdn.glitch.global/2352592e-0222-4a73-ae43-2de112bee7dc/haze.jpg?v=1649732469912);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .container {
 	display: flex;
 	justify-content: center;

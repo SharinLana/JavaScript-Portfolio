@@ -287,6 +287,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('winter-background');
         document.body.classList.remove('cloudy-background');
         document.body.classList.add('sunny-background');
+        document.body.classList.remove('haze-background');
     }
     else if (resultWeatherReceived.weather[0].main === 'Clouds') {
         snow.style.display = 'none';
@@ -295,6 +296,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('winter-background');
         document.body.classList.add('cloudy-background');
         document.body.classList.remove('sunny-background');
+        document.body.classList.remove('haze-background');
     }
     else if (resultWeatherReceived.weather[0].main === 'Mist') {
         snow.style.display = 'none';
@@ -303,6 +305,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('winter-background');
         document.body.classList.remove('cloudy-background');
         document.body.classList.remove('sunny-background');
+        document.body.classList.remove('haze-background');
     }
     else if (resultWeatherReceived.weather[0].main === 'Rain') {
         snow.style.display = 'none';
@@ -311,13 +314,23 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.add('rainy-background');
         document.body.classList.remove('cloudy-background');
         document.body.classList.remove('sunny-background');
-
+        document.body.classList.remove('haze-background');
     }
+  else if (resultWeatherReceived.weather[0].main === 'Haze') {
+    snow.style.display = 'none';
+      document.body.classList.remove('foggy-background');
+      document.body.classList.remove('winter-background');
+      document.body.classList.remove('rainy-background');
+      document.body.classList.remove('cloudy-background');
+      document.body.classList.remove('sunny-background');
+      document.body.classList.add('haze-background');
+  }
     else if (resultWeatherReceived.weather[0].main === 'Snow') {
         document.body.classList.remove('rainy-background');
         document.body.classList.remove('foggy-background');
         document.body.classList.remove('cloudy-background');
         document.body.classList.remove('sunny-background');
+        document.body.classList.remove('haze-background');
         document.body.classList.add('winter-background');
         snow.style.display = 'block';
         particlesJS("particles-js", {
@@ -438,6 +451,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('rainy-background');
         document.body.classList.remove('cloudy-background');
         document.body.classList.remove('sunny-background');
+        document.body.classList.remove('haze-background');
         document.body.classList.add('regular-background');
     }
     min.textContent = `Min: ${Math.round(resultWeatherReceived.main.temp_min)}°C / ${Math.round((resultWeatherReceived.main.temp * 1.8) + 32)}°F`;
