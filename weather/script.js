@@ -48,6 +48,7 @@ const apiLocation = {
             document.body.classList.remove('rainy-background');
             document.body.classList.remove('winter-background');
             document.body.classList.remove('cloudy-background');
+            document.body.classList.remove('haze-background');
             document.body.classList.add('sunny-background');
         }
         else if (resReceived.weather[0].main === 'Clouds') {
@@ -55,6 +56,7 @@ const apiLocation = {
             document.body.classList.remove('foggy-background');
             document.body.classList.remove('rainy-background');
             document.body.classList.remove('winter-background');
+            document.body.classList.remove('haze-background');
             document.body.classList.add('cloudy-background');
             document.body.classList.remove('sunny-background');
         }
@@ -65,6 +67,7 @@ const apiLocation = {
             document.body.classList.remove('winter-background');
             document.body.classList.remove('cloudy-background');
             document.body.classList.remove('sunny-background');
+            document.body.classList.remove('haze-background');
         }
         else if (resReceived.weather[0].main === 'Rain') {
             snow.style.display = 'none';
@@ -73,13 +76,23 @@ const apiLocation = {
             document.body.classList.add('rainy-background');
             document.body.classList.remove('cloudy-background');
             document.body.classList.remove('sunny-background');
-
+            document.body.classList.remove('haze-background');
+        }
+        else if (resReceived.weather[0].main === 'Haze' || resReceived.weather[0].main === 'Dust') {
+            snow.style.display = 'none';
+            document.body.classList.remove('foggy-background');
+            document.body.classList.remove('winter-background');
+            document.body.classList.remove('rainy-background');
+            document.body.classList.remove('cloudy-background');
+            document.body.classList.remove('sunny-background');
+            document.body.classList.add('haze-background');
         }
         else if (resReceived.weather[0].main === 'Snow') {
             document.body.classList.remove('rainy-background');
             document.body.classList.remove('foggy-background');
             document.body.classList.remove('cloudy-background');
             document.body.classList.remove('sunny-background');
+            document.body.classList.remove('haze-background');
             document.body.classList.add('winter-background');
             snow.style.display = 'block';
             particlesJS("particles-js", {
@@ -200,6 +213,7 @@ const apiLocation = {
             document.body.classList.remove('rainy-background');
             document.body.classList.remove('cloudy-background');
             document.body.classList.remove('sunny-background');
+            document.body.classList.remove('haze-background');
             document.body.classList.add('regular-background');
         }
         
@@ -316,7 +330,7 @@ function displayCurrentLocationWeather(resultWeatherReceived) {
         document.body.classList.remove('sunny-background');
         document.body.classList.remove('haze-background');
     }
-  else if (resultWeatherReceived.weather[0].main === 'Haze') {
+  else if (resultWeatherReceived.weather[0].main === 'Haze' || resultWeatherReceived.weather[0].main === 'Dust') {
     snow.style.display = 'none';
       document.body.classList.remove('foggy-background');
       document.body.classList.remove('winter-background');
