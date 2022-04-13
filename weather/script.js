@@ -275,8 +275,10 @@ async function currentLocation() {
     const resultLocation = await fetch(`${apiLocation.endpoint}api_key=${apiLocation.key}`);
     const resultLocationReceived = await resultLocation.json();
         
-    const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},%20${resultLocationReceived.country_code}&units=metric&appID=${api.key}`)
-    const resultWeatherReceived = await resultWeather.json(); 
+  // this way it doesn't work: const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},%20${resultLocationReceived.country_code}&units=metric&appID=${api.key}`)
+  // that way it doesn't work either: const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city},%20${resultLocationReceived.country}&units=metric&appID=${api.key}`)  
+  const resultWeather = await fetch(`${api.endpoint}weather?q=${resultLocationReceived.city}&units=metric&appID=${api.key}`); //this way it works but not for the same-name cities (It automatically perceives St. Petersburg RU as St. Petersburg US and displays the weather forecast for the US St. Petersburg instead of Russian)
+  const resultWeatherReceived = await resultWeather.json(); 
   console.log(resultWeather.url)
   console.log(resultWeatherReceived);
   
